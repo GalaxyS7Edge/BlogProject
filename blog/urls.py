@@ -1,0 +1,19 @@
+from django.conf.urls import url
+
+from . import views
+
+from blog.uploads import upload_image
+
+app_name = 'blog'
+urlpatterns = [
+    # url(r'^$', views.index, name='index'),
+    url(r'^$', views.IndexView.as_view(), name='index'),
+    # url(r'^blog/(?P<pk>[0-9]+)/$', views.detail, name='detail'),
+    url(r'^blog/(?P<pk>[0-9]+)/$', views.PostDetailView.as_view(), name='detail'),
+    # url(r'^archives/(?P<year>[0-9]{4})/(?P<month>[0-9]{1,2})/$', views.archives, name='archives'),
+    url(r'^archives/(?P<year>[0-9]{4})/(?P<month>[0-9]{1,2})/$', views.ArchivesView.as_view(), name='archives'),
+    # url(r'^category/(?P<pk>[0-9]+)/$', views.category, name='category'),
+    url(r'^category/(?P<pk>[0-9]+)/$', views.CategoryView.as_view(), name='category'),
+    url(r'^tag/(?P<pk>[0-9]+)/$', views.TagView.as_view(), name='tag'),
+    url(r'^admin/upload/(?P<dir_name>[^/]+)$', upload_image, name='upload_image'),
+]

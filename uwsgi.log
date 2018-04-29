@@ -1,0 +1,1379 @@
+*** Starting uWSGI 2.0.17 (64bit) on [Sat Apr  7 16:22:11 2018] ***
+compiled with version: 4.2.1 Compatible Apple LLVM 9.1.0 (clang-902.0.39.1) on 07 April 2018 01:59:50
+os: Darwin-17.5.0 Darwin Kernel Version 17.5.0: Mon Mar  5 22:24:32 PST 2018; root:xnu-4570.51.1~1/RELEASE_X86_64
+nodename: Macintosh
+machine: x86_64
+clock source: unix
+pcre jit disabled
+detected number of CPU cores: 4
+current working directory: /Users/X/PycharmProjects/BlogProject
+writing pidfile to /tmp/BlogProject.pid
+detected binary path: /Users/X/PycharmProjects/BlogProject/venv/bin/uwsgi
+chdir() to /Users/X/PycharmProjects/BlogProject/
+your processes number limit is 709
+your memory page size is 4096 bytes
+detected max file descriptor number: 10240
+lock engine: OSX spinlocks
+thunder lock: disabled (you can enable it with --thunder-lock)
+uwsgi socket 0 bound to UNIX address /tmp/BlogProject.sock fd 3
+Python version: 3.5.1 (v3.5.1:37a07cee5969, Dec  5 2015, 21:12:44)  [GCC 4.2.1 (Apple Inc. build 5666) (dot 3)]
+PEP 405 virtualenv detected: /Users/X/PycharmProjects/BlogProject/venv
+Set PythonHome to /Users/X/PycharmProjects/BlogProject/venv
+*** Python threads support is disabled. You can enable it with --enable-threads ***
+Python main interpreter initialized at 0x7ff7efc083f0
+your server socket listen backlog is limited to 100 connections
+your mercy for graceful operations on workers is 60 seconds
+mapped 801768 bytes (782 KB) for 10 cores
+*** Operational MODE: preforking ***
+WSGI app 0 (mountpoint='') ready in 3 seconds on interpreter 0x7ff7efc083f0 pid: 554 (default app)
+*** uWSGI is running in multiple interpreter mode ***
+spawned uWSGI master process (pid: 554)
+spawned uWSGI worker 1 (pid: 561, cores: 1)
+spawned uWSGI worker 2 (pid: 562, cores: 1)
+spawned uWSGI worker 3 (pid: 563, cores: 1)
+spawned uWSGI worker 4 (pid: 564, cores: 1)
+spawned uWSGI worker 5 (pid: 565, cores: 1)
+spawned uWSGI worker 6 (pid: 566, cores: 1)
+spawned uWSGI worker 7 (pid: 567, cores: 1)
+spawned uWSGI worker 8 (pid: 568, cores: 1)
+spawned uWSGI worker 9 (pid: 569, cores: 1)
+spawned uWSGI worker 10 (pid: 570, cores: 1)
+[pid: 570|app: 0|req: 1/1] 127.0.0.1 () {42 vars in 906 bytes} [Sat Apr  7 16:23:52 2018] GET / => generated 20019 bytes in 1294 msecs (HTTP/1.1 200) 2 headers in 88 bytes (5 switches on core 0)
+[pid: 570|app: 0|req: 2/2] 127.0.0.1 () {44 vars in 954 bytes} [Sat Apr  7 16:24:04 2018] GET /admin => generated 0 bytes in 2 msecs (HTTP/1.1 301) 2 headers in 93 bytes (2 switches on core 0)
+[pid: 567|app: 0|req: 1/3] 127.0.0.1 () {44 vars in 956 bytes} [Sat Apr  7 16:24:04 2018] GET /admin/ => generated 14441 bytes in 1376 msecs (HTTP/1.1 200) 6 headers in 251 bytes (4 switches on core 0)
+Not Found: /favicon.ico
+[pid: 570|app: 0|req: 3/4] 127.0.0.1 () {42 vars in 891 bytes} [Sat Apr  7 16:24:06 2018] GET /favicon.ico => generated 3691 bytes in 16 msecs (HTTP/1.1 404) 2 headers in 80 bytes (2 switches on core 0)
+[pid: 570|app: 0|req: 4/5] 127.0.0.1 () {44 vars in 982 bytes} [Sat Apr  7 16:24:08 2018] GET /admin/blog/post/ => generated 17411 bytes in 118 msecs (HTTP/1.1 200) 7 headers in 405 bytes (4 switches on core 0)
+[pid: 570|app: 0|req: 5/6] 127.0.0.1 () {42 vars in 869 bytes} [Sat Apr  7 16:24:08 2018] GET /admin/jsi18n/ => generated 7682 bytes in 16 msecs (HTTP/1.1 200) 3 headers in 93 bytes (2 switches on core 0)
+[pid: 570|app: 0|req: 6/7] 127.0.0.1 () {42 vars in 906 bytes} [Sat Apr  7 16:24:43 2018] GET / => generated 20019 bytes in 68 msecs (HTTP/1.1 200) 2 headers in 88 bytes (5 switches on core 0)
+Building prefix dict from the default dictionary ...
+Dumping model to file cache /var/folders/x6/w9h306m90858mkd2w2kx9zkh0000gn/T/jieba.cache
+Loading model cost 1.959 seconds.
+Prefix dict has been built succesfully.
+[pid: 563|app: 0|req: 1/8] 127.0.0.1 () {44 vars in 960 bytes} [Sat Apr  7 16:24:46 2018] GET /blog/36/ => generated 12937 bytes in 3520 msecs (HTTP/1.1 200) 4 headers in 256 bytes (3 switches on core 0)
+[pid: 568|app: 0|req: 1/9] 127.0.0.1 () {44 vars in 964 bytes} [Sat Apr  7 16:24:52 2018] GET /admin/ => generated 14441 bytes in 1112 msecs (HTTP/1.1 200) 6 headers in 251 bytes (4 switches on core 0)
+[pid: 567|app: 0|req: 2/10] 127.0.0.1 () {44 vars in 982 bytes} [Sat Apr  7 16:24:55 2018] GET /admin/blog/post/ => generated 17411 bytes in 90 msecs (HTTP/1.1 200) 7 headers in 405 bytes (4 switches on core 0)
+[pid: 570|app: 0|req: 7/11] 127.0.0.1 () {42 vars in 869 bytes} [Sat Apr  7 16:24:55 2018] GET /admin/jsi18n/ => generated 7682 bytes in 19 msecs (HTTP/1.1 200) 3 headers in 93 bytes (2 switches on core 0)
+[pid: 569|app: 0|req: 1/12] 127.0.0.1 () {44 vars in 1012 bytes} [Sat Apr  7 16:24:59 2018] GET /admin/blog/post/36/change/ => generated 18969 bytes in 1169 msecs (HTTP/1.1 200) 7 headers in 405 bytes (4 switches on core 0)
+[pid: 570|app: 0|req: 8/13] 127.0.0.1 () {42 vars in 879 bytes} [Sat Apr  7 16:25:00 2018] GET /admin/jsi18n/ => generated 7682 bytes in 11 msecs (HTTP/1.1 200) 3 headers in 93 bytes (2 switches on core 0)
+[pid: 570|app: 0|req: 9/14] 127.0.0.1 () {42 vars in 906 bytes} [Sat Apr  7 16:25:51 2018] GET / => generated 20019 bytes in 115 msecs (HTTP/1.1 200) 2 headers in 88 bytes (5 switches on core 0)
+[pid: 567|app: 0|req: 3/15] 127.0.0.1 () {44 vars in 944 bytes} [Sat Apr  7 16:25:54 2018] GET / => generated 20019 bytes in 76 msecs (HTTP/1.1 200) 2 headers in 88 bytes (5 switches on core 0)
+Building prefix dict from the default dictionary ...
+Loading model from cache /var/folders/x6/w9h306m90858mkd2w2kx9zkh0000gn/T/jieba.cache
+Loading model cost 1.475 seconds.
+Prefix dict has been built succesfully.
+[pid: 569|app: 0|req: 2/16] 127.0.0.1 () {44 vars in 960 bytes} [Sat Apr  7 16:25:56 2018] GET /blog/36/ => generated 12937 bytes in 1837 msecs (HTTP/1.1 200) 4 headers in 256 bytes (3 switches on core 0)
+Building prefix dict from the default dictionary ...
+Loading model from cache /var/folders/x6/w9h306m90858mkd2w2kx9zkh0000gn/T/jieba.cache
+Loading model cost 1.301 seconds.
+Prefix dict has been built succesfully.
+[pid: 568|app: 0|req: 2/17] 127.0.0.1 () {44 vars in 968 bytes} [Sat Apr  7 16:26:02 2018] GET /blog/34/ => generated 14226 bytes in 1687 msecs (HTTP/1.1 200) 4 headers in 256 bytes (3 switches on core 0)
+[pid: 569|app: 0|req: 3/18] 127.0.0.1 () {44 vars in 968 bytes} [Sat Apr  7 16:26:06 2018] GET /blog/31/ => generated 15440 bytes in 1420 msecs (HTTP/1.1 200) 4 headers in 256 bytes (3 switches on core 0)
+[pid: 570|app: 0|req: 10/19] 127.0.0.1 () {44 vars in 964 bytes} [Sat Apr  7 16:28:12 2018] GET /admin/ => generated 14441 bytes in 105 msecs (HTTP/1.1 200) 6 headers in 251 bytes (4 switches on core 0)
+[pid: 569|app: 0|req: 4/20] 127.0.0.1 () {44 vars in 982 bytes} [Sat Apr  7 16:28:14 2018] GET /admin/blog/post/ => generated 17411 bytes in 91 msecs (HTTP/1.1 200) 7 headers in 405 bytes (5 switches on core 0)
+[pid: 570|app: 0|req: 11/21] 127.0.0.1 () {42 vars in 869 bytes} [Sat Apr  7 16:28:14 2018] GET /admin/jsi18n/ => generated 7682 bytes in 13 msecs (HTTP/1.1 200) 3 headers in 93 bytes (2 switches on core 0)
+[pid: 570|app: 0|req: 12/22] 127.0.0.1 () {44 vars in 1012 bytes} [Sat Apr  7 16:28:16 2018] GET /admin/blog/post/36/change/ => generated 18969 bytes in 149 msecs (HTTP/1.1 200) 7 headers in 405 bytes (4 switches on core 0)
+[pid: 567|app: 0|req: 4/23] 127.0.0.1 () {42 vars in 879 bytes} [Sat Apr  7 16:28:16 2018] GET /admin/jsi18n/ => generated 7682 bytes in 24 msecs (HTTP/1.1 200) 3 headers in 93 bytes (2 switches on core 0)
+[pid: 567|app: 0|req: 5/24] 127.0.0.1 () {46 vars in 1043 bytes} [Sat Apr  7 16:28:20 2018] GET /admin/blog/post/36/change/ => generated 18969 bytes in 97 msecs (HTTP/1.1 200) 7 headers in 405 bytes (4 switches on core 0)
+[pid: 570|app: 0|req: 13/25] 127.0.0.1 () {42 vars in 879 bytes} [Sat Apr  7 16:28:20 2018] GET /admin/jsi18n/ => generated 7682 bytes in 10 msecs (HTTP/1.1 200) 3 headers in 93 bytes (2 switches on core 0)
+[pid: 570|app: 0|req: 14/26] 127.0.0.1 () {46 vars in 1043 bytes} [Sat Apr  7 16:28:46 2018] GET /admin/blog/post/36/change/ => generated 18969 bytes in 94 msecs (HTTP/1.1 200) 7 headers in 405 bytes (5 switches on core 0)
+[pid: 570|app: 0|req: 15/27] 127.0.0.1 () {42 vars in 879 bytes} [Sat Apr  7 16:28:46 2018] GET /admin/jsi18n/ => generated 7682 bytes in 9 msecs (HTTP/1.1 200) 3 headers in 93 bytes (2 switches on core 0)
+[pid: 569|app: 0|req: 5/28] 127.0.0.1 () {44 vars in 1000 bytes} [Sat Apr  7 16:28:56 2018] GET /admin/blog/tag/ => generated 12695 bytes in 71 msecs (HTTP/1.1 200) 7 headers in 405 bytes (3 switches on core 0)
+[pid: 570|app: 0|req: 16/29] 127.0.0.1 () {42 vars in 868 bytes} [Sat Apr  7 16:28:56 2018] GET /admin/jsi18n/ => generated 7682 bytes in 9 msecs (HTTP/1.1 200) 3 headers in 93 bytes (2 switches on core 0)
+[pid: 569|app: 0|req: 6/30] 127.0.0.1 () {44 vars in 999 bytes} [Sat Apr  7 16:28:57 2018] GET /admin/blog/category/ => generated 12144 bytes in 53 msecs (HTTP/1.1 200) 7 headers in 405 bytes (3 switches on core 0)
+[pid: 570|app: 0|req: 17/31] 127.0.0.1 () {42 vars in 873 bytes} [Sat Apr  7 16:28:57 2018] GET /admin/jsi18n/ => generated 7682 bytes in 9 msecs (HTTP/1.1 200) 3 headers in 93 bytes (2 switches on core 0)
+[pid: 570|app: 0|req: 18/32] 127.0.0.1 () {44 vars in 996 bytes} [Sat Apr  7 16:28:59 2018] GET /admin/blog/post/ => generated 17411 bytes in 78 msecs (HTTP/1.1 200) 7 headers in 405 bytes (4 switches on core 0)
+[pid: 567|app: 0|req: 6/33] 127.0.0.1 () {42 vars in 869 bytes} [Sat Apr  7 16:28:59 2018] GET /admin/jsi18n/ => generated 7682 bytes in 22 msecs (HTTP/1.1 200) 3 headers in 93 bytes (2 switches on core 0)
+[pid: 569|app: 0|req: 7/34] 127.0.0.1 () {44 vars in 1012 bytes} [Sat Apr  7 16:29:00 2018] GET /admin/blog/post/36/change/ => generated 18969 bytes in 245 msecs (HTTP/1.1 200) 7 headers in 405 bytes (5 switches on core 0)
+[pid: 570|app: 0|req: 19/35] 127.0.0.1 () {42 vars in 879 bytes} [Sat Apr  7 16:29:01 2018] GET /admin/jsi18n/ => generated 7682 bytes in 12 msecs (HTTP/1.1 200) 3 headers in 93 bytes (2 switches on core 0)
+[pid: 570|app: 0|req: 20/36] 127.0.0.1 () {46 vars in 1043 bytes} [Sat Apr  7 16:29:45 2018] GET /admin/blog/post/36/change/ => generated 18969 bytes in 91 msecs (HTTP/1.1 200) 7 headers in 405 bytes (4 switches on core 0)
+[pid: 567|app: 0|req: 7/37] 127.0.0.1 () {42 vars in 879 bytes} [Sat Apr  7 16:29:46 2018] GET /admin/jsi18n/ => generated 7682 bytes in 11 msecs (HTTP/1.1 200) 3 headers in 93 bytes (2 switches on core 0)
+[pid: 570|app: 0|req: 21/38] 127.0.0.1 () {46 vars in 1043 bytes} [Sat Apr  7 16:29:48 2018] GET /admin/blog/post/36/change/ => generated 18969 bytes in 81 msecs (HTTP/1.1 200) 7 headers in 405 bytes (4 switches on core 0)
+[pid: 567|app: 0|req: 8/39] 127.0.0.1 () {42 vars in 879 bytes} [Sat Apr  7 16:29:48 2018] GET /admin/jsi18n/ => generated 7682 bytes in 10 msecs (HTTP/1.1 200) 3 headers in 93 bytes (2 switches on core 0)
+[pid: 570|app: 0|req: 22/40] 127.0.0.1 () {46 vars in 1043 bytes} [Sat Apr  7 16:29:50 2018] GET /admin/blog/post/36/change/ => generated 18969 bytes in 193 msecs (HTTP/1.1 200) 7 headers in 405 bytes (4 switches on core 0)
+[pid: 570|app: 0|req: 23/41] 127.0.0.1 () {42 vars in 879 bytes} [Sat Apr  7 16:29:51 2018] GET /admin/jsi18n/ => generated 7682 bytes in 11 msecs (HTTP/1.1 200) 3 headers in 93 bytes (2 switches on core 0)
+[pid: 569|app: 0|req: 8/42] 127.0.0.1 () {46 vars in 1043 bytes} [Sat Apr  7 16:29:58 2018] GET /admin/blog/post/36/change/ => generated 18969 bytes in 131 msecs (HTTP/1.1 200) 7 headers in 405 bytes (5 switches on core 0)
+[pid: 567|app: 0|req: 9/43] 127.0.0.1 () {42 vars in 879 bytes} [Sat Apr  7 16:29:59 2018] GET /admin/jsi18n/ => generated 7682 bytes in 11 msecs (HTTP/1.1 200) 3 headers in 93 bytes (2 switches on core 0)
+[pid: 568|app: 0|req: 3/44] 127.0.0.1 () {46 vars in 1043 bytes} [Sat Apr  7 16:30:00 2018] GET /admin/blog/post/36/change/ => generated 18969 bytes in 106 msecs (HTTP/1.1 200) 7 headers in 405 bytes (4 switches on core 0)
+[pid: 569|app: 0|req: 9/45] 127.0.0.1 () {42 vars in 879 bytes} [Sat Apr  7 16:30:00 2018] GET /admin/jsi18n/ => generated 7682 bytes in 21 msecs (HTTP/1.1 200) 3 headers in 93 bytes (2 switches on core 0)
+Building prefix dict from the default dictionary ...
+Loading model from cache /var/folders/x6/w9h306m90858mkd2w2kx9zkh0000gn/T/jieba.cache
+Loading model cost 1.258 seconds.
+Prefix dict has been built succesfully.
+[pid: 567|app: 0|req: 10/46] 127.0.0.1 () {52 vars in 1278 bytes} [Sat Apr  7 16:30:04 2018] POST /admin/blog/post/36/change/ => generated 0 bytes in 1534 msecs (HTTP/1.1 302) 8 headers in 655 bytes (2 switches on core 0)
+[pid: 570|app: 0|req: 24/47] 127.0.0.1 () {46 vars in 1374 bytes} [Sat Apr  7 16:30:05 2018] GET /admin/blog/post/ => generated 17760 bytes in 78 msecs (HTTP/1.1 200) 8 headers in 489 bytes (4 switches on core 0)
+[pid: 570|app: 0|req: 25/48] 127.0.0.1 () {42 vars in 869 bytes} [Sat Apr  7 16:30:06 2018] GET /admin/jsi18n/ => generated 7682 bytes in 11 msecs (HTTP/1.1 200) 3 headers in 93 bytes (2 switches on core 0)
+[pid: 570|app: 0|req: 26/49] 127.0.0.1 () {44 vars in 1012 bytes} [Sat Apr  7 16:30:08 2018] GET /admin/blog/post/36/change/ => generated 18969 bytes in 90 msecs (HTTP/1.1 200) 7 headers in 405 bytes (4 switches on core 0)
+[pid: 570|app: 0|req: 27/50] 127.0.0.1 () {42 vars in 879 bytes} [Sat Apr  7 16:30:08 2018] GET /admin/jsi18n/ => generated 7682 bytes in 11 msecs (HTTP/1.1 200) 3 headers in 93 bytes (2 switches on core 0)
+[pid: 570|app: 0|req: 28/51] 127.0.0.1 () {42 vars in 906 bytes} [Sat Apr  7 16:40:16 2018] GET / => generated 20019 bytes in 78 msecs (HTTP/1.1 200) 2 headers in 88 bytes (5 switches on core 0)
+[pid: 569|app: 0|req: 10/52] 127.0.0.1 () {44 vars in 960 bytes} [Sat Apr  7 16:40:18 2018] GET /blog/36/ => generated 12937 bytes in 356 msecs (HTTP/1.1 200) 4 headers in 256 bytes (3 switches on core 0)
+[pid: 567|app: 0|req: 11/53] 127.0.0.1 () {44 vars in 964 bytes} [Sat Apr  7 16:40:20 2018] GET /admin/ => generated 14431 bytes in 87 msecs (HTTP/1.1 200) 6 headers in 251 bytes (4 switches on core 0)
+[pid: 567|app: 0|req: 12/54] 127.0.0.1 () {44 vars in 982 bytes} [Sat Apr  7 16:40:21 2018] GET /admin/blog/post/ => generated 17411 bytes in 106 msecs (HTTP/1.1 200) 7 headers in 405 bytes (4 switches on core 0)
+[pid: 570|app: 0|req: 29/55] 127.0.0.1 () {42 vars in 869 bytes} [Sat Apr  7 16:40:22 2018] GET /admin/jsi18n/ => generated 7682 bytes in 12 msecs (HTTP/1.1 200) 3 headers in 93 bytes (2 switches on core 0)
+[pid: 569|app: 0|req: 11/56] 127.0.0.1 () {44 vars in 1012 bytes} [Sat Apr  7 16:40:23 2018] GET /admin/blog/post/36/change/ => generated 18969 bytes in 95 msecs (HTTP/1.1 200) 7 headers in 405 bytes (4 switches on core 0)
+[pid: 570|app: 0|req: 30/57] 127.0.0.1 () {42 vars in 879 bytes} [Sat Apr  7 16:40:23 2018] GET /admin/jsi18n/ => generated 7682 bytes in 12 msecs (HTTP/1.1 200) 3 headers in 93 bytes (2 switches on core 0)
+[pid: 569|app: 0|req: 12/58] 127.0.0.1 () {52 vars in 1278 bytes} [Sat Apr  7 16:40:30 2018] POST /admin/blog/post/36/change/ => generated 0 bytes in 194 msecs (HTTP/1.1 302) 8 headers in 787 bytes (2 switches on core 0)
+[pid: 570|app: 0|req: 31/59] 127.0.0.1 () {46 vars in 1510 bytes} [Sat Apr  7 16:40:30 2018] GET /admin/blog/post/add/ => generated 15439 bytes in 85 msecs (HTTP/1.1 200) 8 headers in 489 bytes (4 switches on core 0)
+[pid: 570|app: 0|req: 32/60] 127.0.0.1 () {42 vars in 873 bytes} [Sat Apr  7 16:40:30 2018] GET /admin/jsi18n/ => generated 7682 bytes in 16 msecs (HTTP/1.1 200) 3 headers in 93 bytes (2 switches on core 0)
+[pid: 570|app: 0|req: 33/61] 127.0.0.1 () {44 vars in 1010 bytes} [Sat Apr  7 16:41:12 2018] GET /admin/blog/post/add/ => generated 15034 bytes in 101 msecs (HTTP/1.1 200) 7 headers in 405 bytes (4 switches on core 0)
+[pid: 569|app: 0|req: 13/62] 127.0.0.1 () {44 vars in 1010 bytes} [Sat Apr  7 16:41:58 2018] GET /admin/blog/post/add/ => generated 15034 bytes in 99 msecs (HTTP/1.1 200) 7 headers in 405 bytes (4 switches on core 0)
+[pid: 567|app: 0|req: 13/63] 127.0.0.1 () {44 vars in 1010 bytes} [Sat Apr  7 16:42:25 2018] GET /admin/blog/post/add/ => generated 15034 bytes in 104 msecs (HTTP/1.1 200) 7 headers in 405 bytes (4 switches on core 0)
+[pid: 570|app: 0|req: 34/64] 127.0.0.1 () {42 vars in 906 bytes} [Sat Apr  7 16:42:51 2018] GET / => generated 20019 bytes in 67 msecs (HTTP/1.1 200) 2 headers in 88 bytes (4 switches on core 0)
+[pid: 569|app: 0|req: 14/65] 127.0.0.1 () {44 vars in 956 bytes} [Sat Apr  7 16:42:53 2018] GET /admin/ => generated 14488 bytes in 67 msecs (HTTP/1.1 200) 6 headers in 251 bytes (4 switches on core 0)
+[pid: 569|app: 0|req: 15/66] 127.0.0.1 () {44 vars in 982 bytes} [Sat Apr  7 16:42:55 2018] GET /admin/blog/post/ => generated 17411 bytes in 79 msecs (HTTP/1.1 200) 7 headers in 405 bytes (4 switches on core 0)
+[pid: 570|app: 0|req: 35/67] 127.0.0.1 () {42 vars in 869 bytes} [Sat Apr  7 16:42:55 2018] GET /admin/jsi18n/ => generated 7682 bytes in 20 msecs (HTTP/1.1 200) 3 headers in 93 bytes (2 switches on core 0)
+[pid: 569|app: 0|req: 16/68] 127.0.0.1 () {44 vars in 1012 bytes} [Sat Apr  7 16:42:56 2018] GET /admin/blog/post/36/change/ => generated 18969 bytes in 101 msecs (HTTP/1.1 200) 7 headers in 405 bytes (5 switches on core 0)
+[pid: 567|app: 0|req: 14/69] 127.0.0.1 () {42 vars in 879 bytes} [Sat Apr  7 16:42:56 2018] GET /admin/jsi18n/ => generated 7682 bytes in 13 msecs (HTTP/1.1 200) 3 headers in 93 bytes (2 switches on core 0)
+[pid: 567|app: 0|req: 15/70] 127.0.0.1 () {52 vars in 1278 bytes} [Sat Apr  7 16:42:59 2018] POST /admin/blog/post/36/change/ => generated 0 bytes in 272 msecs (HTTP/1.1 302) 8 headers in 655 bytes (2 switches on core 0)
+[pid: 570|app: 0|req: 36/71] 127.0.0.1 () {46 vars in 1374 bytes} [Sat Apr  7 16:42:59 2018] GET /admin/blog/post/ => generated 17760 bytes in 75 msecs (HTTP/1.1 200) 8 headers in 489 bytes (5 switches on core 0)
+[pid: 570|app: 0|req: 37/72] 127.0.0.1 () {42 vars in 869 bytes} [Sat Apr  7 16:42:59 2018] GET /admin/jsi18n/ => generated 7682 bytes in 13 msecs (HTTP/1.1 200) 3 headers in 93 bytes (2 switches on core 0)
+[pid: 569|app: 0|req: 17/73] 127.0.0.1 () {44 vars in 1000 bytes} [Sat Apr  7 16:43:01 2018] GET /admin/blog/post/add/ => generated 15034 bytes in 98 msecs (HTTP/1.1 200) 7 headers in 405 bytes (4 switches on core 0)
+[pid: 570|app: 0|req: 38/74] 127.0.0.1 () {42 vars in 873 bytes} [Sat Apr  7 16:43:01 2018] GET /admin/jsi18n/ => generated 7682 bytes in 15 msecs (HTTP/1.1 200) 3 headers in 93 bytes (2 switches on core 0)
+Building prefix dict from the default dictionary ...
+Loading model from cache /var/folders/x6/w9h306m90858mkd2w2kx9zkh0000gn/T/jieba.cache
+Loading model cost 1.330 seconds.
+Prefix dict has been built succesfully.
+[pid: 570|app: 0|req: 39/75] 127.0.0.1 () {52 vars in 1260 bytes} [Sat Apr  7 16:43:09 2018] POST /admin/blog/post/add/ => generated 0 bytes in 2832 msecs (HTTP/1.1 302) 8 headers in 515 bytes (2 switches on core 0)
+[pid: 570|app: 0|req: 40/76] 127.0.0.1 () {46 vars in 1228 bytes} [Sat Apr  7 16:43:11 2018] GET /admin/blog/post/ => generated 18265 bytes in 86 msecs (HTTP/1.1 200) 8 headers in 489 bytes (5 switches on core 0)
+[pid: 570|app: 0|req: 41/77] 127.0.0.1 () {42 vars in 869 bytes} [Sat Apr  7 16:43:12 2018] GET /admin/jsi18n/ => generated 7682 bytes in 12 msecs (HTTP/1.1 200) 3 headers in 93 bytes (2 switches on core 0)
+[pid: 570|app: 0|req: 42/78] 127.0.0.1 () {44 vars in 976 bytes} [Sat Apr  7 16:43:19 2018] GET /blog/37/ => generated 10709 bytes in 73 msecs (HTTP/1.1 200) 4 headers in 256 bytes (3 switches on core 0)
+[pid: 570|app: 0|req: 43/79] 127.0.0.1 () {44 vars in 952 bytes} [Sat Apr  7 16:43:20 2018] GET / => generated 21873 bytes in 52 msecs (HTTP/1.1 200) 2 headers in 88 bytes (5 switches on core 0)
+[pid: 570|app: 0|req: 44/80] 127.0.0.1 () {44 vars in 956 bytes} [Sat Apr  7 16:43:27 2018] GET /admin/ => generated 14431 bytes in 87 msecs (HTTP/1.1 200) 6 headers in 251 bytes (4 switches on core 0)
+[pid: 570|app: 0|req: 45/81] 127.0.0.1 () {44 vars in 982 bytes} [Sat Apr  7 16:43:29 2018] GET /admin/blog/post/ => generated 17976 bytes in 86 msecs (HTTP/1.1 200) 7 headers in 405 bytes (4 switches on core 0)
+[pid: 570|app: 0|req: 46/82] 127.0.0.1 () {42 vars in 869 bytes} [Sat Apr  7 16:43:29 2018] GET /admin/jsi18n/ => generated 7682 bytes in 16 msecs (HTTP/1.1 200) 3 headers in 93 bytes (2 switches on core 0)
+[pid: 569|app: 0|req: 18/83] 127.0.0.1 () {44 vars in 1012 bytes} [Sat Apr  7 16:43:32 2018] GET /admin/blog/post/37/change/ => generated 15931 bytes in 98 msecs (HTTP/1.1 200) 7 headers in 405 bytes (4 switches on core 0)
+[pid: 570|app: 0|req: 47/84] 127.0.0.1 () {42 vars in 879 bytes} [Sat Apr  7 16:43:33 2018] GET /admin/jsi18n/ => generated 7682 bytes in 12 msecs (HTTP/1.1 200) 3 headers in 93 bytes (2 switches on core 0)
+[pid: 567|app: 0|req: 16/85] 127.0.0.1 () {44 vars in 1012 bytes} [Sat Apr  7 16:43:45 2018] GET /admin/blog/post/37/change/ => generated 15931 bytes in 99 msecs (HTTP/1.1 200) 7 headers in 405 bytes (4 switches on core 0)
+[pid: 570|app: 0|req: 48/86] 127.0.0.1 () {44 vars in 1012 bytes} [Sat Apr  7 16:43:50 2018] GET /admin/blog/post/37/change/ => generated 15931 bytes in 83 msecs (HTTP/1.1 200) 7 headers in 405 bytes (3 switches on core 0)
+[pid: 570|app: 0|req: 49/87] 127.0.0.1 () {42 vars in 906 bytes} [Sat Apr  7 16:44:05 2018] GET / => generated 21873 bytes in 70 msecs (HTTP/1.1 200) 2 headers in 88 bytes (5 switches on core 0)
+[pid: 570|app: 0|req: 50/88] 127.0.0.1 () {44 vars in 956 bytes} [Sat Apr  7 16:44:07 2018] GET /admin/ => generated 14431 bytes in 91 msecs (HTTP/1.1 200) 6 headers in 251 bytes (3 switches on core 0)
+[pid: 570|app: 0|req: 51/89] 127.0.0.1 () {44 vars in 982 bytes} [Sat Apr  7 16:44:09 2018] GET /admin/blog/post/ => generated 17976 bytes in 85 msecs (HTTP/1.1 200) 7 headers in 405 bytes (5 switches on core 0)
+[pid: 570|app: 0|req: 52/90] 127.0.0.1 () {42 vars in 869 bytes} [Sat Apr  7 16:44:09 2018] GET /admin/jsi18n/ => generated 7682 bytes in 12 msecs (HTTP/1.1 200) 3 headers in 93 bytes (2 switches on core 0)
+[pid: 569|app: 0|req: 19/91] 127.0.0.1 () {44 vars in 1012 bytes} [Sat Apr  7 16:44:11 2018] GET /admin/blog/post/27/change/ => generated 21957 bytes in 127 msecs (HTTP/1.1 200) 7 headers in 405 bytes (4 switches on core 0)
+[pid: 570|app: 0|req: 53/92] 127.0.0.1 () {42 vars in 879 bytes} [Sat Apr  7 16:44:11 2018] GET /admin/jsi18n/ => generated 7682 bytes in 29 msecs (HTTP/1.1 200) 3 headers in 93 bytes (2 switches on core 0)
+[pid: 570|app: 0|req: 54/93] 127.0.0.1 () {48 vars in 1065 bytes} [Sat Apr  7 16:45:03 2018] GET /admin/blog/post/27/change/ => generated 21957 bytes in 101 msecs (HTTP/1.1 200) 7 headers in 405 bytes (5 switches on core 0)
+[pid: 567|app: 0|req: 17/94] 127.0.0.1 () {46 vars in 932 bytes} [Sat Apr  7 16:45:04 2018] GET /admin/jsi18n/ => generated 7682 bytes in 15 msecs (HTTP/1.1 200) 3 headers in 93 bytes (2 switches on core 0)
+[pid: 569|app: 0|req: 20/95] 127.0.0.1 () {48 vars in 1065 bytes} [Sat Apr  7 16:45:07 2018] GET /admin/blog/post/27/change/ => generated 21957 bytes in 109 msecs (HTTP/1.1 200) 7 headers in 405 bytes (5 switches on core 0)
+[pid: 570|app: 0|req: 55/96] 127.0.0.1 () {46 vars in 932 bytes} [Sat Apr  7 16:45:07 2018] GET /admin/jsi18n/ => generated 7682 bytes in 13 msecs (HTTP/1.1 200) 3 headers in 93 bytes (2 switches on core 0)
+[pid: 569|app: 0|req: 21/97] 127.0.0.1 () {48 vars in 1063 bytes} [Sat Apr  7 16:45:11 2018] GET /admin/blog/category/ => generated 12144 bytes in 82 msecs (HTTP/1.1 200) 7 headers in 405 bytes (3 switches on core 0)
+[pid: 570|app: 0|req: 56/98] 127.0.0.1 () {46 vars in 926 bytes} [Sat Apr  7 16:45:11 2018] GET /admin/jsi18n/ => generated 7682 bytes in 13 msecs (HTTP/1.1 200) 3 headers in 93 bytes (2 switches on core 0)
+[pid: 570|app: 0|req: 57/99] 127.0.0.1 () {48 vars in 1049 bytes} [Sat Apr  7 16:45:13 2018] GET /admin/blog/post/ => generated 17976 bytes in 88 msecs (HTTP/1.1 200) 7 headers in 405 bytes (5 switches on core 0)
+[pid: 570|app: 0|req: 58/100] 127.0.0.1 () {46 vars in 922 bytes} [Sat Apr  7 16:45:13 2018] GET /admin/jsi18n/ => generated 7682 bytes in 15 msecs (HTTP/1.1 200) 3 headers in 93 bytes (2 switches on core 0)
+[pid: 570|app: 0|req: 59/101] 127.0.0.1 () {54 vars in 1198 bytes} [Sat Apr  7 16:45:18 2018] POST /admin/blog/post/ => generated 7575 bytes in 161 msecs (HTTP/1.1 200) 7 headers in 405 bytes (2 switches on core 0)
+[pid: 567|app: 0|req: 18/102] 127.0.0.1 () {54 vars in 1198 bytes} [Sat Apr  7 16:45:19 2018] POST /admin/blog/post/ => generated 0 bytes in 75 msecs (HTTP/1.1 302) 8 headers in 469 bytes (2 switches on core 0)
+[pid: 570|app: 0|req: 60/103] 127.0.0.1 () {48 vars in 1200 bytes} [Sat Apr  7 16:45:19 2018] GET /admin/blog/post/ => generated 17662 bytes in 62 msecs (HTTP/1.1 200) 8 headers in 489 bytes (5 switches on core 0)
+[pid: 570|app: 0|req: 61/104] 127.0.0.1 () {46 vars in 922 bytes} [Sat Apr  7 16:45:19 2018] GET /admin/jsi18n/ => generated 7682 bytes in 12 msecs (HTTP/1.1 200) 3 headers in 93 bytes (2 switches on core 0)
+[pid: 567|app: 0|req: 19/105] 127.0.0.1 () {48 vars in 1065 bytes} [Sat Apr  7 16:45:22 2018] GET /admin/blog/post/36/change/ => generated 18969 bytes in 235 msecs (HTTP/1.1 200) 7 headers in 405 bytes (4 switches on core 0)
+[pid: 570|app: 0|req: 62/106] 127.0.0.1 () {46 vars in 932 bytes} [Sat Apr  7 16:45:23 2018] GET /admin/jsi18n/ => generated 7682 bytes in 22 msecs (HTTP/1.1 200) 3 headers in 93 bytes (2 switches on core 0)
+[pid: 570|app: 0|req: 63/107] 127.0.0.1 () {54 vars in 1300 bytes} [Sat Apr  7 16:45:32 2018] POST /admin/blog/post/36/change/ => generated 0 bytes in 216 msecs (HTTP/1.1 302) 8 headers in 655 bytes (2 switches on core 0)
+[pid: 567|app: 0|req: 20/108] 127.0.0.1 () {48 vars in 1396 bytes} [Sat Apr  7 16:45:33 2018] GET /admin/blog/post/ => generated 17760 bytes in 78 msecs (HTTP/1.1 200) 8 headers in 489 bytes (4 switches on core 0)
+[pid: 569|app: 0|req: 22/109] 127.0.0.1 () {46 vars in 922 bytes} [Sat Apr  7 16:45:33 2018] GET /admin/jsi18n/ => generated 7682 bytes in 13 msecs (HTTP/1.1 200) 3 headers in 93 bytes (2 switches on core 0)
+[pid: 570|app: 0|req: 64/110] 127.0.0.1 () {44 vars in 976 bytes} [Sat Apr  7 16:45:37 2018] GET /blog/36/ => generated 12937 bytes in 308 msecs (HTTP/1.1 200) 4 headers in 256 bytes (4 switches on core 0)
+[pid: 569|app: 0|req: 23/111] 127.0.0.1 () {44 vars in 952 bytes} [Sat Apr  7 16:45:39 2018] GET / => generated 19720 bytes in 52 msecs (HTTP/1.1 200) 2 headers in 88 bytes (4 switches on core 0)
+[pid: 569|app: 0|req: 24/112] 127.0.0.1 () {48 vars in 1065 bytes} [Sat Apr  7 16:45:43 2018] GET /admin/blog/post/36/change/ => generated 18684 bytes in 101 msecs (HTTP/1.1 200) 7 headers in 405 bytes (4 switches on core 0)
+[pid: 563|app: 0|req: 2/113] 127.0.0.1 () {46 vars in 932 bytes} [Sat Apr  7 16:45:43 2018] GET /admin/jsi18n/ => generated 7682 bytes in 93 msecs (HTTP/1.1 200) 3 headers in 93 bytes (2 switches on core 0)
+[pid: 570|app: 0|req: 65/114] 127.0.0.1 () {48 vars in 1065 bytes} [Sat Apr  7 16:45:50 2018] GET /admin/blog/post/36/change/ => generated 18684 bytes in 91 msecs (HTTP/1.1 200) 7 headers in 405 bytes (4 switches on core 0)
+[pid: 567|app: 0|req: 21/115] 127.0.0.1 () {46 vars in 932 bytes} [Sat Apr  7 16:45:50 2018] GET /admin/jsi18n/ => generated 7682 bytes in 12 msecs (HTTP/1.1 200) 3 headers in 93 bytes (2 switches on core 0)
+[pid: 570|app: 0|req: 66/116] 127.0.0.1 () {48 vars in 1065 bytes} [Sat Apr  7 16:49:43 2018] GET /admin/blog/post/36/change/ => generated 18684 bytes in 113 msecs (HTTP/1.1 200) 7 headers in 405 bytes (4 switches on core 0)
+[pid: 567|app: 0|req: 22/117] 127.0.0.1 () {46 vars in 932 bytes} [Sat Apr  7 16:49:43 2018] GET /admin/jsi18n/ => generated 7682 bytes in 13 msecs (HTTP/1.1 200) 3 headers in 93 bytes (2 switches on core 0)
+[pid: 567|app: 0|req: 23/118] 127.0.0.1 () {48 vars in 1065 bytes} [Sat Apr  7 16:49:47 2018] GET /admin/blog/post/36/change/ => generated 18684 bytes in 89 msecs (HTTP/1.1 200) 7 headers in 405 bytes (4 switches on core 0)
+[pid: 567|app: 0|req: 24/119] 127.0.0.1 () {46 vars in 932 bytes} [Sat Apr  7 16:49:47 2018] GET /admin/jsi18n/ => generated 7682 bytes in 9 msecs (HTTP/1.1 200) 3 headers in 93 bytes (2 switches on core 0)
+[pid: 570|app: 0|req: 67/120] 127.0.0.1 () {46 vars in 983 bytes} [Sat Apr  7 16:50:48 2018] GET / => generated 20008 bytes in 353 msecs (HTTP/1.1 200) 2 headers in 88 bytes (5 switches on core 0)
+[pid: 570|app: 0|req: 68/121] 127.0.0.1 () {42 vars in 906 bytes} [Sat Apr  7 16:51:00 2018] GET / => generated 20008 bytes in 55 msecs (HTTP/1.1 200) 2 headers in 88 bytes (5 switches on core 0)
+[pid: 570|app: 0|req: 69/122] 127.0.0.1 () {44 vars in 956 bytes} [Sat Apr  7 16:51:01 2018] GET /admin/ => generated 14323 bytes in 97 msecs (HTTP/1.1 200) 6 headers in 251 bytes (3 switches on core 0)
+[pid: 569|app: 0|req: 25/123] 127.0.0.1 () {44 vars in 982 bytes} [Sat Apr  7 16:51:03 2018] GET /admin/blog/post/ => generated 17411 bytes in 141 msecs (HTTP/1.1 200) 7 headers in 405 bytes (5 switches on core 0)
+[pid: 570|app: 0|req: 70/124] 127.0.0.1 () {42 vars in 869 bytes} [Sat Apr  7 16:51:04 2018] GET /admin/jsi18n/ => generated 7682 bytes in 15 msecs (HTTP/1.1 200) 3 headers in 93 bytes (2 switches on core 0)
+[pid: 569|app: 0|req: 26/125] 127.0.0.1 () {44 vars in 1012 bytes} [Sat Apr  7 16:51:06 2018] GET /admin/blog/post/36/change/ => generated 18947 bytes in 122 msecs (HTTP/1.1 200) 7 headers in 405 bytes (5 switches on core 0)
+[pid: 570|app: 0|req: 71/126] 127.0.0.1 () {42 vars in 879 bytes} [Sat Apr  7 16:51:06 2018] GET /admin/jsi18n/ => generated 7682 bytes in 27 msecs (HTTP/1.1 200) 3 headers in 93 bytes (2 switches on core 0)
+[pid: 567|app: 0|req: 25/127] 127.0.0.1 () {42 vars in 906 bytes} [Sat Apr  7 16:52:25 2018] GET / => generated 20008 bytes in 355 msecs (HTTP/1.1 200) 2 headers in 88 bytes (3 switches on core 0)
+[pid: 567|app: 0|req: 26/128] 127.0.0.1 () {44 vars in 956 bytes} [Sat Apr  7 16:52:29 2018] GET /admin/ => generated 14323 bytes in 108 msecs (HTTP/1.1 200) 6 headers in 251 bytes (4 switches on core 0)
+Not Found: /favicon.ico
+[pid: 570|app: 0|req: 72/129] 127.0.0.1 () {42 vars in 891 bytes} [Sat Apr  7 16:52:29 2018] GET /favicon.ico => generated 3691 bytes in 12 msecs (HTTP/1.1 404) 2 headers in 80 bytes (2 switches on core 0)
+[pid: 570|app: 0|req: 73/130] 127.0.0.1 () {44 vars in 982 bytes} [Sat Apr  7 16:52:31 2018] GET /admin/blog/post/ => generated 17411 bytes in 102 msecs (HTTP/1.1 200) 7 headers in 405 bytes (4 switches on core 0)
+[pid: 567|app: 0|req: 27/131] 127.0.0.1 () {42 vars in 869 bytes} [Sat Apr  7 16:52:31 2018] GET /admin/jsi18n/ => generated 7682 bytes in 15 msecs (HTTP/1.1 200) 3 headers in 93 bytes (2 switches on core 0)
+[pid: 567|app: 0|req: 28/132] 127.0.0.1 () {44 vars in 1012 bytes} [Sat Apr  7 16:52:33 2018] GET /admin/blog/post/27/change/ => generated 21957 bytes in 141 msecs (HTTP/1.1 200) 7 headers in 405 bytes (3 switches on core 0)
+[pid: 569|app: 0|req: 27/133] 127.0.0.1 () {42 vars in 879 bytes} [Sat Apr  7 16:52:33 2018] GET /admin/jsi18n/ => generated 7682 bytes in 14 msecs (HTTP/1.1 200) 3 headers in 93 bytes (2 switches on core 0)
+[pid: 570|app: 0|req: 74/134] 127.0.0.1 () {44 vars in 982 bytes} [Sat Apr  7 16:52:35 2018] GET /admin/blog/post/ => generated 17411 bytes in 88 msecs (HTTP/1.1 200) 7 headers in 405 bytes (5 switches on core 0)
+[pid: 570|app: 0|req: 75/135] 127.0.0.1 () {44 vars in 1012 bytes} [Sat Apr  7 16:52:37 2018] GET /admin/blog/post/36/change/ => generated 18947 bytes in 118 msecs (HTTP/1.1 200) 7 headers in 405 bytes (4 switches on core 0)
+[pid: 570|app: 0|req: 76/136] 127.0.0.1 () {42 vars in 879 bytes} [Sat Apr  7 16:52:37 2018] GET /admin/jsi18n/ => generated 7682 bytes in 18 msecs (HTTP/1.1 200) 3 headers in 93 bytes (2 switches on core 0)
+[pid: 569|app: 0|req: 28/137] 127.0.0.1 () {52 vars in 1278 bytes} [Sat Apr  7 16:52:44 2018] POST /admin/blog/post/36/change/ => generated 0 bytes in 1504 msecs (HTTP/1.1 302) 8 headers in 655 bytes (2 switches on core 0)
+[pid: 570|app: 0|req: 77/138] 127.0.0.1 () {46 vars in 1374 bytes} [Sat Apr  7 16:52:46 2018] GET /admin/blog/post/ => generated 17760 bytes in 63 msecs (HTTP/1.1 200) 8 headers in 489 bytes (4 switches on core 0)
+[pid: 570|app: 0|req: 78/139] 127.0.0.1 () {42 vars in 869 bytes} [Sat Apr  7 16:52:46 2018] GET /admin/jsi18n/ => generated 7682 bytes in 10 msecs (HTTP/1.1 200) 3 headers in 93 bytes (2 switches on core 0)
+[pid: 569|app: 0|req: 29/140] 127.0.0.1 () {44 vars in 1012 bytes} [Sat Apr  7 16:52:49 2018] GET /admin/blog/post/36/change/ => generated 18684 bytes in 247 msecs (HTTP/1.1 200) 7 headers in 405 bytes (5 switches on core 0)
+[pid: 570|app: 0|req: 79/141] 127.0.0.1 () {42 vars in 879 bytes} [Sat Apr  7 16:52:50 2018] GET /admin/jsi18n/ => generated 7682 bytes in 16 msecs (HTTP/1.1 200) 3 headers in 93 bytes (2 switches on core 0)
+[pid: 568|app: 0|req: 4/142] 127.0.0.1 () {44 vars in 1012 bytes} [Sat Apr  7 16:55:03 2018] GET /admin/blog/post/36/change/ => generated 18684 bytes in 408 msecs (HTTP/1.1 200) 7 headers in 405 bytes (5 switches on core 0)
+[pid: 566|app: 0|req: 1/143] 127.0.0.1 () {44 vars in 1012 bytes} [Sat Apr  7 17:00:52 2018] GET /admin/blog/post/36/change/ => generated 18684 bytes in 1388 msecs (HTTP/1.1 200) 7 headers in 405 bytes (5 switches on core 0)
+[pid: 569|app: 0|req: 30/144] 127.0.0.1 () {42 vars in 906 bytes} [Sat Apr  7 17:01:02 2018] GET / => generated 19720 bytes in 127 msecs (HTTP/1.1 200) 2 headers in 88 bytes (5 switches on core 0)
+[pid: 569|app: 0|req: 31/145] 127.0.0.1 () {44 vars in 956 bytes} [Sat Apr  7 17:01:04 2018] GET /admin/ => generated 14323 bytes in 99 msecs (HTTP/1.1 200) 6 headers in 251 bytes (4 switches on core 0)
+[pid: 569|app: 0|req: 32/146] 127.0.0.1 () {44 vars in 982 bytes} [Sat Apr  7 17:01:06 2018] GET /admin/blog/post/ => generated 17411 bytes in 102 msecs (HTTP/1.1 200) 7 headers in 405 bytes (4 switches on core 0)
+[pid: 570|app: 0|req: 80/147] 127.0.0.1 () {42 vars in 869 bytes} [Sat Apr  7 17:01:06 2018] GET /admin/jsi18n/ => generated 7682 bytes in 77 msecs (HTTP/1.1 200) 3 headers in 93 bytes (2 switches on core 0)
+[pid: 567|app: 0|req: 29/148] 127.0.0.1 () {44 vars in 1012 bytes} [Sat Apr  7 17:01:08 2018] GET /admin/blog/post/36/change/ => generated 18684 bytes in 213 msecs (HTTP/1.1 200) 7 headers in 405 bytes (4 switches on core 0)
+[pid: 570|app: 0|req: 81/149] 127.0.0.1 () {42 vars in 879 bytes} [Sat Apr  7 17:01:09 2018] GET /admin/jsi18n/ => generated 7682 bytes in 13 msecs (HTTP/1.1 200) 3 headers in 93 bytes (2 switches on core 0)
+[pid: 570|app: 0|req: 82/150] 127.0.0.1 () {48 vars in 1065 bytes} [Sat Apr  7 17:01:40 2018] GET /admin/blog/post/36/change/ => generated 18684 bytes in 130 msecs (HTTP/1.1 200) 7 headers in 405 bytes (5 switches on core 0)
+[pid: 567|app: 0|req: 30/151] 127.0.0.1 () {46 vars in 932 bytes} [Sat Apr  7 17:01:40 2018] GET /admin/jsi18n/ => generated 7682 bytes in 13 msecs (HTTP/1.1 200) 3 headers in 93 bytes (2 switches on core 0)
+[pid: 570|app: 0|req: 83/152] 127.0.0.1 () {48 vars in 1065 bytes} [Sat Apr  7 17:02:23 2018] GET /admin/blog/post/36/change/ => generated 18684 bytes in 109 msecs (HTTP/1.1 200) 7 headers in 405 bytes (5 switches on core 0)
+[pid: 570|app: 0|req: 84/153] 127.0.0.1 () {46 vars in 932 bytes} [Sat Apr  7 17:02:24 2018] GET /admin/jsi18n/ => generated 7682 bytes in 12 msecs (HTTP/1.1 200) 3 headers in 93 bytes (2 switches on core 0)
+[pid: 567|app: 0|req: 31/154] 127.0.0.1 () {42 vars in 783 bytes} [Sat Apr  7 17:04:38 2018] GET / => generated 19720 bytes in 119 msecs (HTTP/1.1 200) 2 headers in 88 bytes (5 switches on core 0)
+[pid: 569|app: 0|req: 33/155] 127.0.0.1 () {44 vars in 831 bytes} [Sat Apr  7 17:04:41 2018] GET /admin => generated 0 bytes in 12 msecs (HTTP/1.1 301) 2 headers in 93 bytes (2 switches on core 0)
+[pid: 567|app: 0|req: 32/156] 127.0.0.1 () {44 vars in 833 bytes} [Sat Apr  7 17:04:41 2018] GET /admin/ => generated 0 bytes in 10 msecs (HTTP/1.1 302) 7 headers in 292 bytes (2 switches on core 0)
+[pid: 570|app: 0|req: 85/157] 127.0.0.1 () {44 vars in 870 bytes} [Sat Apr  7 17:04:41 2018] GET /admin/login/?next=/admin/ => generated 3392 bytes in 78 msecs (HTTP/1.1 200) 7 headers in 405 bytes (2 switches on core 0)
+Not Found: /favicon.ico
+[pid: 567|app: 0|req: 33/158] 127.0.0.1 () {42 vars in 773 bytes} [Sat Apr  7 17:04:42 2018] GET /favicon.ico => generated 3691 bytes in 17 msecs (HTTP/1.1 404) 2 headers in 80 bytes (2 switches on core 0)
+[pid: 570|app: 0|req: 86/159] 127.0.0.1 () {50 vars in 1048 bytes} [Sat Apr  7 17:04:47 2018] POST /admin/login/?next=/admin/ => generated 0 bytes in 177 msecs (HTTP/1.1 302) 9 headers in 558 bytes (2 switches on core 0)
+[pid: 569|app: 0|req: 34/160] 127.0.0.1 () {46 vars in 938 bytes} [Sat Apr  7 17:04:47 2018] GET /admin/ => generated 14323 bytes in 94 msecs (HTTP/1.1 200) 6 headers in 251 bytes (4 switches on core 0)
+[pid: 570|app: 0|req: 87/161] 127.0.0.1 () {44 vars in 903 bytes} [Sat Apr  7 17:04:50 2018] GET /admin/blog/post/ => generated 17411 bytes in 87 msecs (HTTP/1.1 200) 7 headers in 405 bytes (4 switches on core 0)
+[pid: 567|app: 0|req: 34/162] 127.0.0.1 () {42 vars in 812 bytes} [Sat Apr  7 17:04:50 2018] GET /admin/jsi18n/ => generated 7682 bytes in 11 msecs (HTTP/1.1 200) 3 headers in 93 bytes (2 switches on core 0)
+[pid: 570|app: 0|req: 88/163] 127.0.0.1 () {44 vars in 933 bytes} [Sat Apr  7 17:04:51 2018] GET /admin/blog/post/36/change/ => generated 18684 bytes in 98 msecs (HTTP/1.1 200) 7 headers in 405 bytes (4 switches on core 0)
+[pid: 569|app: 0|req: 35/164] 127.0.0.1 () {42 vars in 822 bytes} [Sat Apr  7 17:04:51 2018] GET /admin/jsi18n/ => generated 7682 bytes in 12 msecs (HTTP/1.1 200) 3 headers in 93 bytes (2 switches on core 0)
+[pid: 567|app: 0|req: 35/165] 127.0.0.1 () {42 vars in 906 bytes} [Sat Apr  7 17:13:07 2018] GET / => generated 20016 bytes in 105 msecs (HTTP/1.1 200) 2 headers in 88 bytes (5 switches on core 0)
+[pid: 567|app: 0|req: 36/166] 127.0.0.1 () {44 vars in 956 bytes} [Sat Apr  7 17:13:09 2018] GET /admin/ => generated 14323 bytes in 71 msecs (HTTP/1.1 200) 6 headers in 251 bytes (4 switches on core 0)
+[pid: 569|app: 0|req: 36/167] 127.0.0.1 () {44 vars in 982 bytes} [Sat Apr  7 17:13:10 2018] GET /admin/blog/post/ => generated 17411 bytes in 156 msecs (HTTP/1.1 200) 7 headers in 405 bytes (4 switches on core 0)
+[pid: 570|app: 0|req: 89/168] 127.0.0.1 () {42 vars in 869 bytes} [Sat Apr  7 17:13:11 2018] GET /admin/jsi18n/ => generated 7682 bytes in 132 msecs (HTTP/1.1 200) 3 headers in 93 bytes (2 switches on core 0)
+[pid: 569|app: 0|req: 37/169] 127.0.0.1 () {44 vars in 1012 bytes} [Sat Apr  7 17:13:12 2018] GET /admin/blog/post/36/change/ => generated 18963 bytes in 104 msecs (HTTP/1.1 200) 7 headers in 405 bytes (4 switches on core 0)
+[pid: 570|app: 0|req: 90/170] 127.0.0.1 () {42 vars in 879 bytes} [Sat Apr  7 17:13:12 2018] GET /admin/jsi18n/ => generated 7682 bytes in 16 msecs (HTTP/1.1 200) 3 headers in 93 bytes (2 switches on core 0)
+*** Starting uWSGI 2.0.17 (64bit) on [Sat Apr  7 17:34:07 2018] ***
+compiled with version: 4.2.1 Compatible Apple LLVM 9.1.0 (clang-902.0.39.1) on 06 April 2018 12:48:53
+os: Darwin-17.5.0 Darwin Kernel Version 17.5.0: Mon Mar  5 22:24:32 PST 2018; root:xnu-4570.51.1~1/RELEASE_X86_64
+nodename: Macintosh
+machine: x86_64
+clock source: unix
+detected number of CPU cores: 4
+current working directory: /Users/X/PycharmProjects/BlogProject
+writing pidfile to /tmp/BlogProject.pid
+detected binary path: /Library/Frameworks/Python.framework/Versions/3.5/bin/uwsgi
+!!! no internal routing support, rebuild with pcre support !!!
+chdir() to /Users/X/PycharmProjects/BlogProject/
+your processes number limit is 709
+your memory page size is 4096 bytes
+detected max file descriptor number: 256
+lock engine: OSX spinlocks
+thunder lock: disabled (you can enable it with --thunder-lock)
+uwsgi socket 0 bound to UNIX address /tmp/BlogProject.sock fd 3
+Python version: 3.5.1 (v3.5.1:37a07cee5969, Dec  5 2015, 21:12:44)  [GCC 4.2.1 (Apple Inc. build 5666) (dot 3)]
+PEP 405 virtualenv detected: /Users/X/PycharmProjects/BlogProject/venv
+Set PythonHome to /Users/X/PycharmProjects/BlogProject/venv
+*** Python threads support is disabled. You can enable it with --enable-threads ***
+Python main interpreter initialized at 0x7f9178c04a10
+your server socket listen backlog is limited to 100 connections
+your mercy for graceful operations on workers is 60 seconds
+mapped 801768 bytes (782 KB) for 10 cores
+*** Operational MODE: preforking ***
+WSGI app 0 (mountpoint='') ready in 3 seconds on interpreter 0x7f9178c04a10 pid: 1913 (default app)
+*** uWSGI is running in multiple interpreter mode ***
+spawned uWSGI master process (pid: 1913)
+spawned uWSGI worker 1 (pid: 1921, cores: 1)
+spawned uWSGI worker 2 (pid: 1922, cores: 1)
+spawned uWSGI worker 3 (pid: 1923, cores: 1)
+spawned uWSGI worker 4 (pid: 1924, cores: 1)
+spawned uWSGI worker 5 (pid: 1925, cores: 1)
+spawned uWSGI worker 6 (pid: 1926, cores: 1)
+spawned uWSGI worker 7 (pid: 1927, cores: 1)
+spawned uWSGI worker 8 (pid: 1928, cores: 1)
+spawned uWSGI worker 9 (pid: 1929, cores: 1)
+spawned uWSGI worker 10 (pid: 1930, cores: 1)
+...brutally killing workers...
+...brutally killing workers...
+*** Starting uWSGI 2.0.17 (64bit) on [Sat Apr  7 17:37:59 2018] ***
+compiled with version: 4.2.1 Compatible Apple LLVM 9.1.0 (clang-902.0.39.1) on 07 April 2018 01:59:50
+os: Darwin-17.5.0 Darwin Kernel Version 17.5.0: Mon Mar  5 22:24:32 PST 2018; root:xnu-4570.51.1~1/RELEASE_X86_64
+nodename: Macintosh
+machine: x86_64
+clock source: unix
+pcre jit disabled
+detected number of CPU cores: 4
+current working directory: /Users/X/PycharmProjects/BlogProject
+writing pidfile to /tmp/BlogProject.pid
+detected binary path: /Users/X/PycharmProjects/BlogProject/venv/bin/uwsgi
+chdir() to /Users/X/PycharmProjects/BlogProject/
+your processes number limit is 709
+your memory page size is 4096 bytes
+detected max file descriptor number: 10240
+lock engine: OSX spinlocks
+thunder lock: disabled (you can enable it with --thunder-lock)
+uwsgi socket 0 bound to UNIX address /tmp/BlogProject.sock fd 3
+Python version: 3.5.1 (v3.5.1:37a07cee5969, Dec  5 2015, 21:12:44)  [GCC 4.2.1 (Apple Inc. build 5666) (dot 3)]
+PEP 405 virtualenv detected: /Users/X/PycharmProjects/BlogProject/venv
+Set PythonHome to /Users/X/PycharmProjects/BlogProject/venv
+*** Python threads support is disabled. You can enable it with --enable-threads ***
+Python main interpreter initialized at 0x7f814a401660
+your server socket listen backlog is limited to 100 connections
+your mercy for graceful operations on workers is 60 seconds
+mapped 801768 bytes (782 KB) for 10 cores
+*** Operational MODE: preforking ***
+WSGI app 0 (mountpoint='') ready in 4 seconds on interpreter 0x7f814a401660 pid: 532 (default app)
+*** uWSGI is running in multiple interpreter mode ***
+spawned uWSGI master process (pid: 532)
+spawned uWSGI worker 1 (pid: 546, cores: 1)
+spawned uWSGI worker 2 (pid: 547, cores: 1)
+spawned uWSGI worker 3 (pid: 548, cores: 1)
+spawned uWSGI worker 4 (pid: 549, cores: 1)
+spawned uWSGI worker 5 (pid: 550, cores: 1)
+spawned uWSGI worker 6 (pid: 551, cores: 1)
+spawned uWSGI worker 7 (pid: 552, cores: 1)
+spawned uWSGI worker 8 (pid: 553, cores: 1)
+spawned uWSGI worker 9 (pid: 554, cores: 1)
+spawned uWSGI worker 10 (pid: 555, cores: 1)
+[pid: 554|app: 0|req: 1/1] 127.0.0.1 () {42 vars in 906 bytes} [Sat Apr  7 17:38:07 2018] GET / => generated 20016 bytes in 2065 msecs (HTTP/1.1 200) 2 headers in 88 bytes (5 switches on core 0)
+[pid: 553|app: 0|req: 1/2] 127.0.0.1 () {44 vars in 956 bytes} [Sat Apr  7 17:38:13 2018] GET /admin/ => generated 14323 bytes in 1112 msecs (HTTP/1.1 200) 6 headers in 251 bytes (3 switches on core 0)
+Not Found: /favicon.ico
+[pid: 555|app: 0|req: 1/3] 127.0.0.1 () {42 vars in 891 bytes} [Sat Apr  7 17:38:14 2018] GET /favicon.ico => generated 3691 bytes in 902 msecs (HTTP/1.1 404) 2 headers in 80 bytes (1 switches on core 0)
+[pid: 553|app: 0|req: 2/4] 127.0.0.1 () {44 vars in 982 bytes} [Sat Apr  7 17:38:16 2018] GET /admin/blog/post/ => generated 17411 bytes in 86 msecs (HTTP/1.1 200) 7 headers in 405 bytes (5 switches on core 0)
+[pid: 553|app: 0|req: 3/5] 127.0.0.1 () {42 vars in 869 bytes} [Sat Apr  7 17:38:16 2018] GET /admin/jsi18n/ => generated 7682 bytes in 14 msecs (HTTP/1.1 200) 3 headers in 93 bytes (1 switches on core 0)
+[pid: 555|app: 0|req: 2/6] 127.0.0.1 () {44 vars in 1012 bytes} [Sat Apr  7 17:38:17 2018] GET /admin/blog/post/36/change/ => generated 18963 bytes in 254 msecs (HTTP/1.1 200) 7 headers in 405 bytes (4 switches on core 0)
+[pid: 553|app: 0|req: 4/7] 127.0.0.1 () {42 vars in 879 bytes} [Sat Apr  7 17:38:18 2018] GET /admin/jsi18n/ => generated 7682 bytes in 11 msecs (HTTP/1.1 200) 3 headers in 93 bytes (1 switches on core 0)
+[pid: 555|app: 0|req: 3/8] 127.0.0.1 () {42 vars in 906 bytes} [Sat Apr  7 17:42:40 2018] GET / => generated 20016 bytes in 81 msecs (HTTP/1.1 200) 2 headers in 88 bytes (5 switches on core 0)
+[pid: 554|app: 0|req: 2/9] 127.0.0.1 () {44 vars in 956 bytes} [Sat Apr  7 17:42:42 2018] GET /admin/ => generated 14323 bytes in 132 msecs (HTTP/1.1 200) 6 headers in 251 bytes (3 switches on core 0)
+[pid: 553|app: 0|req: 5/10] 127.0.0.1 () {44 vars in 982 bytes} [Sat Apr  7 17:42:47 2018] GET /admin/blog/post/ => generated 17411 bytes in 94 msecs (HTTP/1.1 200) 7 headers in 405 bytes (4 switches on core 0)
+[pid: 555|app: 0|req: 4/11] 127.0.0.1 () {42 vars in 869 bytes} [Sat Apr  7 17:42:47 2018] GET /admin/jsi18n/ => generated 7682 bytes in 21 msecs (HTTP/1.1 200) 3 headers in 93 bytes (1 switches on core 0)
+[pid: 554|app: 0|req: 3/12] 127.0.0.1 () {44 vars in 1012 bytes} [Sat Apr  7 17:42:49 2018] GET /admin/blog/post/36/change/ => generated 18963 bytes in 109 msecs (HTTP/1.1 200) 7 headers in 405 bytes (4 switches on core 0)
+[pid: 555|app: 0|req: 5/13] 127.0.0.1 () {42 vars in 879 bytes} [Sat Apr  7 17:42:49 2018] GET /admin/jsi18n/ => generated 7682 bytes in 16 msecs (HTTP/1.1 200) 3 headers in 93 bytes (2 switches on core 0)
+[pid: 554|app: 0|req: 4/14] 127.0.0.1 () {42 vars in 906 bytes} [Sat Apr  7 17:48:48 2018] GET / => generated 20016 bytes in 65 msecs (HTTP/1.1 200) 2 headers in 88 bytes (5 switches on core 0)
+Building prefix dict from the default dictionary ...
+Dumping model to file cache /var/folders/x6/w9h306m90858mkd2w2kx9zkh0000gn/T/jieba.cache
+Loading model cost 1.775 seconds.
+Prefix dict has been built succesfully.
+[pid: 552|app: 0|req: 1/15] 127.0.0.1 () {44 vars in 960 bytes} [Sat Apr  7 17:48:50 2018] GET /blog/36/ => generated 12937 bytes in 3305 msecs (HTTP/1.1 200) 4 headers in 256 bytes (2 switches on core 0)
+[pid: 554|app: 0|req: 5/16] 127.0.0.1 () {44 vars in 964 bytes} [Sat Apr  7 17:48:55 2018] GET /admin/ => generated 14323 bytes in 68 msecs (HTTP/1.1 200) 6 headers in 251 bytes (4 switches on core 0)
+[pid: 554|app: 0|req: 6/17] 127.0.0.1 () {44 vars in 982 bytes} [Sat Apr  7 17:48:58 2018] GET /admin/blog/post/ => generated 17411 bytes in 83 msecs (HTTP/1.1 200) 7 headers in 405 bytes (5 switches on core 0)
+[pid: 552|app: 0|req: 2/18] 127.0.0.1 () {42 vars in 869 bytes} [Sat Apr  7 17:48:58 2018] GET /admin/jsi18n/ => generated 7682 bytes in 13 msecs (HTTP/1.1 200) 3 headers in 93 bytes (1 switches on core 0)
+[pid: 551|app: 0|req: 1/19] 127.0.0.1 () {44 vars in 1012 bytes} [Sat Apr  7 17:49:00 2018] GET /admin/blog/post/36/change/ => generated 18963 bytes in 1256 msecs (HTTP/1.1 200) 7 headers in 405 bytes (3 switches on core 0)
+[pid: 555|app: 0|req: 6/20] 127.0.0.1 () {42 vars in 879 bytes} [Sat Apr  7 17:49:01 2018] GET /admin/jsi18n/ => generated 7682 bytes in 50 msecs (HTTP/1.1 200) 3 headers in 93 bytes (1 switches on core 0)
+[pid: 555|app: 0|req: 7/21] 127.0.0.1 () {44 vars in 1012 bytes} [Sat Apr  7 17:51:28 2018] GET /admin/blog/post/36/change/ => generated 18963 bytes in 124 msecs (HTTP/1.1 200) 7 headers in 405 bytes (3 switches on core 0)
+[pid: 553|app: 0|req: 6/22] 127.0.0.1 () {44 vars in 1012 bytes} [Sat Apr  7 17:54:30 2018] GET /admin/blog/post/36/change/ => generated 18963 bytes in 157 msecs (HTTP/1.1 200) 7 headers in 405 bytes (5 switches on core 0)
+[pid: 555|app: 0|req: 8/23] 127.0.0.1 () {44 vars in 1012 bytes} [Sat Apr  7 17:55:17 2018] GET /admin/blog/post/36/change/ => generated 18963 bytes in 153 msecs (HTTP/1.1 200) 7 headers in 405 bytes (3 switches on core 0)
+[pid: 554|app: 0|req: 7/24] 127.0.0.1 () {42 vars in 906 bytes} [Sat Apr  7 17:58:51 2018] GET / => generated 20016 bytes in 118 msecs (HTTP/1.1 200) 2 headers in 88 bytes (5 switches on core 0)
+[pid: 551|app: 0|req: 2/25] 127.0.0.1 () {44 vars in 956 bytes} [Sat Apr  7 17:58:54 2018] GET /admin/ => generated 14323 bytes in 147 msecs (HTTP/1.1 200) 6 headers in 251 bytes (4 switches on core 0)
+[pid: 553|app: 0|req: 7/26] 127.0.0.1 () {44 vars in 982 bytes} [Sat Apr  7 17:58:56 2018] GET /admin/blog/post/ => generated 17411 bytes in 96 msecs (HTTP/1.1 200) 7 headers in 405 bytes (5 switches on core 0)
+[pid: 555|app: 0|req: 9/27] 127.0.0.1 () {42 vars in 869 bytes} [Sat Apr  7 17:58:56 2018] GET /admin/jsi18n/ => generated 7682 bytes in 77 msecs (HTTP/1.1 200) 3 headers in 93 bytes (1 switches on core 0)
+Building prefix dict from the default dictionary ...
+Loading model from cache /var/folders/x6/w9h306m90858mkd2w2kx9zkh0000gn/T/jieba.cache
+Loading model cost 1.489 seconds.
+Prefix dict has been built succesfully.
+[pid: 552|app: 0|req: 3/28] 127.0.0.1 () {44 vars in 1012 bytes} [Sat Apr  7 17:59:00 2018] GET /admin/blog/post/36/change/ => generated 18963 bytes in 200 msecs (HTTP/1.1 200) 7 headers in 405 bytes (3 switches on core 0)
+[pid: 554|app: 0|req: 8/29] 127.0.0.1 () {42 vars in 879 bytes} [Sat Apr  7 17:59:00 2018] GET /admin/jsi18n/ => generated 7682 bytes in 17 msecs (HTTP/1.1 200) 3 headers in 93 bytes (1 switches on core 0)
+Sat Apr  7 17:59:01 2018 - SIGPIPE: writing to a closed pipe/socket/fd (probably the client disconnected) on request /blog/36/ (ip 127.0.0.1) !!!
+Sat Apr  7 17:59:01 2018 - uwsgi_response_writev_headers_and_body_do(): Broken pipe [core/writer.c line 306] during GET /blog/36/ (127.0.0.1)
+OSError: write error
+[pid: 555|app: 0|req: 10/30] 127.0.0.1 () {44 vars in 976 bytes} [Sat Apr  7 17:58:59 2018] GET /blog/36/ => generated 0 bytes in 1998 msecs (HTTP/1.1 200) 4 headers in 0 bytes (1 switches on core 0)
+[pid: 555|app: 0|req: 11/31] 127.0.0.1 () {42 vars in 906 bytes} [Sat Apr  7 18:23:18 2018] GET / => generated 20016 bytes in 124 msecs (HTTP/1.1 200) 2 headers in 88 bytes (5 switches on core 0)
+[pid: 554|app: 0|req: 9/32] 127.0.0.1 () {42 vars in 906 bytes} [Sat Apr  7 18:29:20 2018] GET / => generated 20016 bytes in 145 msecs (HTTP/1.1 200) 2 headers in 88 bytes (4 switches on core 0)
+[pid: 555|app: 0|req: 12/33] 127.0.0.1 () {44 vars in 956 bytes} [Sat Apr  7 18:29:22 2018] GET /admin/ => generated 14323 bytes in 155 msecs (HTTP/1.1 200) 6 headers in 251 bytes (3 switches on core 0)
+[pid: 555|app: 0|req: 13/34] 127.0.0.1 () {44 vars in 982 bytes} [Sat Apr  7 18:29:24 2018] GET /admin/blog/post/ => generated 17411 bytes in 102 msecs (HTTP/1.1 200) 7 headers in 405 bytes (4 switches on core 0)
+[pid: 555|app: 0|req: 14/35] 127.0.0.1 () {42 vars in 869 bytes} [Sat Apr  7 18:29:24 2018] GET /admin/jsi18n/ => generated 7682 bytes in 19 msecs (HTTP/1.1 200) 3 headers in 93 bytes (1 switches on core 0)
+[pid: 553|app: 0|req: 8/36] 127.0.0.1 () {44 vars in 1012 bytes} [Sat Apr  7 18:29:26 2018] GET /admin/blog/post/27/change/ => generated 21957 bytes in 178 msecs (HTTP/1.1 200) 7 headers in 405 bytes (5 switches on core 0)
+[pid: 552|app: 0|req: 4/37] 127.0.0.1 () {42 vars in 879 bytes} [Sat Apr  7 18:29:26 2018] GET /admin/jsi18n/ => generated 7682 bytes in 82 msecs (HTTP/1.1 200) 3 headers in 93 bytes (1 switches on core 0)
+[pid: 554|app: 0|req: 10/38] 127.0.0.1 () {42 vars in 906 bytes} [Sat Apr  7 19:26:40 2018] GET / => generated 20016 bytes in 113 msecs (HTTP/1.1 200) 2 headers in 88 bytes (4 switches on core 0)
+[pid: 554|app: 0|req: 11/39] 127.0.0.1 () {42 vars in 906 bytes} [Sat Apr  7 20:04:54 2018] GET / => generated 20016 bytes in 135 msecs (HTTP/1.1 200) 2 headers in 88 bytes (4 switches on core 0)
+[pid: 554|app: 0|req: 12/40] 127.0.0.1 () {44 vars in 944 bytes} [Sat Apr  7 20:04:56 2018] GET / => generated 20016 bytes in 66 msecs (HTTP/1.1 200) 2 headers in 88 bytes (4 switches on core 0)
+[pid: 553|app: 0|req: 9/41] 127.0.0.1 () {44 vars in 956 bytes} [Sat Apr  7 20:04:58 2018] GET /admin/ => generated 14323 bytes in 138 msecs (HTTP/1.1 200) 6 headers in 251 bytes (4 switches on core 0)
+[pid: 553|app: 0|req: 10/42] 127.0.0.1 () {44 vars in 982 bytes} [Sat Apr  7 20:05:00 2018] GET /admin/blog/post/ => generated 17411 bytes in 91 msecs (HTTP/1.1 200) 7 headers in 405 bytes (4 switches on core 0)
+[pid: 555|app: 0|req: 15/43] 127.0.0.1 () {42 vars in 869 bytes} [Sat Apr  7 20:05:00 2018] GET /admin/jsi18n/ => generated 7682 bytes in 78 msecs (HTTP/1.1 200) 3 headers in 93 bytes (1 switches on core 0)
+[pid: 555|app: 0|req: 16/44] 127.0.0.1 () {44 vars in 1012 bytes} [Sat Apr  7 20:05:06 2018] GET /admin/blog/post/36/change/ => generated 18963 bytes in 131 msecs (HTTP/1.1 200) 7 headers in 405 bytes (4 switches on core 0)
+[pid: 554|app: 0|req: 13/45] 127.0.0.1 () {42 vars in 879 bytes} [Sat Apr  7 20:05:06 2018] GET /admin/jsi18n/ => generated 7682 bytes in 33 msecs (HTTP/1.1 200) 3 headers in 93 bytes (1 switches on core 0)
+[pid: 555|app: 0|req: 17/46] 127.0.0.1 () {42 vars in 906 bytes} [Sat Apr  7 20:10:29 2018] GET / => generated 20016 bytes in 84 msecs (HTTP/1.1 200) 2 headers in 88 bytes (4 switches on core 0)
+[pid: 555|app: 0|req: 18/47] 127.0.0.1 () {44 vars in 1012 bytes} [Sat Apr  7 20:10:30 2018] GET /admin/blog/post/36/change/ => generated 18963 bytes in 383 msecs (HTTP/1.1 200) 7 headers in 405 bytes (5 switches on core 0)
+[pid: 553|app: 0|req: 11/48] 127.0.0.1 () {44 vars in 1012 bytes} [Sat Apr  7 20:12:28 2018] GET /admin/blog/post/36/change/ => generated 18963 bytes in 153 msecs (HTTP/1.1 200) 7 headers in 405 bytes (3 switches on core 0)
+[pid: 554|app: 0|req: 14/49] 127.0.0.1 () {44 vars in 1012 bytes} [Sat Apr  7 20:13:21 2018] GET /admin/blog/post/36/change/ => generated 18963 bytes in 162 msecs (HTTP/1.1 200) 7 headers in 405 bytes (4 switches on core 0)
+[pid: 552|app: 0|req: 5/50] 127.0.0.1 () {44 vars in 944 bytes} [Sat Apr  7 20:35:25 2018] GET / => generated 20016 bytes in 127 msecs (HTTP/1.1 200) 2 headers in 88 bytes (4 switches on core 0)
+Building prefix dict from the default dictionary ...
+Loading model from cache /var/folders/x6/w9h306m90858mkd2w2kx9zkh0000gn/T/jieba.cache
+Loading model cost 1.323 seconds.
+Prefix dict has been built succesfully.
+[pid: 553|app: 0|req: 12/51] 127.0.0.1 () {44 vars in 960 bytes} [Sat Apr  7 20:35:40 2018] GET /blog/36/ => generated 12937 bytes in 3342 msecs (HTTP/1.1 200) 4 headers in 256 bytes (3 switches on core 0)
+[pid: 554|app: 0|req: 15/52] 127.0.0.1 () {44 vars in 952 bytes} [Sat Apr  7 20:35:47 2018] GET / => generated 20016 bytes in 109 msecs (HTTP/1.1 200) 2 headers in 88 bytes (5 switches on core 0)
+[pid: 553|app: 0|req: 13/53] 127.0.0.1 () {44 vars in 960 bytes} [Sat Apr  7 20:35:50 2018] GET /blog/36/ => generated 12937 bytes in 176 msecs (HTTP/1.1 200) 4 headers in 256 bytes (4 switches on core 0)
+[pid: 555|app: 0|req: 19/54] 127.0.0.1 () {44 vars in 952 bytes} [Sat Apr  7 20:35:53 2018] GET / => generated 20016 bytes in 111 msecs (HTTP/1.1 200) 2 headers in 88 bytes (5 switches on core 0)
+Sat Apr  7 20:36:51 2018 - SIGPIPE: writing to a closed pipe/socket/fd (probably the client disconnected) on request /blog/27/ (ip 127.0.0.1) !!!
+Sat Apr  7 20:36:51 2018 - uwsgi_response_writev_headers_and_body_do(): Broken pipe [core/writer.c line 306] during GET /blog/27/ (127.0.0.1)
+OSError: write error
+[pid: 553|app: 0|req: 14/55] 127.0.0.1 () {44 vars in 960 bytes} [Sat Apr  7 20:36:51 2018] GET /blog/27/ => generated 0 bytes in 367 msecs (HTTP/1.1 200) 4 headers in 0 bytes (0 switches on core 0)
+[pid: 553|app: 0|req: 15/56] 127.0.0.1 () {44 vars in 960 bytes} [Sat Apr  7 20:36:51 2018] GET /blog/27/ => generated 15484 bytes in 302 msecs (HTTP/1.1 200) 4 headers in 256 bytes (2 switches on core 0)
+[pid: 554|app: 0|req: 16/57] 127.0.0.1 () {42 vars in 906 bytes} [Sat Apr  7 20:40:03 2018] GET / => generated 20016 bytes in 95 msecs (HTTP/1.1 200) 2 headers in 88 bytes (5 switches on core 0)
+[pid: 552|app: 0|req: 6/58] 127.0.0.1 () {44 vars in 960 bytes} [Sat Apr  7 20:40:10 2018] GET /blog/36/ => generated 12937 bytes in 339 msecs (HTTP/1.1 200) 4 headers in 256 bytes (3 switches on core 0)
+[pid: 552|app: 0|req: 7/59] 127.0.0.1 () {44 vars in 960 bytes} [Sat Apr  7 20:40:14 2018] GET /blog/36/ => generated 12937 bytes in 1417 msecs (HTTP/1.1 200) 4 headers in 256 bytes (3 switches on core 0)
+Invalid HTTP_HOST header: '192.168.3.103:8888'. You may need to add '192.168.3.103' to ALLOWED_HOSTS.
+[pid: 553|app: 0|req: 16/60] 192.168.3.103 () {40 vars in 741 bytes} [Sat Apr  7 20:42:17 2018] GET /blog/36/ => generated 56514 bytes in 78 msecs (HTTP/1.1 400) 1 headers in 53 bytes (9 switches on core 0)
+Invalid HTTP_HOST header: '192.168.3.103:8888'. You may need to add '192.168.3.103' to ALLOWED_HOSTS.
+[pid: 555|app: 0|req: 20/61] 192.168.3.103 () {40 vars in 716 bytes} [Sat Apr  7 20:42:18 2018] GET /favicon.ico => generated 56519 bytes in 61 msecs (HTTP/1.1 400) 1 headers in 53 bytes (8 switches on core 0)
+Invalid HTTP_HOST header: '192.168.3.103:8888'. You may need to add '192.168.3.103' to ALLOWED_HOSTS.
+[pid: 554|app: 0|req: 17/62] 192.168.3.103 () {42 vars in 772 bytes} [Sat Apr  7 20:42:59 2018] GET /blog/36/ => generated 56649 bytes in 95 msecs (HTTP/1.1 400) 1 headers in 53 bytes (8 switches on core 0)
+Invalid HTTP_HOST header: '192.168.3.103:8888'. You may need to add '192.168.3.103' to ALLOWED_HOSTS.
+[pid: 555|app: 0|req: 21/63] 192.168.3.103 () {44 vars in 769 bytes} [Sat Apr  7 20:43:00 2018] GET /favicon.ico => generated 56780 bytes in 61 msecs (HTTP/1.1 400) 1 headers in 53 bytes (7 switches on core 0)
+Invalid HTTP_HOST header: '192.168.3.103:8888'. You may need to add '192.168.3.103' to ALLOWED_HOSTS.
+[pid: 552|app: 0|req: 8/64] 192.168.3.103 () {42 vars in 772 bytes} [Sat Apr  7 20:43:02 2018] GET /blog/36/ => generated 56649 bytes in 55 msecs (HTTP/1.1 400) 1 headers in 53 bytes (9 switches on core 0)
+Invalid HTTP_HOST header: '192.168.3.103:8888'. You may need to add '192.168.3.103' to ALLOWED_HOSTS.
+[pid: 554|app: 0|req: 18/65] 192.168.3.103 () {44 vars in 769 bytes} [Sat Apr  7 20:43:02 2018] GET /favicon.ico => generated 56780 bytes in 53 msecs (HTTP/1.1 400) 1 headers in 53 bytes (8 switches on core 0)
+Invalid HTTP_HOST header: '192.168.3.103:8888'. You may need to add '192.168.3.103' to ALLOWED_HOSTS.
+[pid: 552|app: 0|req: 9/66] 192.168.3.103 () {42 vars in 772 bytes} [Sat Apr  7 20:43:13 2018] GET /blog/36/ => generated 56649 bytes in 48 msecs (HTTP/1.1 400) 1 headers in 53 bytes (8 switches on core 0)
+Invalid HTTP_HOST header: '192.168.3.103:8888'. You may need to add '192.168.3.103' to ALLOWED_HOSTS.
+[pid: 555|app: 0|req: 22/67] 192.168.3.103 () {44 vars in 769 bytes} [Sat Apr  7 20:43:14 2018] GET /favicon.ico => generated 56780 bytes in 98 msecs (HTTP/1.1 400) 1 headers in 53 bytes (8 switches on core 0)
+Invalid HTTP_HOST header: '192.168.3.103:8888'. You may need to add '192.168.3.103' to ALLOWED_HOSTS.
+[pid: 554|app: 0|req: 19/68] 192.168.3.103 () {40 vars in 725 bytes} [Sat Apr  7 20:46:17 2018] GET / => generated 56418 bytes in 54 msecs (HTTP/1.1 400) 1 headers in 53 bytes (8 switches on core 0)
+Invalid HTTP_HOST header: '192.168.3.103:8888'. You may need to add '192.168.3.103' to ALLOWED_HOSTS.
+[pid: 555|app: 0|req: 23/69] 192.168.3.103 () {40 vars in 708 bytes} [Sat Apr  7 20:46:17 2018] GET /favicon.ico => generated 56511 bytes in 56 msecs (HTTP/1.1 400) 1 headers in 53 bytes (7 switches on core 0)
+Invalid HTTP_HOST header: '192.168.3.103:8888'. You may need to add '192.168.3.103' to ALLOWED_HOSTS.
+[pid: 554|app: 0|req: 20/70] 192.168.3.103 () {42 vars in 756 bytes} [Sat Apr  7 20:49:47 2018] GET / => generated 56553 bytes in 215 msecs (HTTP/1.1 400) 1 headers in 53 bytes (8 switches on core 0)
+Invalid HTTP_HOST header: '192.168.3.103:8888'. You may need to add '192.168.3.103' to ALLOWED_HOSTS.
+[pid: 554|app: 0|req: 21/71] 192.168.3.103 () {44 vars in 761 bytes} [Sat Apr  7 20:49:48 2018] GET /favicon.ico => generated 56772 bytes in 91 msecs (HTTP/1.1 400) 1 headers in 53 bytes (7 switches on core 0)
+Invalid HTTP_HOST header: '192.168.3.103:8888'. You may need to add '192.168.3.103' to ALLOWED_HOSTS.
+[pid: 553|app: 0|req: 17/72] 192.168.3.103 () {42 vars in 756 bytes} [Sat Apr  7 20:49:49 2018] GET / => generated 56553 bytes in 80 msecs (HTTP/1.1 400) 1 headers in 53 bytes (9 switches on core 0)
+Invalid HTTP_HOST header: '192.168.3.103:8888'. You may need to add '192.168.3.103' to ALLOWED_HOSTS.
+[pid: 554|app: 0|req: 22/73] 192.168.3.103 () {44 vars in 761 bytes} [Sat Apr  7 20:49:49 2018] GET /favicon.ico => generated 56772 bytes in 50 msecs (HTTP/1.1 400) 1 headers in 53 bytes (8 switches on core 0)
+Invalid HTTP_HOST header: '192.168.3.103:8888'. You may need to add '192.168.3.103' to ALLOWED_HOSTS.
+[pid: 554|app: 0|req: 23/74] 192.168.3.103 () {40 vars in 725 bytes} [Sat Apr  7 20:51:24 2018] GET / => generated 56418 bytes in 58 msecs (HTTP/1.1 400) 1 headers in 53 bytes (9 switches on core 0)
+Invalid HTTP_HOST header: '192.168.3.103:8888'. You may need to add '192.168.3.103' to ALLOWED_HOSTS.
+[pid: 554|app: 0|req: 24/75] 192.168.3.103 () {40 vars in 708 bytes} [Sat Apr  7 20:51:24 2018] GET /favicon.ico => generated 56511 bytes in 61 msecs (HTTP/1.1 400) 1 headers in 53 bytes (8 switches on core 0)
+[pid: 552|app: 0|req: 10/76] 127.0.0.1 () {42 vars in 906 bytes} [Sat Apr  7 20:51:56 2018] GET / => generated 20016 bytes in 128 msecs (HTTP/1.1 200) 2 headers in 88 bytes (5 switches on core 0)
+[pid: 553|app: 0|req: 18/77] 127.0.0.1 () {44 vars in 937 bytes} [Sat Apr  7 20:52:04 2018] GET / => generated 20016 bytes in 99 msecs (HTTP/1.1 200) 2 headers in 88 bytes (5 switches on core 0)
+[pid: 553|app: 0|req: 19/78] 127.0.0.1 () {44 vars in 960 bytes} [Sat Apr  7 20:52:09 2018] GET /blog/27/ => generated 15484 bytes in 361 msecs (HTTP/1.1 200) 4 headers in 256 bytes (3 switches on core 0)
+...brutally killing workers...
+worker 10 buried after 2 seconds
+worker 9 buried after 2 seconds
+worker 8 buried after 2 seconds
+worker 7 buried after 2 seconds
+worker 6 buried after 2 seconds
+worker 5 buried after 2 seconds
+worker 4 buried after 2 seconds
+worker 3 buried after 2 seconds
+worker 2 buried after 2 seconds
+worker 1 buried after 2 seconds
+binary reloading uWSGI...
+chdir() to /Users/X/PycharmProjects/BlogProject
+closing all non-uwsgi socket fds > 2 (max_fd = 10240)...
+found fd 3 mapped to socket 0 (/tmp/BlogProject.sock)
+running /Users/X/PycharmProjects/BlogProject/venv/bin/uwsgi
+*** Starting uWSGI 2.0.17 (64bit) on [Sat Apr  7 21:04:40 2018] ***
+compiled with version: 4.2.1 Compatible Apple LLVM 9.1.0 (clang-902.0.39.1) on 06 April 2018 12:48:53
+os: Darwin-17.5.0 Darwin Kernel Version 17.5.0: Mon Mar  5 22:24:32 PST 2018; root:xnu-4570.51.1~1/RELEASE_X86_64
+nodename: Macintosh
+machine: x86_64
+clock source: unix
+detected number of CPU cores: 4
+current working directory: /Users/X/PycharmProjects/BlogProject
+writing pidfile to /tmp/BlogProject.pid
+detected binary path: /Library/Frameworks/Python.framework/Versions/3.5/bin/uwsgi
+!!! no internal routing support, rebuild with pcre support !!!
+chdir() to /Users/X/PycharmProjects/BlogProject/
+your processes number limit is 709
+your memory page size is 4096 bytes
+detected max file descriptor number: 256
+lock engine: OSX spinlocks
+thunder lock: disabled (you can enable it with --thunder-lock)
+uwsgi socket 0 bound to UNIX address /tmp/BlogProject.sock fd 3
+Python version: 3.5.1 (v3.5.1:37a07cee5969, Dec  5 2015, 21:12:44)  [GCC 4.2.1 (Apple Inc. build 5666) (dot 3)]
+PEP 405 virtualenv detected: /Users/X/PycharmProjects/BlogProject/venv
+Set PythonHome to /Users/X/PycharmProjects/BlogProject/venv
+*** Python threads support is disabled. You can enable it with --enable-threads ***
+Python main interpreter initialized at 0x7f8e70f01540
+your server socket listen backlog is limited to 100 connections
+your mercy for graceful operations on workers is 60 seconds
+mapped 801768 bytes (782 KB) for 10 cores
+*** Operational MODE: preforking ***
+WSGI app 0 (mountpoint='') ready in 3 seconds on interpreter 0x7f8e70f01540 pid: 661 (default app)
+*** uWSGI is running in multiple interpreter mode ***
+spawned uWSGI master process (pid: 661)
+spawned uWSGI worker 1 (pid: 668, cores: 1)
+spawned uWSGI worker 2 (pid: 669, cores: 1)
+spawned uWSGI worker 3 (pid: 670, cores: 1)
+spawned uWSGI worker 4 (pid: 671, cores: 1)
+spawned uWSGI worker 5 (pid: 672, cores: 1)
+spawned uWSGI worker 6 (pid: 673, cores: 1)
+spawned uWSGI worker 7 (pid: 674, cores: 1)
+spawned uWSGI worker 8 (pid: 675, cores: 1)
+spawned uWSGI worker 9 (pid: 676, cores: 1)
+spawned uWSGI worker 10 (pid: 677, cores: 1)
+[pid: 676|app: 0|req: 1/1] 127.0.0.1 () {44 vars in 937 bytes} [Sat Apr  7 21:04:45 2018] GET / => generated 20016 bytes in 1401 msecs (HTTP/1.1 200) 2 headers in 88 bytes (5 switches on core 0)
+[pid: 676|app: 0|req: 2/2] 127.0.0.1 () {44 vars in 956 bytes} [Sat Apr  7 21:04:49 2018] GET /admin/ => generated 14313 bytes in 92 msecs (HTTP/1.1 200) 6 headers in 251 bytes (4 switches on core 0)
+Not Found: /favicon.ico
+[pid: 676|app: 0|req: 3/3] 127.0.0.1 () {42 vars in 891 bytes} [Sat Apr  7 21:04:49 2018] GET /favicon.ico => generated 3691 bytes in 9 msecs (HTTP/1.1 404) 2 headers in 80 bytes (2 switches on core 0)
+[pid: 676|app: 0|req: 4/4] 127.0.0.1 () {44 vars in 956 bytes} [Sat Apr  7 21:04:52 2018] GET /admin/ => generated 14313 bytes in 54 msecs (HTTP/1.1 200) 6 headers in 251 bytes (4 switches on core 0)
+[pid: 676|app: 0|req: 5/5] 127.0.0.1 () {44 vars in 982 bytes} [Sat Apr  7 21:04:54 2018] GET /admin/blog/post/ => generated 17411 bytes in 89 msecs (HTTP/1.1 200) 7 headers in 405 bytes (5 switches on core 0)
+[pid: 676|app: 0|req: 6/6] 127.0.0.1 () {42 vars in 869 bytes} [Sat Apr  7 21:04:54 2018] GET /admin/jsi18n/ => generated 7682 bytes in 11 msecs (HTTP/1.1 200) 3 headers in 93 bytes (2 switches on core 0)
+[pid: 676|app: 0|req: 7/7] 127.0.0.1 () {44 vars in 1012 bytes} [Sat Apr  7 21:04:56 2018] GET /admin/blog/post/36/change/ => generated 18963 bytes in 100 msecs (HTTP/1.1 200) 7 headers in 405 bytes (5 switches on core 0)
+[pid: 676|app: 0|req: 8/8] 127.0.0.1 () {42 vars in 879 bytes} [Sat Apr  7 21:04:56 2018] GET /admin/jsi18n/ => generated 7682 bytes in 16 msecs (HTTP/1.1 200) 3 headers in 93 bytes (2 switches on core 0)
+[pid: 676|app: 0|req: 9/9] 127.0.0.1 () {44 vars in 1012 bytes} [Sat Apr  7 21:05:08 2018] GET /admin/blog/post/36/change/ => generated 18963 bytes in 94 msecs (HTTP/1.1 200) 7 headers in 405 bytes (5 switches on core 0)
+Building prefix dict from the default dictionary ...
+Dumping model to file cache /var/folders/x6/w9h306m90858mkd2w2kx9zkh0000gn/T/jieba.cache
+Loading model cost 1.797 seconds.
+Prefix dict has been built succesfully.
+[pid: 675|app: 0|req: 1/10] 127.0.0.1 () {44 vars in 986 bytes} [Sat Apr  7 21:05:13 2018] GET /blog/36/ => generated 12937 bytes in 3264 msecs (HTTP/1.1 200) 4 headers in 256 bytes (4 switches on core 0)
+[pid: 677|app: 0|req: 1/11] 127.0.0.1 () {44 vars in 952 bytes} [Sat Apr  7 21:05:18 2018] GET / => generated 20016 bytes in 979 msecs (HTTP/1.1 200) 2 headers in 88 bytes (5 switches on core 0)
+[pid: 676|app: 0|req: 10/12] 127.0.0.1 () {48 vars in 1005 bytes} [Sat Apr  7 21:05:39 2018] GET / => generated 20016 bytes in 51 msecs (HTTP/1.1 200) 2 headers in 88 bytes (5 switches on core 0)
+[pid: 676|app: 0|req: 11/13] 127.0.0.1 () {42 vars in 906 bytes} [Sat Apr  7 21:07:24 2018] GET / => generated 20016 bytes in 85 msecs (HTTP/1.1 200) 2 headers in 88 bytes (5 switches on core 0)
+Building prefix dict from the default dictionary ...
+Loading model from cache /var/folders/x6/w9h306m90858mkd2w2kx9zkh0000gn/T/jieba.cache
+Loading model cost 1.284 seconds.
+Prefix dict has been built succesfully.
+[pid: 677|app: 0|req: 2/14] 127.0.0.1 () {48 vars in 1013 bytes} [Sat Apr  7 21:09:34 2018] GET /blog/36/ => generated 12937 bytes in 2849 msecs (HTTP/1.1 200) 4 headers in 256 bytes (4 switches on core 0)
+[pid: 676|app: 0|req: 12/15] 127.0.0.1 () {48 vars in 1015 bytes} [Sat Apr  7 21:11:29 2018] GET /admin => generated 0 bytes in 18 msecs (HTTP/1.1 301) 2 headers in 93 bytes (2 switches on core 0)
+[pid: 676|app: 0|req: 13/16] 127.0.0.1 () {48 vars in 1017 bytes} [Sat Apr  7 21:11:29 2018] GET /admin/ => generated 14313 bytes in 106 msecs (HTTP/1.1 200) 6 headers in 251 bytes (4 switches on core 0)
+[pid: 676|app: 0|req: 14/17] 127.0.0.1 () {48 vars in 1035 bytes} [Sat Apr  7 21:11:31 2018] GET /admin/blog/post/ => generated 17411 bytes in 85 msecs (HTTP/1.1 200) 7 headers in 405 bytes (5 switches on core 0)
+[pid: 677|app: 0|req: 3/18] 127.0.0.1 () {46 vars in 922 bytes} [Sat Apr  7 21:11:32 2018] GET /admin/jsi18n/ => generated 7682 bytes in 28 msecs (HTTP/1.1 200) 3 headers in 93 bytes (2 switches on core 0)
+[pid: 676|app: 0|req: 15/19] 127.0.0.1 () {48 vars in 1065 bytes} [Sat Apr  7 21:11:34 2018] GET /admin/blog/post/36/change/ => generated 18963 bytes in 119 msecs (HTTP/1.1 200) 7 headers in 405 bytes (4 switches on core 0)
+[pid: 677|app: 0|req: 4/20] 127.0.0.1 () {46 vars in 932 bytes} [Sat Apr  7 21:11:34 2018] GET /admin/jsi18n/ => generated 7682 bytes in 18 msecs (HTTP/1.1 200) 3 headers in 93 bytes (2 switches on core 0)
+[pid: 676|app: 0|req: 16/21] 127.0.0.1 () {42 vars in 906 bytes} [Sun Apr  8 07:57:54 2018] GET / => generated 20016 bytes in 189 msecs (HTTP/1.1 200) 2 headers in 88 bytes (5 switches on core 0)
+[pid: 676|app: 0|req: 17/22] 127.0.0.1 () {46 vars in 959 bytes} [Sun Apr  8 08:00:09 2018] GET / => generated 19983 bytes in 62 msecs (HTTP/1.1 200) 2 headers in 88 bytes (5 switches on core 0)
+[pid: 675|app: 0|req: 2/23] 127.0.0.1 () {46 vars in 959 bytes} [Sun Apr  8 08:00:11 2018] GET / => generated 19983 bytes in 108 msecs (HTTP/1.1 200) 2 headers in 88 bytes (5 switches on core 0)
+[pid: 677|app: 0|req: 5/24] 127.0.0.1 () {46 vars in 959 bytes} [Sun Apr  8 08:00:14 2018] GET / => generated 19983 bytes in 101 msecs (HTTP/1.1 200) 2 headers in 88 bytes (5 switches on core 0)
+[pid: 677|app: 0|req: 6/25] 127.0.0.1 () {46 vars in 959 bytes} [Sun Apr  8 08:00:15 2018] GET / => generated 19983 bytes in 65 msecs (HTTP/1.1 200) 2 headers in 88 bytes (4 switches on core 0)
+[pid: 676|app: 0|req: 18/26] 127.0.0.1 () {42 vars in 906 bytes} [Sun Apr  8 08:04:51 2018] GET / => generated 20016 bytes in 123 msecs (HTTP/1.1 200) 2 headers in 88 bytes (5 switches on core 0)
+[pid: 676|app: 0|req: 19/27] 127.0.0.1 () {44 vars in 937 bytes} [Sun Apr  8 08:06:03 2018] GET / => generated 20016 bytes in 52 msecs (HTTP/1.1 200) 2 headers in 88 bytes (5 switches on core 0)
+[pid: 676|app: 0|req: 20/28] 127.0.0.1 () {44 vars in 937 bytes} [Sun Apr  8 08:06:06 2018] GET / => generated 20016 bytes in 208 msecs (HTTP/1.1 200) 2 headers in 88 bytes (5 switches on core 0)
+[pid: 675|app: 0|req: 3/29] 127.0.0.1 () {46 vars in 959 bytes} [Sun Apr  8 08:08:07 2018] GET / => generated 20016 bytes in 130 msecs (HTTP/1.1 200) 2 headers in 88 bytes (5 switches on core 0)
+[pid: 676|app: 0|req: 21/30] 127.0.0.1 () {46 vars in 959 bytes} [Sun Apr  8 08:08:10 2018] GET / => generated 20016 bytes in 107 msecs (HTTP/1.1 200) 2 headers in 88 bytes (5 switches on core 0)
+[pid: 676|app: 0|req: 22/31] 127.0.0.1 () {46 vars in 959 bytes} [Sun Apr  8 08:08:14 2018] GET / => generated 20016 bytes in 46 msecs (HTTP/1.1 200) 2 headers in 88 bytes (5 switches on core 0)
+[pid: 676|app: 0|req: 23/32] 127.0.0.1 () {46 vars in 959 bytes} [Sun Apr  8 08:11:46 2018] GET / => generated 19915 bytes in 136 msecs (HTTP/1.1 200) 2 headers in 88 bytes (4 switches on core 0)
+[pid: 676|app: 0|req: 24/33] 127.0.0.1 () {46 vars in 959 bytes} [Sun Apr  8 08:11:48 2018] GET / => generated 19915 bytes in 55 msecs (HTTP/1.1 200) 2 headers in 88 bytes (5 switches on core 0)
+[pid: 675|app: 0|req: 4/34] 127.0.0.1 () {46 vars in 959 bytes} [Sun Apr  8 08:14:53 2018] GET / => generated 20320 bytes in 102 msecs (HTTP/1.1 200) 2 headers in 88 bytes (5 switches on core 0)
+[pid: 675|app: 0|req: 5/35] 127.0.0.1 () {46 vars in 959 bytes} [Sun Apr  8 08:14:57 2018] GET / => generated 20320 bytes in 47 msecs (HTTP/1.1 200) 2 headers in 88 bytes (5 switches on core 0)
+[pid: 676|app: 0|req: 25/36] 127.0.0.1 () {46 vars in 959 bytes} [Sun Apr  8 08:15:28 2018] GET / => generated 20320 bytes in 126 msecs (HTTP/1.1 200) 2 headers in 88 bytes (5 switches on core 0)
+[pid: 676|app: 0|req: 26/37] 127.0.0.1 () {46 vars in 959 bytes} [Sun Apr  8 08:15:30 2018] GET / => generated 20320 bytes in 78 msecs (HTTP/1.1 200) 2 headers in 88 bytes (5 switches on core 0)
+[pid: 676|app: 0|req: 27/38] 127.0.0.1 () {46 vars in 959 bytes} [Sun Apr  8 08:15:55 2018] GET / => generated 20016 bytes in 52 msecs (HTTP/1.1 200) 2 headers in 88 bytes (5 switches on core 0)
+[pid: 676|app: 0|req: 28/39] 127.0.0.1 () {46 vars in 959 bytes} [Sun Apr  8 08:15:57 2018] GET / => generated 20016 bytes in 55 msecs (HTTP/1.1 200) 2 headers in 88 bytes (5 switches on core 0)
+[pid: 676|app: 0|req: 29/40] 127.0.0.1 () {42 vars in 906 bytes} [Sun Apr  8 08:32:58 2018] GET / => generated 20018 bytes in 165 msecs (HTTP/1.1 200) 2 headers in 88 bytes (5 switches on core 0)
+[pid: 676|app: 0|req: 30/41] 127.0.0.1 () {44 vars in 937 bytes} [Sun Apr  8 08:33:00 2018] GET / => generated 20018 bytes in 76 msecs (HTTP/1.1 200) 2 headers in 88 bytes (5 switches on core 0)
+[pid: 676|app: 0|req: 31/42] 127.0.0.1 () {44 vars in 937 bytes} [Sun Apr  8 08:37:01 2018] GET / => generated 20018 bytes in 151 msecs (HTTP/1.1 200) 2 headers in 88 bytes (5 switches on core 0)
+[pid: 671|app: 0|req: 1/43] 127.0.0.1 () {44 vars in 937 bytes} [Sun Apr  8 08:37:04 2018] GET / => generated 20018 bytes in 1322 msecs (HTTP/1.1 200) 2 headers in 88 bytes (5 switches on core 0)
+[pid: 675|app: 0|req: 6/44] 127.0.0.1 () {44 vars in 937 bytes} [Sun Apr  8 08:37:09 2018] GET / => generated 20018 bytes in 117 msecs (HTTP/1.1 200) 2 headers in 88 bytes (5 switches on core 0)
+[pid: 677|app: 0|req: 7/45] 127.0.0.1 () {44 vars in 937 bytes} [Sun Apr  8 08:37:10 2018] GET / => generated 20018 bytes in 129 msecs (HTTP/1.1 200) 2 headers in 88 bytes (5 switches on core 0)
+[pid: 673|app: 0|req: 1/46] 127.0.0.1 () {44 vars in 937 bytes} [Sun Apr  8 08:37:12 2018] GET / => generated 20018 bytes in 1196 msecs (HTTP/1.1 200) 2 headers in 88 bytes (5 switches on core 0)
+[pid: 675|app: 0|req: 7/47] 127.0.0.1 () {42 vars in 906 bytes} [Sun Apr  8 08:41:33 2018] GET / => generated 19981 bytes in 158 msecs (HTTP/1.1 200) 2 headers in 88 bytes (5 switches on core 0)
+[pid: 677|app: 0|req: 8/48] 127.0.0.1 () {44 vars in 937 bytes} [Sun Apr  8 08:41:36 2018] GET / => generated 19981 bytes in 202 msecs (HTTP/1.1 200) 2 headers in 88 bytes (5 switches on core 0)
+[pid: 676|app: 0|req: 32/49] 127.0.0.1 () {44 vars in 937 bytes} [Sun Apr  8 08:41:37 2018] GET / => generated 19981 bytes in 93 msecs (HTTP/1.1 200) 2 headers in 88 bytes (5 switches on core 0)
+[pid: 677|app: 0|req: 9/50] 127.0.0.1 () {44 vars in 937 bytes} [Sun Apr  8 08:41:38 2018] GET / => generated 19981 bytes in 118 msecs (HTTP/1.1 200) 2 headers in 88 bytes (5 switches on core 0)
+[pid: 675|app: 0|req: 8/51] 127.0.0.1 () {44 vars in 937 bytes} [Sun Apr  8 08:41:39 2018] GET / => generated 19981 bytes in 88 msecs (HTTP/1.1 200) 2 headers in 88 bytes (5 switches on core 0)
+[pid: 676|app: 0|req: 33/52] 127.0.0.1 () {44 vars in 937 bytes} [Sun Apr  8 08:41:40 2018] GET / => generated 19981 bytes in 57 msecs (HTTP/1.1 200) 2 headers in 88 bytes (5 switches on core 0)
+[pid: 676|app: 0|req: 34/53] 127.0.0.1 () {44 vars in 937 bytes} [Sun Apr  8 08:41:40 2018] GET / => generated 19981 bytes in 62 msecs (HTTP/1.1 200) 2 headers in 88 bytes (4 switches on core 0)
+[pid: 677|app: 0|req: 10/54] 127.0.0.1 () {44 vars in 937 bytes} [Sun Apr  8 08:41:41 2018] GET / => generated 19981 bytes in 78 msecs (HTTP/1.1 200) 2 headers in 88 bytes (5 switches on core 0)
+[pid: 677|app: 0|req: 11/55] 127.0.0.1 () {44 vars in 937 bytes} [Sun Apr  8 08:41:41 2018] GET / => generated 19981 bytes in 57 msecs (HTTP/1.1 200) 2 headers in 88 bytes (5 switches on core 0)
+[pid: 676|app: 0|req: 35/56] 127.0.0.1 () {44 vars in 937 bytes} [Sun Apr  8 08:41:41 2018] GET / => generated 19981 bytes in 98 msecs (HTTP/1.1 200) 2 headers in 88 bytes (3 switches on core 0)
+[pid: 677|app: 0|req: 12/57] 127.0.0.1 () {44 vars in 937 bytes} [Sun Apr  8 08:41:41 2018] GET / => generated 19981 bytes in 95 msecs (HTTP/1.1 200) 2 headers in 88 bytes (5 switches on core 0)
+[pid: 676|app: 0|req: 36/58] 127.0.0.1 () {46 vars in 959 bytes} [Sun Apr  8 08:41:48 2018] GET / => generated 19981 bytes in 62 msecs (HTTP/1.1 200) 2 headers in 88 bytes (5 switches on core 0)
+[pid: 676|app: 0|req: 37/59] 127.0.0.1 () {46 vars in 959 bytes} [Sun Apr  8 08:43:15 2018] GET / => generated 20039 bytes in 137 msecs (HTTP/1.1 200) 2 headers in 88 bytes (5 switches on core 0)
+[pid: 676|app: 0|req: 38/60] 127.0.0.1 () {46 vars in 959 bytes} [Sun Apr  8 08:43:17 2018] GET / => generated 20039 bytes in 60 msecs (HTTP/1.1 200) 2 headers in 88 bytes (5 switches on core 0)
+[pid: 677|app: 0|req: 13/61] 127.0.0.1 () {46 vars in 927 bytes} [Sun Apr  8 08:53:22 2018] GET / => generated 20283 bytes in 282 msecs (HTTP/1.1 200) 2 headers in 88 bytes (5 switches on core 0)
+[pid: 676|app: 0|req: 39/62] 127.0.0.1 () {46 vars in 927 bytes} [Sun Apr  8 08:53:25 2018] GET / => generated 20283 bytes in 148 msecs (HTTP/1.1 200) 2 headers in 88 bytes (5 switches on core 0)
+[pid: 676|app: 0|req: 40/63] 127.0.0.1 () {46 vars in 927 bytes} [Sun Apr  8 08:53:27 2018] GET / => generated 20283 bytes in 76 msecs (HTTP/1.1 200) 2 headers in 88 bytes (5 switches on core 0)
+[pid: 677|app: 0|req: 14/64] 127.0.0.1 () {46 vars in 927 bytes} [Sun Apr  8 08:53:29 2018] GET / => generated 20283 bytes in 116 msecs (HTTP/1.1 200) 2 headers in 88 bytes (5 switches on core 0)
+[pid: 676|app: 0|req: 41/65] 127.0.0.1 () {46 vars in 927 bytes} [Sun Apr  8 08:54:26 2018] GET / => generated 20341 bytes in 83 msecs (HTTP/1.1 200) 2 headers in 88 bytes (5 switches on core 0)
+[pid: 676|app: 0|req: 42/66] 127.0.0.1 () {46 vars in 927 bytes} [Sun Apr  8 08:54:29 2018] GET / => generated 20341 bytes in 85 msecs (HTTP/1.1 200) 2 headers in 88 bytes (5 switches on core 0)
+[pid: 676|app: 0|req: 43/67] 127.0.0.1 () {46 vars in 927 bytes} [Sun Apr  8 08:54:31 2018] GET / => generated 20341 bytes in 77 msecs (HTTP/1.1 200) 2 headers in 88 bytes (5 switches on core 0)
+[pid: 677|app: 0|req: 15/68] 127.0.0.1 () {44 vars in 905 bytes} [Sun Apr  8 09:03:04 2018] GET / => generated 20075 bytes in 154 msecs (HTTP/1.1 200) 2 headers in 88 bytes (5 switches on core 0)
+[pid: 677|app: 0|req: 16/69] 127.0.0.1 () {44 vars in 905 bytes} [Sun Apr  8 09:05:52 2018] GET / => generated 20447 bytes in 62 msecs (HTTP/1.1 200) 2 headers in 88 bytes (5 switches on core 0)
+[pid: 675|app: 0|req: 9/70] 127.0.0.1 () {44 vars in 905 bytes} [Sun Apr  8 09:05:55 2018] GET / => generated 20447 bytes in 252 msecs (HTTP/1.1 200) 2 headers in 88 bytes (5 switches on core 0)
+[pid: 676|app: 0|req: 44/71] 127.0.0.1 () {42 vars in 874 bytes} [Sun Apr  8 09:14:27 2018] GET / => generated 20865 bytes in 261 msecs (HTTP/1.1 200) 2 headers in 88 bytes (5 switches on core 0)
+[pid: 676|app: 0|req: 45/72] 127.0.0.1 () {44 vars in 905 bytes} [Sun Apr  8 09:15:34 2018] GET / => generated 21920 bytes in 104 msecs (HTTP/1.1 200) 2 headers in 88 bytes (5 switches on core 0)
+[pid: 677|app: 0|req: 17/73] 127.0.0.1 () {44 vars in 905 bytes} [Sun Apr  8 09:16:21 2018] GET / => generated 22014 bytes in 123 msecs (HTTP/1.1 200) 2 headers in 88 bytes (5 switches on core 0)
+[pid: 676|app: 0|req: 46/74] 127.0.0.1 () {46 vars in 927 bytes} [Sun Apr  8 09:16:26 2018] GET / => generated 22014 bytes in 101 msecs (HTTP/1.1 200) 2 headers in 88 bytes (5 switches on core 0)
+[pid: 677|app: 0|req: 18/75] 127.0.0.1 () {46 vars in 927 bytes} [Sun Apr  8 09:18:52 2018] GET / => generated 22106 bytes in 63 msecs (HTTP/1.1 200) 2 headers in 88 bytes (5 switches on core 0)
+[pid: 676|app: 0|req: 47/76] 127.0.0.1 () {46 vars in 927 bytes} [Sun Apr  8 09:18:55 2018] GET / => generated 22106 bytes in 79 msecs (HTTP/1.1 200) 2 headers in 88 bytes (5 switches on core 0)
+[pid: 676|app: 0|req: 48/77] 127.0.0.1 () {46 vars in 927 bytes} [Sun Apr  8 09:19:07 2018] GET / => generated 22026 bytes in 81 msecs (HTTP/1.1 200) 2 headers in 88 bytes (5 switches on core 0)
+[pid: 676|app: 0|req: 49/78] 127.0.0.1 () {46 vars in 927 bytes} [Sun Apr  8 09:19:09 2018] GET / => generated 22026 bytes in 67 msecs (HTTP/1.1 200) 2 headers in 88 bytes (5 switches on core 0)
+[pid: 676|app: 0|req: 50/79] 127.0.0.1 () {46 vars in 927 bytes} [Sun Apr  8 09:20:05 2018] GET / => generated 21549 bytes in 61 msecs (HTTP/1.1 200) 2 headers in 88 bytes (5 switches on core 0)
+[pid: 677|app: 0|req: 19/80] 127.0.0.1 () {46 vars in 927 bytes} [Sun Apr  8 09:20:16 2018] GET / => generated 19919 bytes in 138 msecs (HTTP/1.1 200) 2 headers in 88 bytes (5 switches on core 0)
+[pid: 677|app: 0|req: 20/81] 127.0.0.1 () {48 vars in 981 bytes} [Sun Apr  8 09:20:40 2018] GET /blog/34/ => generated 14129 bytes in 684 msecs (HTTP/1.1 200) 4 headers in 256 bytes (4 switches on core 0)
+[pid: 675|app: 0|req: 10/82] 127.0.0.1 () {48 vars in 1015 bytes} [Sun Apr  8 09:20:42 2018] GET /admin => generated 0 bytes in 28 msecs (HTTP/1.1 301) 2 headers in 93 bytes (2 switches on core 0)
+[pid: 677|app: 0|req: 21/83] 127.0.0.1 () {48 vars in 1017 bytes} [Sun Apr  8 09:20:42 2018] GET /admin/ => generated 0 bytes in 59 msecs (HTTP/1.1 302) 7 headers in 363 bytes (2 switches on core 0)
+[pid: 674|app: 0|req: 1/84] 127.0.0.1 () {48 vars in 1010 bytes} [Sun Apr  8 09:20:42 2018] GET /admin/login/?next=/admin/ => generated 3392 bytes in 1213 msecs (HTTP/1.1 200) 7 headers in 405 bytes (2 switches on core 0)
+[pid: 677|app: 0|req: 22/85] 127.0.0.1 () {54 vars in 1180 bytes} [Sun Apr  8 09:20:50 2018] POST /admin/login/?next=/admin/ => generated 0 bytes in 158 msecs (HTTP/1.1 302) 9 headers in 558 bytes (2 switches on core 0)
+[pid: 676|app: 0|req: 51/86] 127.0.0.1 () {48 vars in 1034 bytes} [Sun Apr  8 09:20:50 2018] GET /admin/ => generated 14313 bytes in 97 msecs (HTTP/1.1 200) 6 headers in 251 bytes (4 switches on core 0)
+[pid: 677|app: 0|req: 23/87] 127.0.0.1 () {48 vars in 1035 bytes} [Sun Apr  8 09:21:07 2018] GET /admin/blog/post/ => generated 17411 bytes in 268 msecs (HTTP/1.1 200) 7 headers in 405 bytes (5 switches on core 0)
+[pid: 676|app: 0|req: 52/88] 127.0.0.1 () {46 vars in 922 bytes} [Sun Apr  8 09:21:08 2018] GET /admin/jsi18n/ => generated 7682 bytes in 16 msecs (HTTP/1.1 200) 3 headers in 93 bytes (2 switches on core 0)
+[pid: 676|app: 0|req: 53/89] 127.0.0.1 () {48 vars in 1065 bytes} [Sun Apr  8 09:21:10 2018] GET /admin/blog/post/27/change/ => generated 21957 bytes in 120 msecs (HTTP/1.1 200) 7 headers in 405 bytes (5 switches on core 0)
+[pid: 676|app: 0|req: 54/90] 127.0.0.1 () {46 vars in 932 bytes} [Sun Apr  8 09:21:10 2018] GET /admin/jsi18n/ => generated 7682 bytes in 12 msecs (HTTP/1.1 200) 3 headers in 93 bytes (2 switches on core 0)
+[pid: 677|app: 0|req: 24/91] 127.0.0.1 () {42 vars in 906 bytes} [Sun Apr  8 09:24:58 2018] GET / => generated 20021 bytes in 67 msecs (HTTP/1.1 200) 2 headers in 88 bytes (5 switches on core 0)
+[pid: 676|app: 0|req: 55/92] 127.0.0.1 () {42 vars in 906 bytes} [Sun Apr  8 09:26:19 2018] GET / => generated 20021 bytes in 80 msecs (HTTP/1.1 200) 2 headers in 88 bytes (5 switches on core 0)
+Building prefix dict from the default dictionary ...
+Loading model from cache /var/folders/x6/w9h306m90858mkd2w2kx9zkh0000gn/T/jieba.cache
+Loading model cost 1.343 seconds.
+Prefix dict has been built succesfully.
+[pid: 676|app: 0|req: 56/93] 127.0.0.1 () {44 vars in 999 bytes} [Sun Apr  8 09:26:27 2018] GET /search/?q=%E5%BC%BA%E6%A3%AE => generated 10565 bytes in 1787 msecs (HTTP/1.1 200) 2 headers in 88 bytes (3 switches on core 0)
+[pid: 676|app: 0|req: 57/94] 127.0.0.1 () {44 vars in 988 bytes} [Sun Apr  8 09:26:32 2018] GET /blog/34/ => generated 14231 bytes in 348 msecs (HTTP/1.1 200) 4 headers in 256 bytes (4 switches on core 0)
+[pid: 676|app: 0|req: 58/95] 127.0.0.1 () {42 vars in 906 bytes} [Sun Apr  8 09:27:21 2018] GET / => generated 20021 bytes in 55 msecs (HTTP/1.1 200) 2 headers in 88 bytes (5 switches on core 0)
+[pid: 676|app: 0|req: 59/96] 127.0.0.1 () {42 vars in 906 bytes} [Sun Apr  8 09:28:24 2018] GET / => generated 20021 bytes in 85 msecs (HTTP/1.1 200) 2 headers in 88 bytes (5 switches on core 0)
+[pid: 676|app: 0|req: 60/97] 127.0.0.1 () {44 vars in 956 bytes} [Sun Apr  8 09:28:26 2018] GET /admin/ => generated 14313 bytes in 89 msecs (HTTP/1.1 200) 6 headers in 251 bytes (4 switches on core 0)
+Not Found: /favicon.ico
+[pid: 677|app: 0|req: 25/98] 127.0.0.1 () {42 vars in 891 bytes} [Sun Apr  8 09:28:27 2018] GET /favicon.ico => generated 3691 bytes in 16 msecs (HTTP/1.1 404) 2 headers in 80 bytes (2 switches on core 0)
+[pid: 676|app: 0|req: 61/99] 127.0.0.1 () {44 vars in 990 bytes} [Sun Apr  8 09:28:29 2018] GET /admin/blog/post/add/ => generated 15034 bytes in 162 msecs (HTTP/1.1 200) 7 headers in 405 bytes (4 switches on core 0)
+[pid: 677|app: 0|req: 26/100] 127.0.0.1 () {42 vars in 873 bytes} [Sun Apr  8 09:28:29 2018] GET /admin/jsi18n/ => generated 7682 bytes in 11 msecs (HTTP/1.1 200) 3 headers in 93 bytes (2 switches on core 0)
+[pid: 677|app: 0|req: 27/101] 127.0.0.1 () {42 vars in 906 bytes} [Sun Apr  8 09:33:39 2018] GET / => generated 20021 bytes in 70 msecs (HTTP/1.1 200) 2 headers in 88 bytes (5 switches on core 0)
+[pid: 676|app: 0|req: 62/102] 127.0.0.1 () {44 vars in 960 bytes} [Sun Apr  8 09:33:41 2018] GET /blog/36/ => generated 12942 bytes in 243 msecs (HTTP/1.1 200) 4 headers in 256 bytes (4 switches on core 0)
+[pid: 675|app: 0|req: 11/103] 127.0.0.1 () {44 vars in 964 bytes} [Sun Apr  8 09:33:43 2018] GET /admin/ => generated 14313 bytes in 201 msecs (HTTP/1.1 200) 6 headers in 251 bytes (4 switches on core 0)
+[pid: 676|app: 0|req: 63/104] 127.0.0.1 () {44 vars in 982 bytes} [Sun Apr  8 09:33:48 2018] GET /admin/blog/post/ => generated 17411 bytes in 93 msecs (HTTP/1.1 200) 7 headers in 405 bytes (5 switches on core 0)
+[pid: 676|app: 0|req: 64/105] 127.0.0.1 () {42 vars in 869 bytes} [Sun Apr  8 09:33:48 2018] GET /admin/jsi18n/ => generated 7682 bytes in 14 msecs (HTTP/1.1 200) 3 headers in 93 bytes (2 switches on core 0)
+[pid: 674|app: 0|req: 2/106] 127.0.0.1 () {44 vars in 1012 bytes} [Sun Apr  8 09:33:49 2018] GET /admin/blog/post/36/change/ => generated 18963 bytes in 270 msecs (HTTP/1.1 200) 7 headers in 405 bytes (5 switches on core 0)
+[pid: 676|app: 0|req: 65/107] 127.0.0.1 () {42 vars in 879 bytes} [Sun Apr  8 09:33:50 2018] GET /admin/jsi18n/ => generated 7682 bytes in 12 msecs (HTTP/1.1 200) 3 headers in 93 bytes (2 switches on core 0)
+[pid: 674|app: 0|req: 3/108] 127.0.0.1 () {44 vars in 1012 bytes} [Sun Apr  8 09:34:07 2018] GET /admin/blog/post/36/change/ => generated 18963 bytes in 80 msecs (HTTP/1.1 200) 7 headers in 405 bytes (5 switches on core 0)
+[pid: 675|app: 0|req: 12/109] 127.0.0.1 () {44 vars in 1012 bytes} [Sun Apr  8 09:35:33 2018] GET /admin/blog/post/36/change/ => generated 18963 bytes in 136 msecs (HTTP/1.1 200) 7 headers in 405 bytes (5 switches on core 0)
+[pid: 676|app: 0|req: 66/110] 127.0.0.1 () {42 vars in 906 bytes} [Sun Apr  8 09:35:44 2018] GET / => generated 20021 bytes in 67 msecs (HTTP/1.1 200) 2 headers in 88 bytes (5 switches on core 0)
+[pid: 675|app: 0|req: 13/111] 127.0.0.1 () {44 vars in 956 bytes} [Sun Apr  8 09:35:47 2018] GET /admin/ => generated 14313 bytes in 72 msecs (HTTP/1.1 200) 6 headers in 251 bytes (4 switches on core 0)
+[pid: 675|app: 0|req: 14/112] 127.0.0.1 () {44 vars in 982 bytes} [Sun Apr  8 09:35:50 2018] GET /admin/blog/post/ => generated 17411 bytes in 93 msecs (HTTP/1.1 200) 7 headers in 405 bytes (5 switches on core 0)
+[pid: 676|app: 0|req: 67/113] 127.0.0.1 () {42 vars in 869 bytes} [Sun Apr  8 09:35:50 2018] GET /admin/jsi18n/ => generated 7682 bytes in 11 msecs (HTTP/1.1 200) 3 headers in 93 bytes (2 switches on core 0)
+[pid: 676|app: 0|req: 68/114] 127.0.0.1 () {44 vars in 1012 bytes} [Sun Apr  8 09:35:51 2018] GET /admin/blog/post/36/change/ => generated 18963 bytes in 112 msecs (HTTP/1.1 200) 7 headers in 405 bytes (5 switches on core 0)
+[pid: 676|app: 0|req: 69/115] 127.0.0.1 () {42 vars in 879 bytes} [Sun Apr  8 09:35:52 2018] GET /admin/jsi18n/ => generated 7682 bytes in 17 msecs (HTTP/1.1 200) 3 headers in 93 bytes (2 switches on core 0)
+[pid: 677|app: 0|req: 28/116] 127.0.0.1 () {42 vars in 906 bytes} [Sun Apr  8 09:39:50 2018] GET / => generated 20021 bytes in 124 msecs (HTTP/1.1 200) 2 headers in 88 bytes (5 switches on core 0)
+[pid: 677|app: 0|req: 29/117] 127.0.0.1 () {44 vars in 956 bytes} [Sun Apr  8 09:39:52 2018] GET /admin/ => generated 14313 bytes in 100 msecs (HTTP/1.1 200) 6 headers in 251 bytes (4 switches on core 0)
+[pid: 677|app: 0|req: 30/118] 127.0.0.1 () {44 vars in 982 bytes} [Sun Apr  8 09:39:54 2018] GET /admin/blog/post/ => generated 17411 bytes in 95 msecs (HTTP/1.1 200) 7 headers in 405 bytes (5 switches on core 0)
+[pid: 676|app: 0|req: 70/119] 127.0.0.1 () {42 vars in 869 bytes} [Sun Apr  8 09:39:54 2018] GET /admin/jsi18n/ => generated 7682 bytes in 12 msecs (HTTP/1.1 200) 3 headers in 93 bytes (2 switches on core 0)
+[pid: 675|app: 0|req: 15/120] 127.0.0.1 () {44 vars in 1012 bytes} [Sun Apr  8 09:39:56 2018] GET /admin/blog/post/36/change/ => generated 18963 bytes in 114 msecs (HTTP/1.1 200) 7 headers in 405 bytes (5 switches on core 0)
+[pid: 676|app: 0|req: 71/121] 127.0.0.1 () {42 vars in 879 bytes} [Sun Apr  8 09:39:56 2018] GET /admin/jsi18n/ => generated 7682 bytes in 11 msecs (HTTP/1.1 200) 3 headers in 93 bytes (2 switches on core 0)
+[pid: 676|app: 0|req: 72/122] 127.0.0.1 () {52 vars in 1282 bytes} [Sun Apr  8 09:40:06 2018] POST /admin/blog/post/36/change/ => generated 0 bytes in 279 msecs (HTTP/1.1 302) 8 headers in 655 bytes (16 switches on core 0)
+[pid: 675|app: 0|req: 16/123] 127.0.0.1 () {46 vars in 1374 bytes} [Sun Apr  8 09:40:07 2018] GET /admin/blog/post/ => generated 17760 bytes in 213 msecs (HTTP/1.1 200) 8 headers in 489 bytes (5 switches on core 0)
+[pid: 676|app: 0|req: 73/124] 127.0.0.1 () {42 vars in 869 bytes} [Sun Apr  8 09:40:07 2018] GET /admin/jsi18n/ => generated 7682 bytes in 12 msecs (HTTP/1.1 200) 3 headers in 93 bytes (2 switches on core 0)
+[pid: 675|app: 0|req: 17/125] 127.0.0.1 () {44 vars in 1012 bytes} [Sun Apr  8 09:40:17 2018] GET /admin/blog/post/36/change/ => generated 18941 bytes in 106 msecs (HTTP/1.1 200) 7 headers in 405 bytes (5 switches on core 0)
+[pid: 676|app: 0|req: 74/126] 127.0.0.1 () {42 vars in 879 bytes} [Sun Apr  8 09:40:17 2018] GET /admin/jsi18n/ => generated 7682 bytes in 26 msecs (HTTP/1.1 200) 3 headers in 93 bytes (2 switches on core 0)
+[pid: 674|app: 0|req: 4/127] 127.0.0.1 () {42 vars in 906 bytes} [Sun Apr  8 09:40:22 2018] GET / => generated 20010 bytes in 66 msecs (HTTP/1.1 200) 2 headers in 88 bytes (5 switches on core 0)
+[pid: 676|app: 0|req: 75/128] 127.0.0.1 () {44 vars in 956 bytes} [Sun Apr  8 09:40:32 2018] GET /admin/ => generated 14313 bytes in 172 msecs (HTTP/1.1 200) 6 headers in 251 bytes (4 switches on core 0)
+[pid: 674|app: 0|req: 5/129] 127.0.0.1 () {44 vars in 982 bytes} [Sun Apr  8 09:40:35 2018] GET /admin/blog/post/ => generated 17411 bytes in 104 msecs (HTTP/1.1 200) 7 headers in 405 bytes (5 switches on core 0)
+[pid: 676|app: 0|req: 76/130] 127.0.0.1 () {42 vars in 869 bytes} [Sun Apr  8 09:40:35 2018] GET /admin/jsi18n/ => generated 7682 bytes in 9 msecs (HTTP/1.1 200) 3 headers in 93 bytes (2 switches on core 0)
+[pid: 677|app: 0|req: 31/131] 127.0.0.1 () {44 vars in 1012 bytes} [Sun Apr  8 09:40:36 2018] GET /admin/blog/post/36/change/ => generated 18941 bytes in 121 msecs (HTTP/1.1 200) 7 headers in 405 bytes (5 switches on core 0)
+[pid: 676|app: 0|req: 77/132] 127.0.0.1 () {42 vars in 879 bytes} [Sun Apr  8 09:40:36 2018] GET /admin/jsi18n/ => generated 7682 bytes in 29 msecs (HTTP/1.1 200) 3 headers in 93 bytes (2 switches on core 0)
+[pid: 676|app: 0|req: 78/133] 127.0.0.1 () {52 vars in 1280 bytes} [Sun Apr  8 09:40:41 2018] POST /admin/blog/post/36/change/ => generated 0 bytes in 1395 msecs (HTTP/1.1 302) 8 headers in 655 bytes (9 switches on core 0)
+[pid: 674|app: 0|req: 6/134] 127.0.0.1 () {46 vars in 1374 bytes} [Sun Apr  8 09:40:42 2018] GET /admin/blog/post/ => generated 17760 bytes in 63 msecs (HTTP/1.1 200) 8 headers in 489 bytes (5 switches on core 0)
+[pid: 677|app: 0|req: 32/135] 127.0.0.1 () {42 vars in 869 bytes} [Sun Apr  8 09:40:42 2018] GET /admin/jsi18n/ => generated 7682 bytes in 11 msecs (HTTP/1.1 200) 3 headers in 93 bytes (2 switches on core 0)
+[pid: 675|app: 0|req: 18/136] 127.0.0.1 () {44 vars in 1012 bytes} [Sun Apr  8 09:41:20 2018] GET /admin/blog/post/36/change/ => generated 18947 bytes in 102 msecs (HTTP/1.1 200) 7 headers in 405 bytes (5 switches on core 0)
+[pid: 676|app: 0|req: 79/137] 127.0.0.1 () {42 vars in 879 bytes} [Sun Apr  8 09:41:20 2018] GET /admin/jsi18n/ => generated 7682 bytes in 9 msecs (HTTP/1.1 200) 3 headers in 93 bytes (2 switches on core 0)
+[pid: 676|app: 0|req: 80/138] 127.0.0.1 () {44 vars in 1002 bytes} [Sun Apr  8 09:41:34 2018] GET /admin/blog/post/ => generated 17411 bytes in 66 msecs (HTTP/1.1 200) 7 headers in 405 bytes (5 switches on core 0)
+[pid: 676|app: 0|req: 81/139] 127.0.0.1 () {42 vars in 869 bytes} [Sun Apr  8 09:41:35 2018] GET /admin/jsi18n/ => generated 7682 bytes in 12 msecs (HTTP/1.1 200) 3 headers in 93 bytes (2 switches on core 0)
+[pid: 676|app: 0|req: 82/140] 127.0.0.1 () {44 vars in 1012 bytes} [Sun Apr  8 09:41:36 2018] GET /admin/blog/post/36/change/ => generated 18947 bytes in 101 msecs (HTTP/1.1 200) 7 headers in 405 bytes (5 switches on core 0)
+[pid: 675|app: 0|req: 19/141] 127.0.0.1 () {42 vars in 879 bytes} [Sun Apr  8 09:41:36 2018] GET /admin/jsi18n/ => generated 7682 bytes in 26 msecs (HTTP/1.1 200) 3 headers in 93 bytes (2 switches on core 0)
+[pid: 677|app: 0|req: 33/142] 127.0.0.1 () {44 vars in 1002 bytes} [Sun Apr  8 09:41:44 2018] GET /admin/blog/post/ => generated 17411 bytes in 76 msecs (HTTP/1.1 200) 7 headers in 405 bytes (4 switches on core 0)
+[pid: 671|app: 0|req: 2/143] 127.0.0.1 () {44 vars in 1012 bytes} [Sun Apr  8 09:41:45 2018] GET /admin/blog/post/36/change/ => generated 18947 bytes in 246 msecs (HTTP/1.1 200) 7 headers in 405 bytes (5 switches on core 0)
+[pid: 677|app: 0|req: 34/144] 127.0.0.1 () {42 vars in 879 bytes} [Sun Apr  8 09:41:45 2018] GET /admin/jsi18n/ => generated 7682 bytes in 21 msecs (HTTP/1.1 200) 3 headers in 93 bytes (2 switches on core 0)
+[pid: 676|app: 0|req: 83/145] 127.0.0.1 () {52 vars in 1295 bytes} [Sun Apr  8 09:41:57 2018] POST /admin/upload/kindeditor?dir=image => generated 88 bytes in 31 msecs (HTTP/1.1 200) 2 headers in 80 bytes (15 switches on core 0)
+[pid: 675|app: 0|req: 20/146] 127.0.0.1 () {52 vars in 1278 bytes} [Sun Apr  8 09:42:01 2018] POST /admin/blog/post/36/change/ => generated 0 bytes in 304 msecs (HTTP/1.1 302) 8 headers in 655 bytes (2 switches on core 0)
+[pid: 677|app: 0|req: 35/147] 127.0.0.1 () {46 vars in 1374 bytes} [Sun Apr  8 09:42:02 2018] GET /admin/blog/post/ => generated 17760 bytes in 64 msecs (HTTP/1.1 200) 8 headers in 489 bytes (4 switches on core 0)
+[pid: 676|app: 0|req: 84/148] 127.0.0.1 () {42 vars in 869 bytes} [Sun Apr  8 09:42:02 2018] GET /admin/jsi18n/ => generated 7682 bytes in 20 msecs (HTTP/1.1 200) 3 headers in 93 bytes (2 switches on core 0)
+[pid: 676|app: 0|req: 85/149] 127.0.0.1 () {44 vars in 976 bytes} [Sun Apr  8 09:42:03 2018] GET /blog/36/ => generated 13028 bytes in 219 msecs (HTTP/1.1 200) 4 headers in 256 bytes (4 switches on core 0)
+[pid: 676|app: 0|req: 86/150] 127.0.0.1 () {44 vars in 1002 bytes} [Sun Apr  8 09:42:10 2018] GET /admin/blog/post/ => generated 17411 bytes in 68 msecs (HTTP/1.1 200) 7 headers in 405 bytes (4 switches on core 0)
+[pid: 675|app: 0|req: 21/151] 127.0.0.1 () {44 vars in 1012 bytes} [Sun Apr  8 09:42:12 2018] GET /admin/blog/post/36/change/ => generated 19059 bytes in 97 msecs (HTTP/1.1 200) 7 headers in 405 bytes (5 switches on core 0)
+[pid: 676|app: 0|req: 87/152] 127.0.0.1 () {42 vars in 879 bytes} [Sun Apr  8 09:42:12 2018] GET /admin/jsi18n/ => generated 7682 bytes in 17 msecs (HTTP/1.1 200) 3 headers in 93 bytes (2 switches on core 0)
+[pid: 677|app: 0|req: 36/153] 127.0.0.1 () {52 vars in 1278 bytes} [Sun Apr  8 09:42:16 2018] POST /admin/blog/post/36/change/ => generated 0 bytes in 215 msecs (HTTP/1.1 302) 8 headers in 655 bytes (2 switches on core 0)
+[pid: 676|app: 0|req: 88/154] 127.0.0.1 () {46 vars in 1374 bytes} [Sun Apr  8 09:42:16 2018] GET /admin/blog/post/ => generated 17760 bytes in 69 msecs (HTTP/1.1 200) 8 headers in 489 bytes (5 switches on core 0)
+[pid: 676|app: 0|req: 89/155] 127.0.0.1 () {42 vars in 869 bytes} [Sun Apr  8 09:42:16 2018] GET /admin/jsi18n/ => generated 7682 bytes in 11 msecs (HTTP/1.1 200) 3 headers in 93 bytes (2 switches on core 0)
+[pid: 676|app: 0|req: 90/156] 127.0.0.1 () {42 vars in 906 bytes} [Sun Apr  8 09:44:24 2018] GET / => generated 20013 bytes in 66 msecs (HTTP/1.1 200) 2 headers in 88 bytes (5 switches on core 0)
+[pid: 675|app: 0|req: 22/157] 127.0.0.1 () {44 vars in 956 bytes} [Sun Apr  8 09:44:49 2018] GET /admin/ => generated 14363 bytes in 79 msecs (HTTP/1.1 200) 6 headers in 251 bytes (3 switches on core 0)
+[pid: 675|app: 0|req: 23/158] 127.0.0.1 () {44 vars in 982 bytes} [Sun Apr  8 09:44:52 2018] GET /admin/blog/post/ => generated 17411 bytes in 79 msecs (HTTP/1.1 200) 7 headers in 405 bytes (4 switches on core 0)
+[pid: 676|app: 0|req: 91/159] 127.0.0.1 () {42 vars in 869 bytes} [Sun Apr  8 09:44:52 2018] GET /admin/jsi18n/ => generated 7682 bytes in 10 msecs (HTTP/1.1 200) 3 headers in 93 bytes (2 switches on core 0)
+[pid: 676|app: 0|req: 92/160] 127.0.0.1 () {42 vars in 906 bytes} [Sun Apr  8 09:49:50 2018] GET / => generated 20013 bytes in 60 msecs (HTTP/1.1 200) 2 headers in 88 bytes (5 switches on core 0)
+Invalid HTTP_HOST header: '192.168.3.103:8888'. You may need to add '192.168.3.103' to ALLOWED_HOSTS.
+[pid: 677|app: 0|req: 37/161] 192.168.3.106 () {40 vars in 747 bytes} [Sun Apr  8 09:54:17 2018] GET / => generated 56460 bytes in 69 msecs (HTTP/1.1 400) 1 headers in 53 bytes (9 switches on core 0)
+Invalid HTTP_HOST header: '192.168.3.103:8888'. You may need to add '192.168.3.103' to ALLOWED_HOSTS.
+[pid: 677|app: 0|req: 38/162] 192.168.3.106 () {40 vars in 727 bytes} [Sun Apr  8 09:54:18 2018] GET /favicon.ico => generated 56550 bytes in 50 msecs (HTTP/1.1 400) 1 headers in 53 bytes (8 switches on core 0)
+Invalid HTTP_HOST header: '192.168.3.103:8888'. You may need to add '192.168.3.103' to ALLOWED_HOSTS.
+[pid: 677|app: 0|req: 39/163] 192.168.3.106 () {42 vars in 778 bytes} [Sun Apr  8 09:54:59 2018] GET / => generated 56595 bytes in 53 msecs (HTTP/1.1 400) 1 headers in 53 bytes (9 switches on core 0)
+Invalid HTTP_HOST header: '192.168.3.103:8888'. You may need to add '192.168.3.103' to ALLOWED_HOSTS.
+[pid: 676|app: 0|req: 93/164] 192.168.3.106 () {44 vars in 780 bytes} [Sun Apr  8 09:54:59 2018] GET /favicon.ico => generated 56811 bytes in 50 msecs (HTTP/1.1 400) 1 headers in 53 bytes (9 switches on core 0)
+Invalid HTTP_HOST header: '192.168.3.103:8888'. You may need to add '192.168.3.103' to ALLOWED_HOSTS.
+[pid: 675|app: 0|req: 24/165] 192.168.3.106 () {42 vars in 778 bytes} [Sun Apr  8 09:55:27 2018] GET / => generated 56595 bytes in 72 msecs (HTTP/1.1 400) 1 headers in 53 bytes (8 switches on core 0)
+Invalid HTTP_HOST header: '192.168.3.103:8888'. You may need to add '192.168.3.103' to ALLOWED_HOSTS.
+[pid: 676|app: 0|req: 94/166] 192.168.3.106 () {44 vars in 780 bytes} [Sun Apr  8 09:55:27 2018] GET /favicon.ico => generated 56811 bytes in 48 msecs (HTTP/1.1 400) 1 headers in 53 bytes (8 switches on core 0)
+Invalid HTTP_HOST header: '192.168.3.103:8888'. You may need to add '192.168.3.103' to ALLOWED_HOSTS.
+[pid: 677|app: 0|req: 40/167] 192.168.3.106 () {42 vars in 778 bytes} [Sun Apr  8 09:55:28 2018] GET / => generated 56595 bytes in 49 msecs (HTTP/1.1 400) 1 headers in 53 bytes (8 switches on core 0)
+Invalid HTTP_HOST header: '192.168.3.103:8888'. You may need to add '192.168.3.103' to ALLOWED_HOSTS.
+[pid: 676|app: 0|req: 95/168] 192.168.3.106 () {44 vars in 780 bytes} [Sun Apr  8 09:55:29 2018] GET /favicon.ico => generated 56811 bytes in 48 msecs (HTTP/1.1 400) 1 headers in 53 bytes (8 switches on core 0)
+Invalid HTTP_HOST header: '192.168.3.103:8888'. You may need to add '192.168.3.103' to ALLOWED_HOSTS.
+[pid: 675|app: 0|req: 25/169] 192.168.3.106 () {42 vars in 778 bytes} [Sun Apr  8 09:55:35 2018] GET / => generated 56595 bytes in 55 msecs (HTTP/1.1 400) 1 headers in 53 bytes (8 switches on core 0)
+Invalid HTTP_HOST header: '192.168.3.103:8888'. You may need to add '192.168.3.103' to ALLOWED_HOSTS.
+[pid: 677|app: 0|req: 41/170] 192.168.3.106 () {44 vars in 780 bytes} [Sun Apr  8 09:55:35 2018] GET /favicon.ico => generated 56811 bytes in 48 msecs (HTTP/1.1 400) 1 headers in 53 bytes (8 switches on core 0)
+Invalid HTTP_HOST header: '192.168.3.103:8888'. You may need to add '192.168.3.103' to ALLOWED_HOSTS.
+[pid: 677|app: 0|req: 42/171] 192.168.3.106 () {42 vars in 778 bytes} [Sun Apr  8 09:55:36 2018] GET / => generated 56595 bytes in 47 msecs (HTTP/1.1 400) 1 headers in 53 bytes (9 switches on core 0)
+Invalid HTTP_HOST header: '192.168.3.103:8888'. You may need to add '192.168.3.103' to ALLOWED_HOSTS.
+[pid: 676|app: 0|req: 96/172] 192.168.3.106 () {44 vars in 780 bytes} [Sun Apr  8 09:55:37 2018] GET /favicon.ico => generated 56811 bytes in 51 msecs (HTTP/1.1 400) 1 headers in 53 bytes (9 switches on core 0)
+Invalid HTTP_HOST header: '192.168.3.103:8888'. You may need to add '192.168.3.103' to ALLOWED_HOSTS.
+[pid: 676|app: 0|req: 97/173] 192.168.3.106 () {42 vars in 778 bytes} [Sun Apr  8 09:55:39 2018] GET / => generated 56595 bytes in 43 msecs (HTTP/1.1 400) 1 headers in 53 bytes (9 switches on core 0)
+Invalid HTTP_HOST header: '192.168.3.103:8888'. You may need to add '192.168.3.103' to ALLOWED_HOSTS.
+[pid: 677|app: 0|req: 43/174] 192.168.3.106 () {40 vars in 727 bytes} [Sun Apr  8 09:55:39 2018] GET /favicon.ico => generated 56550 bytes in 47 msecs (HTTP/1.1 400) 1 headers in 53 bytes (8 switches on core 0)
+Invalid HTTP_HOST header: '192.168.3.103:8888'. You may need to add '192.168.3.103' to ALLOWED_HOSTS.
+[pid: 676|app: 0|req: 98/175] 192.168.3.103 () {40 vars in 729 bytes} [Sun Apr  8 09:57:06 2018] GET / => generated 56430 bytes in 71 msecs (HTTP/1.1 400) 1 headers in 53 bytes (9 switches on core 0)
+Invalid HTTP_HOST header: '192.168.3.103:8888'. You may need to add '192.168.3.103' to ALLOWED_HOSTS.
+[pid: 676|app: 0|req: 99/176] 192.168.3.103 () {40 vars in 712 bytes} [Sun Apr  8 09:57:07 2018] GET /favicon.ico => generated 56523 bytes in 53 msecs (HTTP/1.1 400) 1 headers in 53 bytes (9 switches on core 0)
+...brutally killing workers...
+worker 7 buried after 2 seconds
+worker 6 buried after 2 seconds
+worker 5 buried after 2 seconds
+worker 4 buried after 2 seconds
+worker 3 buried after 2 seconds
+worker 2 buried after 2 seconds
+worker 1 buried after 2 seconds
+*** Starting uWSGI 2.0.17 (64bit) on [Sun Apr  8 10:15:57 2018] ***
+compiled with version: 4.2.1 Compatible Apple LLVM 9.1.0 (clang-902.0.39.1) on 06 April 2018 12:48:53
+os: Darwin-17.5.0 Darwin Kernel Version 17.5.0: Mon Mar  5 22:24:32 PST 2018; root:xnu-4570.51.1~1/RELEASE_X86_64
+nodename: Macintosh
+machine: x86_64
+clock source: unix
+detected number of CPU cores: 4
+current working directory: /Users/X/PycharmProjects/BlogProject
+writing pidfile to /tmp/BlogProject.pid
+detected binary path: /Library/Frameworks/Python.framework/Versions/3.5/bin/uwsgi
+!!! no internal routing support, rebuild with pcre support !!!
+chdir() to /Users/X/PycharmProjects/BlogProject/
+your processes number limit is 709
+your memory page size is 4096 bytes
+detected max file descriptor number: 256
+lock engine: OSX spinlocks
+thunder lock: disabled (you can enable it with --thunder-lock)
+uwsgi socket 0 bound to UNIX address /tmp/BlogProject.sock fd 3
+Python version: 3.5.1 (v3.5.1:37a07cee5969, Dec  5 2015, 21:12:44)  [GCC 4.2.1 (Apple Inc. build 5666) (dot 3)]
+PEP 405 virtualenv detected: /Users/X/PycharmProjects/BlogProject/venv
+Set PythonHome to /Users/X/PycharmProjects/BlogProject/venv
+*** Python threads support is disabled. You can enable it with --enable-threads ***
+Python main interpreter initialized at 0x7fa76b5023d0
+your server socket listen backlog is limited to 100 connections
+your mercy for graceful operations on workers is 60 seconds
+mapped 801768 bytes (782 KB) for 10 cores
+*** Operational MODE: preforking ***
+WSGI app 0 (mountpoint='') ready in 3 seconds on interpreter 0x7fa76b5023d0 pid: 597 (default app)
+*** uWSGI is running in multiple interpreter mode ***
+spawned uWSGI master process (pid: 597)
+spawned uWSGI worker 1 (pid: 604, cores: 1)
+spawned uWSGI worker 2 (pid: 605, cores: 1)
+spawned uWSGI worker 3 (pid: 606, cores: 1)
+spawned uWSGI worker 4 (pid: 607, cores: 1)
+spawned uWSGI worker 5 (pid: 608, cores: 1)
+spawned uWSGI worker 6 (pid: 609, cores: 1)
+spawned uWSGI worker 7 (pid: 610, cores: 1)
+spawned uWSGI worker 8 (pid: 611, cores: 1)
+spawned uWSGI worker 9 (pid: 612, cores: 1)
+spawned uWSGI worker 10 (pid: 613, cores: 1)
+SIGINT/SIGQUIT received...killing workers...
+worker 10 buried after 2 seconds
+worker 9 buried after 2 seconds
+worker 8 buried after 2 seconds
+worker 7 buried after 2 seconds
+worker 6 buried after 2 seconds
+worker 5 buried after 2 seconds
+worker 4 buried after 2 seconds
+worker 3 buried after 2 seconds
+worker 2 buried after 2 seconds
+worker 1 buried after 2 seconds
+goodbye to uWSGI.
+VACUUM: pidfile removed.
+VACUUM: unix socket /tmp/BlogProject.sock removed.
+*** Starting uWSGI 2.0.17 (64bit) on [Sun Apr  8 10:17:08 2018] ***
+compiled with version: 4.2.1 Compatible Apple LLVM 9.1.0 (clang-902.0.39.1) on 06 April 2018 12:48:53
+os: Darwin-17.5.0 Darwin Kernel Version 17.5.0: Mon Mar  5 22:24:32 PST 2018; root:xnu-4570.51.1~1/RELEASE_X86_64
+nodename: Macintosh
+machine: x86_64
+clock source: unix
+detected number of CPU cores: 4
+current working directory: /Users/X/PycharmProjects/BlogProject
+writing pidfile to /tmp/BlogProject.pid
+detected binary path: /Library/Frameworks/Python.framework/Versions/3.5/bin/uwsgi
+!!! no internal routing support, rebuild with pcre support !!!
+chdir() to /Users/X/PycharmProjects/BlogProject/
+your processes number limit is 709
+your memory page size is 4096 bytes
+detected max file descriptor number: 256
+lock engine: OSX spinlocks
+thunder lock: disabled (you can enable it with --thunder-lock)
+uwsgi socket 0 bound to UNIX address /tmp/BlogProject.sock fd 3
+Python version: 3.5.1 (v3.5.1:37a07cee5969, Dec  5 2015, 21:12:44)  [GCC 4.2.1 (Apple Inc. build 5666) (dot 3)]
+PEP 405 virtualenv detected: /Users/X/PycharmProjects/BlogProject/venv
+Set PythonHome to /Users/X/PycharmProjects/BlogProject/venv
+*** Python threads support is disabled. You can enable it with --enable-threads ***
+Python main interpreter initialized at 0x7fea0f500920
+your server socket listen backlog is limited to 100 connections
+your mercy for graceful operations on workers is 60 seconds
+mapped 801768 bytes (782 KB) for 10 cores
+*** Operational MODE: preforking ***
+WSGI app 0 (mountpoint='') ready in 3 seconds on interpreter 0x7fea0f500920 pid: 649 (default app)
+*** uWSGI is running in multiple interpreter mode ***
+spawned uWSGI master process (pid: 649)
+spawned uWSGI worker 1 (pid: 656, cores: 1)
+spawned uWSGI worker 2 (pid: 657, cores: 1)
+spawned uWSGI worker 3 (pid: 658, cores: 1)
+spawned uWSGI worker 4 (pid: 659, cores: 1)
+spawned uWSGI worker 5 (pid: 660, cores: 1)
+spawned uWSGI worker 6 (pid: 661, cores: 1)
+spawned uWSGI worker 7 (pid: 662, cores: 1)
+spawned uWSGI worker 8 (pid: 663, cores: 1)
+spawned uWSGI worker 9 (pid: 664, cores: 1)
+spawned uWSGI worker 10 (pid: 665, cores: 1)
+SIGINT/SIGQUIT received...killing workers...
+worker 10 buried after 3 seconds
+worker 9 buried after 3 seconds
+worker 8 buried after 3 seconds
+worker 7 buried after 3 seconds
+worker 6 buried after 3 seconds
+worker 5 buried after 3 seconds
+worker 4 buried after 3 seconds
+worker 3 buried after 3 seconds
+worker 2 buried after 3 seconds
+worker 1 buried after 3 seconds
+goodbye to uWSGI.
+VACUUM: pidfile removed.
+VACUUM: unix socket /tmp/BlogProject.sock removed.
+*** Starting uWSGI 2.0.17 (64bit) on [Sun Apr  8 10:18:48 2018] ***
+compiled with version: 4.2.1 Compatible Apple LLVM 9.1.0 (clang-902.0.39.1) on 06 April 2018 12:48:53
+os: Darwin-17.5.0 Darwin Kernel Version 17.5.0: Mon Mar  5 22:24:32 PST 2018; root:xnu-4570.51.1~1/RELEASE_X86_64
+nodename: Macintosh
+machine: x86_64
+clock source: unix
+detected number of CPU cores: 4
+current working directory: /Users/X/PycharmProjects/BlogProject
+writing pidfile to /tmp/BlogProject.pid
+detected binary path: /Library/Frameworks/Python.framework/Versions/3.5/bin/uwsgi
+!!! no internal routing support, rebuild with pcre support !!!
+chdir() to /Users/X/PycharmProjects/BlogProject/
+your processes number limit is 709
+your memory page size is 4096 bytes
+detected max file descriptor number: 256
+lock engine: OSX spinlocks
+thunder lock: disabled (you can enable it with --thunder-lock)
+uwsgi socket 0 bound to UNIX address /tmp/BlogProject.sock fd 3
+Python version: 3.5.1 (v3.5.1:37a07cee5969, Dec  5 2015, 21:12:44)  [GCC 4.2.1 (Apple Inc. build 5666) (dot 3)]
+PEP 405 virtualenv detected: /Users/X/PycharmProjects/BlogProject/venv
+Set PythonHome to /Users/X/PycharmProjects/BlogProject/venv
+*** Python threads support is disabled. You can enable it with --enable-threads ***
+Python main interpreter initialized at 0x7f897b403290
+your server socket listen backlog is limited to 100 connections
+your mercy for graceful operations on workers is 60 seconds
+mapped 801768 bytes (782 KB) for 10 cores
+*** Operational MODE: preforking ***
+WSGI app 0 (mountpoint='') ready in 2 seconds on interpreter 0x7f897b403290 pid: 728 (default app)
+*** uWSGI is running in multiple interpreter mode ***
+spawned uWSGI master process (pid: 728)
+spawned uWSGI worker 1 (pid: 735, cores: 1)
+spawned uWSGI worker 2 (pid: 736, cores: 1)
+spawned uWSGI worker 3 (pid: 737, cores: 1)
+spawned uWSGI worker 4 (pid: 738, cores: 1)
+spawned uWSGI worker 5 (pid: 739, cores: 1)
+spawned uWSGI worker 6 (pid: 740, cores: 1)
+spawned uWSGI worker 7 (pid: 741, cores: 1)
+spawned uWSGI worker 8 (pid: 742, cores: 1)
+spawned uWSGI worker 9 (pid: 743, cores: 1)
+spawned uWSGI worker 10 (pid: 744, cores: 1)
+SIGINT/SIGQUIT received...killing workers...
+worker 10 buried after 3 seconds
+worker 9 buried after 3 seconds
+worker 8 buried after 3 seconds
+worker 7 buried after 3 seconds
+worker 6 buried after 3 seconds
+worker 5 buried after 3 seconds
+worker 4 buried after 3 seconds
+worker 3 buried after 3 seconds
+worker 2 buried after 3 seconds
+worker 1 buried after 3 seconds
+goodbye to uWSGI.
+VACUUM: pidfile removed.
+VACUUM: unix socket /tmp/BlogProject.sock removed.
+*** Starting uWSGI 2.0.17 (64bit) on [Sun Apr  8 10:21:02 2018] ***
+compiled with version: 4.2.1 Compatible Apple LLVM 9.1.0 (clang-902.0.39.1) on 06 April 2018 12:48:53
+os: Darwin-17.5.0 Darwin Kernel Version 17.5.0: Mon Mar  5 22:24:32 PST 2018; root:xnu-4570.51.1~1/RELEASE_X86_64
+nodename: Macintosh
+machine: x86_64
+clock source: unix
+detected number of CPU cores: 4
+current working directory: /Users/X/PycharmProjects/BlogProject
+writing pidfile to /tmp/BlogProject.pid
+detected binary path: /Library/Frameworks/Python.framework/Versions/3.5/bin/uwsgi
+!!! no internal routing support, rebuild with pcre support !!!
+chdir() to /Users/X/PycharmProjects/BlogProject/
+your processes number limit is 709
+your memory page size is 4096 bytes
+detected max file descriptor number: 256
+lock engine: OSX spinlocks
+thunder lock: disabled (you can enable it with --thunder-lock)
+uwsgi socket 0 bound to UNIX address /tmp/BlogProject.sock fd 3
+Python version: 3.5.1 (v3.5.1:37a07cee5969, Dec  5 2015, 21:12:44)  [GCC 4.2.1 (Apple Inc. build 5666) (dot 3)]
+PEP 405 virtualenv detected: /Users/X/PycharmProjects/BlogProject/venv
+Set PythonHome to /Users/X/PycharmProjects/BlogProject/venv
+*** Python threads support is disabled. You can enable it with --enable-threads ***
+Python main interpreter initialized at 0x7fe8edc03880
+your server socket listen backlog is limited to 100 connections
+your mercy for graceful operations on workers is 60 seconds
+mapped 801768 bytes (782 KB) for 10 cores
+*** Operational MODE: preforking ***
+WSGI app 0 (mountpoint='') ready in 3 seconds on interpreter 0x7fe8edc03880 pid: 804 (default app)
+*** uWSGI is running in multiple interpreter mode ***
+spawned uWSGI master process (pid: 804)
+spawned uWSGI worker 1 (pid: 811, cores: 1)
+spawned uWSGI worker 2 (pid: 812, cores: 1)
+spawned uWSGI worker 3 (pid: 813, cores: 1)
+spawned uWSGI worker 4 (pid: 814, cores: 1)
+spawned uWSGI worker 5 (pid: 815, cores: 1)
+spawned uWSGI worker 6 (pid: 816, cores: 1)
+spawned uWSGI worker 7 (pid: 817, cores: 1)
+spawned uWSGI worker 8 (pid: 818, cores: 1)
+spawned uWSGI worker 9 (pid: 819, cores: 1)
+spawned uWSGI worker 10 (pid: 820, cores: 1)
+SIGINT/SIGQUIT received...killing workers...
+worker 10 buried after 3 seconds
+worker 9 buried after 3 seconds
+worker 8 buried after 3 seconds
+worker 7 buried after 3 seconds
+worker 6 buried after 3 seconds
+worker 5 buried after 3 seconds
+worker 4 buried after 3 seconds
+worker 3 buried after 3 seconds
+worker 2 buried after 3 seconds
+worker 1 buried after 3 seconds
+goodbye to uWSGI.
+VACUUM: pidfile removed.
+VACUUM: unix socket /tmp/BlogProject.sock removed.
+*** Starting uWSGI 2.0.17 (64bit) on [Sun Apr  8 10:22:56 2018] ***
+compiled with version: 4.2.1 Compatible Apple LLVM 9.1.0 (clang-902.0.39.1) on 07 April 2018 01:59:50
+os: Darwin-17.5.0 Darwin Kernel Version 17.5.0: Mon Mar  5 22:24:32 PST 2018; root:xnu-4570.51.1~1/RELEASE_X86_64
+nodename: Macintosh
+machine: x86_64
+clock source: unix
+pcre jit disabled
+detected number of CPU cores: 4
+current working directory: /Users/X/PycharmProjects/BlogProject
+writing pidfile to /tmp/BlogProject.pid
+detected binary path: /Users/X/PycharmProjects/BlogProject/venv/bin/uwsgi
+chdir() to /Users/X/PycharmProjects/BlogProject/
+your processes number limit is 709
+your memory page size is 4096 bytes
+detected max file descriptor number: 10240
+lock engine: OSX spinlocks
+thunder lock: disabled (you can enable it with --thunder-lock)
+uwsgi socket 0 bound to UNIX address /tmp/BlogProject.sock fd 3
+Python version: 3.5.1 (v3.5.1:37a07cee5969, Dec  5 2015, 21:12:44)  [GCC 4.2.1 (Apple Inc. build 5666) (dot 3)]
+PEP 405 virtualenv detected: /Users/X/PycharmProjects/BlogProject/venv
+Set PythonHome to /Users/X/PycharmProjects/BlogProject/venv
+*** Python threads support is disabled. You can enable it with --enable-threads ***
+Python main interpreter initialized at 0x7fbf2a500a40
+your server socket listen backlog is limited to 100 connections
+your mercy for graceful operations on workers is 60 seconds
+mapped 801768 bytes (782 KB) for 10 cores
+*** Operational MODE: preforking ***
+WSGI app 0 (mountpoint='') ready in 3 seconds on interpreter 0x7fbf2a500a40 pid: 872 (default app)
+*** uWSGI is running in multiple interpreter mode ***
+spawned uWSGI master process (pid: 872)
+spawned uWSGI worker 1 (pid: 880, cores: 1)
+spawned uWSGI worker 2 (pid: 881, cores: 1)
+spawned uWSGI worker 3 (pid: 882, cores: 1)
+spawned uWSGI worker 4 (pid: 883, cores: 1)
+spawned uWSGI worker 5 (pid: 884, cores: 1)
+spawned uWSGI worker 6 (pid: 885, cores: 1)
+spawned uWSGI worker 7 (pid: 886, cores: 1)
+spawned uWSGI worker 8 (pid: 887, cores: 1)
+spawned uWSGI worker 9 (pid: 888, cores: 1)
+spawned uWSGI worker 10 (pid: 889, cores: 1)
+...brutally killing workers...
+worker 10 buried after 2 seconds
+worker 9 buried after 2 seconds
+worker 8 buried after 2 seconds
+worker 7 buried after 2 seconds
+worker 6 buried after 2 seconds
+worker 5 buried after 2 seconds
+worker 4 buried after 2 seconds
+worker 3 buried after 2 seconds
+worker 2 buried after 2 seconds
+worker 1 buried after 2 seconds
+binary reloading uWSGI...
+chdir() to /Users/X/PycharmProjects/BlogProject
+closing all non-uwsgi socket fds > 2 (max_fd = 10240)...
+found fd 3 mapped to socket 0 (/tmp/BlogProject.sock)
+running /Users/X/PycharmProjects/BlogProject/venv/bin/uwsgi
+*** Starting uWSGI 2.0.17 (64bit) on [Sun Apr  8 10:26:24 2018] ***
+compiled with version: 4.2.1 Compatible Apple LLVM 9.1.0 (clang-902.0.39.1) on 06 April 2018 12:48:53
+os: Darwin-17.5.0 Darwin Kernel Version 17.5.0: Mon Mar  5 22:24:32 PST 2018; root:xnu-4570.51.1~1/RELEASE_X86_64
+nodename: Macintosh
+machine: x86_64
+clock source: unix
+detected number of CPU cores: 4
+current working directory: /Users/X/PycharmProjects/BlogProject
+writing pidfile to /tmp/BlogProject.pid
+detected binary path: /Library/Frameworks/Python.framework/Versions/3.5/bin/uwsgi
+!!! no internal routing support, rebuild with pcre support !!!
+chdir() to /Users/X/PycharmProjects/BlogProject/
+your processes number limit is 709
+your memory page size is 4096 bytes
+detected max file descriptor number: 256
+lock engine: OSX spinlocks
+thunder lock: disabled (you can enable it with --thunder-lock)
+uwsgi socket 0 bound to UNIX address /tmp/BlogProject.sock fd 3
+Python version: 3.5.1 (v3.5.1:37a07cee5969, Dec  5 2015, 21:12:44)  [GCC 4.2.1 (Apple Inc. build 5666) (dot 3)]
+PEP 405 virtualenv detected: /Users/X/PycharmProjects/BlogProject/venv
+Set PythonHome to /Users/X/PycharmProjects/BlogProject/venv
+*** Python threads support is disabled. You can enable it with --enable-threads ***
+Python main interpreter initialized at 0x7fb873604170
+your server socket listen backlog is limited to 100 connections
+your mercy for graceful operations on workers is 60 seconds
+mapped 801768 bytes (782 KB) for 10 cores
+*** Operational MODE: preforking ***
+WSGI app 0 (mountpoint='') ready in 5 seconds on interpreter 0x7fb873604170 pid: 514 (default app)
+*** uWSGI is running in multiple interpreter mode ***
+spawned uWSGI master process (pid: 514)
+spawned uWSGI worker 1 (pid: 544, cores: 1)
+spawned uWSGI worker 2 (pid: 545, cores: 1)
+spawned uWSGI worker 3 (pid: 546, cores: 1)
+spawned uWSGI worker 4 (pid: 547, cores: 1)
+spawned uWSGI worker 5 (pid: 548, cores: 1)
+spawned uWSGI worker 6 (pid: 549, cores: 1)
+spawned uWSGI worker 7 (pid: 550, cores: 1)
+spawned uWSGI worker 8 (pid: 551, cores: 1)
+spawned uWSGI worker 9 (pid: 552, cores: 1)
+spawned uWSGI worker 10 (pid: 553, cores: 1)
+[pid: 552|app: 0|req: 1/1] 127.0.0.1 () {42 vars in 906 bytes} [Sun Apr  8 10:26:29 2018] GET / => generated 20013 bytes in 3018 msecs (HTTP/1.1 200) 2 headers in 88 bytes (5 switches on core 0)
+...brutally killing workers...
+worker 10 buried after 2 seconds
+worker 9 buried after 2 seconds
+worker 8 buried after 2 seconds
+worker 7 buried after 2 seconds
+worker 6 buried after 2 seconds
+worker 5 buried after 2 seconds
+worker 4 buried after 2 seconds
+worker 3 buried after 2 seconds
+worker 2 buried after 2 seconds
+worker 1 buried after 2 seconds
+binary reloading uWSGI...
+chdir() to /Users/X/PycharmProjects/BlogProject
+closing all non-uwsgi socket fds > 2 (max_fd = 256)...
+found fd 3 mapped to socket 0 (/tmp/BlogProject.sock)
+running /Library/Frameworks/Python.framework/Versions/3.5/bin/uwsgi
+[uWSGI] getting INI configuration from BlogProject_uwsgi.ini
+*** Starting uWSGI 2.0.17 (64bit) on [Sun Apr  8 10:41:01 2018] ***
+compiled with version: 4.2.1 Compatible Apple LLVM 9.1.0 (clang-902.0.39.1) on 06 April 2018 12:48:53
+os: Darwin-17.5.0 Darwin Kernel Version 17.5.0: Mon Mar  5 22:24:32 PST 2018; root:xnu-4570.51.1~1/RELEASE_X86_64
+nodename: Macintosh
+machine: x86_64
+clock source: unix
+detected number of CPU cores: 4
+current working directory: /Users/X/PycharmProjects/BlogProject
+detected binary path: /Library/Frameworks/Python.framework/Versions/3.5/bin/uwsgi
+!!! no internal routing support, rebuild with pcre support !!!
+chdir() to /Users/X/PycharmProjects/BlogProject/
+your processes number limit is 709
+your memory page size is 4096 bytes
+detected max file descriptor number: 256
+lock engine: OSX spinlocks
+thunder lock: disabled (you can enable it with --thunder-lock)
+uwsgi socket 0 inherited UNIX address /tmp/BlogProject.sock fd 3
+Python version: 3.5.1 (v3.5.1:37a07cee5969, Dec  5 2015, 21:12:44)  [GCC 4.2.1 (Apple Inc. build 5666) (dot 3)]
+PEP 405 virtualenv detected: /Users/X/PycharmProjects/BlogProject/venv
+Set PythonHome to /Users/X/PycharmProjects/BlogProject/venv
+*** Python threads support is disabled. You can enable it with --enable-threads ***
+Python main interpreter initialized at 0x7f9d05d00c60
+your server socket listen backlog is limited to 100 connections
+your mercy for graceful operations on workers is 60 seconds
+mapped 801768 bytes (782 KB) for 10 cores
+*** Operational MODE: preforking ***
+*** Starting uWSGI 2.0.17 (64bit) on [Sun Apr  8 10:42:51 2018] ***
+compiled with version: 4.2.1 Compatible Apple LLVM 9.1.0 (clang-902.0.39.1) on 06 April 2018 12:48:53
+os: Darwin-17.5.0 Darwin Kernel Version 17.5.0: Mon Mar  5 22:24:32 PST 2018; root:xnu-4570.51.1~1/RELEASE_X86_64
+nodename: Macintosh
+machine: x86_64
+clock source: unix
+detected number of CPU cores: 4
+current working directory: /Users/X/PycharmProjects/BlogProject
+writing pidfile to /tmp/BlogProject.pid
+detected binary path: /Library/Frameworks/Python.framework/Versions/3.5/bin/uwsgi
+!!! no internal routing support, rebuild with pcre support !!!
+chdir() to /Users/X/PycharmProjects/BlogProject/
+your processes number limit is 709
+your memory page size is 4096 bytes
+detected max file descriptor number: 256
+lock engine: OSX spinlocks
+thunder lock: disabled (you can enable it with --thunder-lock)
+uwsgi socket 0 bound to UNIX address /tmp/BlogProject.sock fd 3
+Python version: 3.5.1 (v3.5.1:37a07cee5969, Dec  5 2015, 21:12:44)  [GCC 4.2.1 (Apple Inc. build 5666) (dot 3)]
+PEP 405 virtualenv detected: /Users/X/PycharmProjects/BlogProject/venv
+Set PythonHome to /Users/X/PycharmProjects/BlogProject/venv
+*** Python threads support is disabled. You can enable it with --enable-threads ***
+Python main interpreter initialized at 0x7fb25c403e00
+your server socket listen backlog is limited to 100 connections
+your mercy for graceful operations on workers is 60 seconds
+mapped 801768 bytes (782 KB) for 10 cores
+*** Operational MODE: preforking ***
+WSGI app 0 (mountpoint='') ready in 4 seconds on interpreter 0x7fb25c403e00 pid: 591 (default app)
+*** uWSGI is running in multiple interpreter mode ***
+spawned uWSGI master process (pid: 591)
+spawned uWSGI worker 1 (pid: 598, cores: 1)
+spawned uWSGI worker 2 (pid: 599, cores: 1)
+spawned uWSGI worker 3 (pid: 600, cores: 1)
+spawned uWSGI worker 4 (pid: 601, cores: 1)
+spawned uWSGI worker 5 (pid: 602, cores: 1)
+spawned uWSGI worker 6 (pid: 603, cores: 1)
+spawned uWSGI worker 7 (pid: 604, cores: 1)
+spawned uWSGI worker 8 (pid: 605, cores: 1)
+spawned uWSGI worker 9 (pid: 606, cores: 1)
+spawned uWSGI worker 10 (pid: 607, cores: 1)
+[pid: 598|app: 0|req: 1/1] 127.0.0.1 () {44 vars in 937 bytes} [Sun Apr  8 10:42:55 2018] GET / => generated 20013 bytes in 1227 msecs (HTTP/1.1 200) 2 headers in 88 bytes (4 switches on core 0)
+[pid: 606|app: 0|req: 1/2] 127.0.0.1 () {42 vars in 906 bytes} [Sun Apr  8 10:50:31 2018] GET / => generated 20013 bytes in 1124 msecs (HTTP/1.1 200) 2 headers in 88 bytes (5 switches on core 0)
+[pid: 603|app: 0|req: 1/3] 127.0.0.1 () {44 vars in 944 bytes} [Sun Apr  8 10:50:35 2018] GET / => generated 20013 bytes in 937 msecs (HTTP/1.1 200) 2 headers in 88 bytes (4 switches on core 0)
+Building prefix dict from the default dictionary ...
+Dumping model to file cache /var/folders/x6/w9h306m90858mkd2w2kx9zkh0000gn/T/jieba.cache
+Loading model cost 1.779 seconds.
+Prefix dict has been built succesfully.
+[pid: 606|app: 0|req: 2/4] 127.0.0.1 () {44 vars in 960 bytes} [Sun Apr  8 10:50:37 2018] GET /blog/36/ => generated 12942 bytes in 2218 msecs (HTTP/1.1 200) 4 headers in 256 bytes (3 switches on core 0)
+[pid: 606|app: 0|req: 3/5] 127.0.0.1 () {44 vars in 968 bytes} [Sun Apr  8 10:50:43 2018] GET /blog/34/ => generated 14231 bytes in 1315 msecs (HTTP/1.1 200) 4 headers in 256 bytes (4 switches on core 0)
+[pid: 606|app: 0|req: 4/6] 127.0.0.1 () {44 vars in 968 bytes} [Sun Apr  8 10:50:46 2018] GET /blog/33/ => generated 35002 bytes in 725 msecs (HTTP/1.1 200) 4 headers in 256 bytes (6 switches on core 0)
+[pid: 606|app: 0|req: 5/7] 127.0.0.1 () {44 vars in 968 bytes} [Sun Apr  8 10:50:48 2018] GET /blog/31/ => generated 15445 bytes in 253 msecs (HTTP/1.1 200) 4 headers in 256 bytes (3 switches on core 0)
+Building prefix dict from the default dictionary ...
+Loading model from cache /var/folders/x6/w9h306m90858mkd2w2kx9zkh0000gn/T/jieba.cache
+Loading model cost 1.264 seconds.
+Prefix dict has been built succesfully.
+[pid: 605|app: 0|req: 1/8] 127.0.0.1 () {44 vars in 968 bytes} [Sun Apr  8 10:50:50 2018] GET /blog/27/ => generated 15489 bytes in 2755 msecs (HTTP/1.1 200) 4 headers in 256 bytes (4 switches on core 0)
+[pid: 605|app: 0|req: 2/9] 127.0.0.1 () {44 vars in 968 bytes} [Sun Apr  8 10:50:57 2018] GET /blog/36/ => generated 12942 bytes in 212 msecs (HTTP/1.1 200) 4 headers in 256 bytes (4 switches on core 0)
+[pid: 606|app: 0|req: 6/10] 127.0.0.1 () {44 vars in 968 bytes} [Sun Apr  8 10:50:59 2018] GET /blog/33/ => generated 35002 bytes in 1743 msecs (HTTP/1.1 200) 4 headers in 256 bytes (6 switches on core 0)
+[pid: 606|app: 0|req: 7/11] 127.0.0.1 () {48 vars in 1021 bytes} [Sun Apr  8 10:51:13 2018] GET /blog/36/ => generated 12942 bytes in 162 msecs (HTTP/1.1 200) 4 headers in 256 bytes (3 switches on core 0)
+[pid: 606|app: 0|req: 8/12] 127.0.0.1 () {48 vars in 1021 bytes} [Sun Apr  8 10:51:41 2018] GET /blog/33/ => generated 35002 bytes in 823 msecs (HTTP/1.1 200) 4 headers in 256 bytes (7 switches on core 0)
+Building prefix dict from the default dictionary ...
+Loading model from cache /var/folders/x6/w9h306m90858mkd2w2kx9zkh0000gn/T/jieba.cache
+Loading model cost 1.365 seconds.
+Prefix dict has been built succesfully.
+[pid: 607|app: 0|req: 1/13] 127.0.0.1 () {48 vars in 1021 bytes} [Sun Apr  8 10:52:06 2018] GET /blog/27/ => generated 15489 bytes in 2950 msecs (HTTP/1.1 200) 4 headers in 256 bytes (4 switches on core 0)
+[pid: 605|app: 0|req: 3/14] 127.0.0.1 () {44 vars in 964 bytes} [Sun Apr  8 10:52:58 2018] GET /admin/ => generated 14363 bytes in 95 msecs (HTTP/1.1 200) 6 headers in 251 bytes (4 switches on core 0)
+[pid: 606|app: 0|req: 9/15] 127.0.0.1 () {42 vars in 891 bytes} [Sun Apr  8 10:52:59 2018] GET /favicon.ico => generated 2664 bytes in 49 msecs (HTTP/1.1 404) 3 headers in 109 bytes (2 switches on core 0)
+[pid: 605|app: 0|req: 4/16] 127.0.0.1 () {44 vars in 982 bytes} [Sun Apr  8 10:53:01 2018] GET /admin/blog/post/ => generated 17427 bytes in 84 msecs (HTTP/1.1 200) 7 headers in 405 bytes (5 switches on core 0)
+[pid: 606|app: 0|req: 10/17] 127.0.0.1 () {42 vars in 869 bytes} [Sun Apr  8 10:53:01 2018] GET /admin/jsi18n/ => generated 7682 bytes in 10 msecs (HTTP/1.1 200) 3 headers in 93 bytes (2 switches on core 0)
+[pid: 606|app: 0|req: 11/18] 127.0.0.1 () {44 vars in 1012 bytes} [Sun Apr  8 10:53:03 2018] GET /admin/blog/post/36/change/ => generated 18963 bytes in 112 msecs (HTTP/1.1 200) 7 headers in 405 bytes (4 switches on core 0)
+[pid: 606|app: 0|req: 12/19] 127.0.0.1 () {42 vars in 879 bytes} [Sun Apr  8 10:53:03 2018] GET /admin/jsi18n/ => generated 7682 bytes in 16 msecs (HTTP/1.1 200) 3 headers in 93 bytes (2 switches on core 0)
+[pid: 605|app: 0|req: 5/20] 127.0.0.1 () {52 vars in 1280 bytes} [Sun Apr  8 10:53:09 2018] POST /admin/blog/post/36/change/ => generated 0 bytes in 266 msecs (HTTP/1.1 302) 8 headers in 655 bytes (9 switches on core 0)
+[pid: 606|app: 0|req: 13/21] 127.0.0.1 () {46 vars in 1374 bytes} [Sun Apr  8 10:53:09 2018] GET /admin/blog/post/ => generated 17776 bytes in 152 msecs (HTTP/1.1 200) 8 headers in 489 bytes (5 switches on core 0)
+[pid: 606|app: 0|req: 14/22] 127.0.0.1 () {42 vars in 869 bytes} [Sun Apr  8 10:53:09 2018] GET /admin/jsi18n/ => generated 7682 bytes in 10 msecs (HTTP/1.1 200) 3 headers in 93 bytes (2 switches on core 0)
+[pid: 607|app: 0|req: 2/23] 127.0.0.1 () {44 vars in 976 bytes} [Sun Apr  8 10:53:15 2018] GET /blog/36/ => generated 12942 bytes in 1479 msecs (HTTP/1.1 200) 4 headers in 256 bytes (4 switches on core 0)
+[pid: 604|app: 0|req: 1/24] 127.0.0.1 () {44 vars in 952 bytes} [Sun Apr  8 10:53:18 2018] GET / => generated 20021 bytes in 1127 msecs (HTTP/1.1 200) 2 headers in 88 bytes (4 switches on core 0)
+[pid: 606|app: 0|req: 15/25] 127.0.0.1 () {42 vars in 906 bytes} [Sun Apr  8 18:21:40 2018] GET / => generated 20021 bytes in 212 msecs (HTTP/1.1 200) 2 headers in 88 bytes (5 switches on core 0)
+[pid: 607|app: 0|req: 3/26] 127.0.0.1 () {44 vars in 960 bytes} [Sun Apr  8 18:21:43 2018] GET /blog/36/ => generated 12942 bytes in 286 msecs (HTTP/1.1 200) 4 headers in 256 bytes (4 switches on core 0)
+[pid: 606|app: 0|req: 16/27] 127.0.0.1 () {44 vars in 960 bytes} [Sun Apr  8 18:21:47 2018] GET /blog/34/ => generated 14231 bytes in 281 msecs (HTTP/1.1 200) 4 headers in 256 bytes (3 switches on core 0)
+[pid: 606|app: 0|req: 17/28] 127.0.0.1 () {42 vars in 906 bytes} [Mon Apr  9 12:54:20 2018] GET / => generated 20021 bytes in 214 msecs (HTTP/1.1 200) 2 headers in 88 bytes (5 switches on core 0)
+[pid: 606|app: 0|req: 18/29] 127.0.0.1 () {44 vars in 960 bytes} [Mon Apr  9 12:55:05 2018] GET /blog/36/ => generated 12942 bytes in 409 msecs (HTTP/1.1 200) 4 headers in 256 bytes (4 switches on core 0)
+[pid: 606|app: 0|req: 19/30] 127.0.0.1 () {44 vars in 952 bytes} [Mon Apr  9 12:55:08 2018] GET / => generated 20021 bytes in 59 msecs (HTTP/1.1 200) 2 headers in 88 bytes (5 switches on core 0)
+[pid: 605|app: 0|req: 6/31] 127.0.0.1 () {44 vars in 956 bytes} [Mon Apr  9 12:55:10 2018] GET /admin/ => generated 14451 bytes in 273 msecs (HTTP/1.1 200) 6 headers in 251 bytes (4 switches on core 0)
+[pid: 606|app: 0|req: 20/32] 127.0.0.1 () {42 vars in 891 bytes} [Mon Apr  9 12:55:10 2018] GET /favicon.ico => generated 2664 bytes in 20 msecs (HTTP/1.1 404) 3 headers in 109 bytes (2 switches on core 0)
+[pid: 604|app: 0|req: 2/33] 127.0.0.1 () {44 vars in 982 bytes} [Mon Apr  9 12:55:11 2018] GET /admin/blog/post/ => generated 17427 bytes in 323 msecs (HTTP/1.1 200) 7 headers in 405 bytes (4 switches on core 0)
+[pid: 607|app: 0|req: 4/34] 127.0.0.1 () {42 vars in 869 bytes} [Mon Apr  9 12:55:12 2018] GET /admin/jsi18n/ => generated 7682 bytes in 76 msecs (HTTP/1.1 200) 3 headers in 93 bytes (2 switches on core 0)
+[pid: 607|app: 0|req: 5/35] 127.0.0.1 () {44 vars in 1012 bytes} [Mon Apr  9 12:55:14 2018] GET /admin/blog/post/36/change/ => generated 18979 bytes in 166 msecs (HTTP/1.1 200) 7 headers in 405 bytes (5 switches on core 0)
+[pid: 606|app: 0|req: 21/36] 127.0.0.1 () {42 vars in 879 bytes} [Mon Apr  9 12:55:14 2018] GET /admin/jsi18n/ => generated 7682 bytes in 27 msecs (HTTP/1.1 200) 3 headers in 93 bytes (2 switches on core 0)
+[pid: 606|app: 0|req: 22/37] 127.0.0.1 () {52 vars in 1293 bytes} [Mon Apr  9 12:55:30 2018] POST /admin/upload/kindeditor?dir=image => generated 88 bytes in 51 msecs (HTTP/1.1 200) 2 headers in 80 bytes (9 switches on core 0)
+[pid: 606|app: 0|req: 23/38] 127.0.0.1 () {52 vars in 1278 bytes} [Mon Apr  9 12:55:32 2018] POST /admin/blog/post/36/change/ => generated 0 bytes in 240 msecs (HTTP/1.1 302) 8 headers in 655 bytes (2 switches on core 0)
+[pid: 607|app: 0|req: 6/39] 127.0.0.1 () {46 vars in 1374 bytes} [Mon Apr  9 12:55:32 2018] GET /admin/blog/post/ => generated 17776 bytes in 78 msecs (HTTP/1.1 200) 8 headers in 489 bytes (4 switches on core 0)
+[pid: 607|app: 0|req: 7/40] 127.0.0.1 () {42 vars in 869 bytes} [Mon Apr  9 12:55:32 2018] GET /admin/jsi18n/ => generated 7682 bytes in 14 msecs (HTTP/1.1 200) 3 headers in 93 bytes (2 switches on core 0)
+[pid: 607|app: 0|req: 8/41] 127.0.0.1 () {44 vars in 976 bytes} [Mon Apr  9 12:55:34 2018] GET /blog/36/ => generated 13028 bytes in 1415 msecs (HTTP/1.1 200) 4 headers in 256 bytes (4 switches on core 0)
+[pid: 607|app: 0|req: 9/42] 127.0.0.1 () {44 vars in 1002 bytes} [Mon Apr  9 12:55:40 2018] GET /admin/blog/post/ => generated 17427 bytes in 64 msecs (HTTP/1.1 200) 7 headers in 405 bytes (4 switches on core 0)
+[pid: 606|app: 0|req: 24/43] 127.0.0.1 () {44 vars in 1012 bytes} [Mon Apr  9 12:55:42 2018] GET /admin/blog/post/36/change/ => generated 19091 bytes in 109 msecs (HTTP/1.1 200) 7 headers in 405 bytes (5 switches on core 0)
+[pid: 606|app: 0|req: 25/44] 127.0.0.1 () {42 vars in 879 bytes} [Mon Apr  9 12:55:42 2018] GET /admin/jsi18n/ => generated 7682 bytes in 12 msecs (HTTP/1.1 200) 3 headers in 93 bytes (2 switches on core 0)
+[pid: 605|app: 0|req: 7/45] 127.0.0.1 () {52 vars in 1278 bytes} [Mon Apr  9 12:55:47 2018] POST /admin/blog/post/36/change/ => generated 0 bytes in 240 msecs (HTTP/1.1 302) 8 headers in 655 bytes (2 switches on core 0)
+[pid: 606|app: 0|req: 26/46] 127.0.0.1 () {46 vars in 1374 bytes} [Mon Apr  9 12:55:47 2018] GET /admin/blog/post/ => generated 17776 bytes in 74 msecs (HTTP/1.1 200) 8 headers in 489 bytes (4 switches on core 0)
+[pid: 606|app: 0|req: 27/47] 127.0.0.1 () {42 vars in 869 bytes} [Mon Apr  9 12:55:48 2018] GET /admin/jsi18n/ => generated 7682 bytes in 9 msecs (HTTP/1.1 200) 3 headers in 93 bytes (2 switches on core 0)
+[pid: 607|app: 0|req: 10/48] 127.0.0.1 () {44 vars in 972 bytes} [Mon Apr  9 12:55:52 2018] GET /admin/ => generated 14451 bytes in 257 msecs (HTTP/1.1 200) 6 headers in 251 bytes (3 switches on core 0)
+[pid: 606|app: 0|req: 28/49] 127.0.0.1 () {42 vars in 906 bytes} [Mon Apr  9 12:55:55 2018] GET / => generated 20021 bytes in 42 msecs (HTTP/1.1 200) 2 headers in 88 bytes (4 switches on core 0)
+[pid: 602|app: 0|req: 1/50] 127.0.0.1 () {42 vars in 906 bytes} [Tue Apr 17 17:56:22 2018] GET / => generated 20021 bytes in 2099 msecs (HTTP/1.1 200) 2 headers in 88 bytes (4 switches on core 0)
+[pid: 606|app: 0|req: 29/51] 127.0.0.1 () {44 vars in 960 bytes} [Tue Apr 17 17:56:29 2018] GET /blog/34/ => generated 14231 bytes in 598 msecs (HTTP/1.1 200) 4 headers in 256 bytes (4 switches on core 0)
+[pid: 605|app: 0|req: 8/52] 127.0.0.1 () {52 vars in 1168 bytes} [Tue Apr 17 17:56:37 2018] POST /comment/post/34/ => generated 0 bytes in 101 msecs (HTTP/1.1 302) 3 headers in 112 bytes (2 switches on core 0)
+Building prefix dict from the default dictionary ...
+Dumping model to file cache /var/folders/x6/w9h306m90858mkd2w2kx9zkh0000gn/T/jieba.cache
+Loading model cost 1.898 seconds.
+Prefix dict has been built succesfully.
+[pid: 604|app: 0|req: 3/53] 127.0.0.1 () {46 vars in 999 bytes} [Tue Apr 17 17:56:37 2018] GET /blog/34/ => generated 14605 bytes in 2504 msecs (HTTP/1.1 200) 4 headers in 256 bytes (4 switches on core 0)
+[pid: 601|app: 0|req: 1/54] 127.0.0.1 () {42 vars in 906 bytes} [Tue Apr 17 18:14:24 2018] GET / => generated 20021 bytes in 1608 msecs (HTTP/1.1 200) 2 headers in 88 bytes (5 switches on core 0)
+[pid: 606|app: 0|req: 30/55] 127.0.0.1 () {44 vars in 956 bytes} [Tue Apr 17 18:14:29 2018] GET /admin/ => generated 14452 bytes in 192 msecs (HTTP/1.1 200) 6 headers in 251 bytes (3 switches on core 0)
+[pid: 607|app: 0|req: 11/56] 127.0.0.1 () {42 vars in 891 bytes} [Tue Apr 17 18:14:29 2018] GET /favicon.ico => generated 2664 bytes in 158 msecs (HTTP/1.1 404) 3 headers in 109 bytes (2 switches on core 0)
+[pid: 606|app: 0|req: 31/57] 127.0.0.1 () {44 vars in 990 bytes} [Tue Apr 17 18:14:31 2018] GET /admin/blog/post/add/ => generated 15051 bytes in 154 msecs (HTTP/1.1 200) 7 headers in 405 bytes (4 switches on core 0)
+[pid: 606|app: 0|req: 32/58] 127.0.0.1 () {42 vars in 873 bytes} [Tue Apr 17 18:14:31 2018] GET /admin/jsi18n/ => generated 7682 bytes in 17 msecs (HTTP/1.1 200) 3 headers in 93 bytes (2 switches on core 0)
+[pid: 607|app: 0|req: 12/59] 127.0.0.1 () {44 vars in 996 bytes} [Tue Apr 17 18:14:41 2018] GET /admin/blog/post/ => generated 17428 bytes in 167 msecs (HTTP/1.1 200) 7 headers in 405 bytes (4 switches on core 0)
+[pid: 601|app: 0|req: 2/60] 127.0.0.1 () {42 vars in 869 bytes} [Tue Apr 17 18:14:41 2018] GET /admin/jsi18n/ => generated 7682 bytes in 27 msecs (HTTP/1.1 200) 3 headers in 93 bytes (2 switches on core 0)
+[pid: 605|app: 0|req: 9/61] 127.0.0.1 () {52 vars in 1176 bytes} [Tue Apr 17 18:14:48 2018] POST /admin/blog/post/ => generated 9086 bytes in 207 msecs (HTTP/1.1 200) 7 headers in 405 bytes (3 switches on core 0)
+[pid: 606|app: 0|req: 33/62] 127.0.0.1 () {52 vars in 1176 bytes} [Tue Apr 17 18:14:50 2018] POST /admin/blog/post/ => generated 0 bytes in 1041 msecs (HTTP/1.1 302) 8 headers in 469 bytes (2 switches on core 0)
+[pid: 607|app: 0|req: 13/63] 127.0.0.1 () {46 vars in 1178 bytes} [Tue Apr 17 18:14:51 2018] GET /admin/blog/post/ => generated 10769 bytes in 56 msecs (HTTP/1.1 200) 8 headers in 489 bytes (3 switches on core 0)
+[pid: 607|app: 0|req: 14/64] 127.0.0.1 () {42 vars in 869 bytes} [Tue Apr 17 18:14:51 2018] GET /admin/jsi18n/ => generated 7682 bytes in 12 msecs (HTTP/1.1 200) 3 headers in 93 bytes (2 switches on core 0)
+[pid: 605|app: 0|req: 10/65] 127.0.0.1 () {44 vars in 1000 bytes} [Tue Apr 17 18:14:55 2018] GET /admin/blog/category/ => generated 12161 bytes in 80 msecs (HTTP/1.1 200) 7 headers in 405 bytes (4 switches on core 0)
+[pid: 606|app: 0|req: 34/66] 127.0.0.1 () {42 vars in 873 bytes} [Tue Apr 17 18:14:55 2018] GET /admin/jsi18n/ => generated 7682 bytes in 13 msecs (HTTP/1.1 200) 3 headers in 93 bytes (2 switches on core 0)
+[pid: 605|app: 0|req: 11/67] 127.0.0.1 () {44 vars in 976 bytes} [Tue Apr 17 18:14:56 2018] GET /admin/ => generated 14339 bytes in 62 msecs (HTTP/1.1 200) 6 headers in 251 bytes (4 switches on core 0)
+[pid: 603|app: 0|req: 2/68] 127.0.0.1 () {44 vars in 996 bytes} [Tue Apr 17 18:14:58 2018] GET /admin/comments/comment/ => generated 8843 bytes in 216 msecs (HTTP/1.1 200) 7 headers in 405 bytes (3 switches on core 0)
+[pid: 606|app: 0|req: 35/69] 127.0.0.1 () {42 vars in 876 bytes} [Tue Apr 17 18:14:58 2018] GET /admin/jsi18n/ => generated 7682 bytes in 20 msecs (HTTP/1.1 200) 3 headers in 93 bytes (2 switches on core 0)
+[pid: 605|app: 0|req: 12/70] 127.0.0.1 () {44 vars in 1007 bytes} [Tue Apr 17 18:15:00 2018] GET /admin/blog/category/ => generated 12161 bytes in 58 msecs (HTTP/1.1 200) 7 headers in 405 bytes (4 switches on core 0)
+[pid: 606|app: 0|req: 36/71] 127.0.0.1 () {42 vars in 873 bytes} [Tue Apr 17 18:15:00 2018] GET /admin/jsi18n/ => generated 7682 bytes in 12 msecs (HTTP/1.1 200) 3 headers in 93 bytes (2 switches on core 0)
+[pid: 607|app: 0|req: 15/72] 127.0.0.1 () {44 vars in 976 bytes} [Tue Apr 17 18:15:02 2018] GET /admin/ => generated 14339 bytes in 58 msecs (HTTP/1.1 200) 6 headers in 251 bytes (4 switches on core 0)
+[pid: 605|app: 0|req: 13/73] 127.0.0.1 () {44 vars in 990 bytes} [Tue Apr 17 18:15:06 2018] GET /admin/blog/category/ => generated 12161 bytes in 253 msecs (HTTP/1.1 200) 7 headers in 405 bytes (3 switches on core 0)
+[pid: 606|app: 0|req: 37/74] 127.0.0.1 () {42 vars in 873 bytes} [Tue Apr 17 18:15:06 2018] GET /admin/jsi18n/ => generated 7682 bytes in 11 msecs (HTTP/1.1 200) 3 headers in 93 bytes (2 switches on core 0)
+[pid: 606|app: 0|req: 38/75] 127.0.0.1 () {52 vars in 1188 bytes} [Tue Apr 17 18:15:15 2018] POST /admin/blog/category/ => generated 8306 bytes in 58 msecs (HTTP/1.1 200) 7 headers in 405 bytes (3 switches on core 0)
+[pid: 605|app: 0|req: 14/76] 127.0.0.1 () {52 vars in 1188 bytes} [Tue Apr 17 18:15:16 2018] POST /admin/blog/category/ => generated 0 bytes in 41 msecs (HTTP/1.1 302) 8 headers in 473 bytes (2 switches on core 0)
+[pid: 606|app: 0|req: 39/77] 127.0.0.1 () {46 vars in 1190 bytes} [Tue Apr 17 18:15:16 2018] GET /admin/blog/category/ => generated 9084 bytes in 41 msecs (HTTP/1.1 200) 8 headers in 489 bytes (3 switches on core 0)
+[pid: 607|app: 0|req: 16/78] 127.0.0.1 () {42 vars in 873 bytes} [Tue Apr 17 18:15:16 2018] GET /admin/jsi18n/ => generated 7682 bytes in 9 msecs (HTTP/1.1 200) 3 headers in 93 bytes (2 switches on core 0)
+[pid: 604|app: 0|req: 4/79] 127.0.0.1 () {44 vars in 996 bytes} [Tue Apr 17 18:15:18 2018] GET /admin/blog/post/ => generated 10518 bytes in 108 msecs (HTTP/1.1 200) 7 headers in 405 bytes (3 switches on core 0)
+[pid: 606|app: 0|req: 40/80] 127.0.0.1 () {42 vars in 869 bytes} [Tue Apr 17 18:15:18 2018] GET /admin/jsi18n/ => generated 7682 bytes in 9 msecs (HTTP/1.1 200) 3 headers in 93 bytes (2 switches on core 0)
+[pid: 605|app: 0|req: 15/81] 127.0.0.1 () {44 vars in 990 bytes} [Tue Apr 17 18:15:18 2018] GET /admin/blog/tag/ => generated 12712 bytes in 111 msecs (HTTP/1.1 200) 7 headers in 405 bytes (4 switches on core 0)
+[pid: 607|app: 0|req: 17/82] 127.0.0.1 () {42 vars in 868 bytes} [Tue Apr 17 18:15:18 2018] GET /admin/jsi18n/ => generated 7682 bytes in 8 msecs (HTTP/1.1 200) 3 headers in 93 bytes (2 switches on core 0)
+[pid: 605|app: 0|req: 16/83] 127.0.0.1 () {52 vars in 1173 bytes} [Tue Apr 17 18:15:23 2018] POST /admin/blog/tag/ => generated 8569 bytes in 72 msecs (HTTP/1.1 200) 7 headers in 405 bytes (3 switches on core 0)
+[pid: 604|app: 0|req: 5/84] 127.0.0.1 () {52 vars in 1173 bytes} [Tue Apr 17 18:15:24 2018] POST /admin/blog/tag/ => generated 0 bytes in 53 msecs (HTTP/1.1 302) 8 headers in 468 bytes (2 switches on core 0)
+[pid: 607|app: 0|req: 18/85] 127.0.0.1 () {46 vars in 1175 bytes} [Tue Apr 17 18:15:24 2018] GET /admin/blog/tag/ => generated 9074 bytes in 61 msecs (HTTP/1.1 200) 8 headers in 489 bytes (3 switches on core 0)
+[pid: 606|app: 0|req: 41/86] 127.0.0.1 () {42 vars in 868 bytes} [Tue Apr 17 18:15:24 2018] GET /admin/jsi18n/ => generated 7682 bytes in 10 msecs (HTTP/1.1 200) 3 headers in 93 bytes (2 switches on core 0)
+[pid: 605|app: 0|req: 17/87] 127.0.0.1 () {44 vars in 991 bytes} [Tue Apr 17 18:15:26 2018] GET /admin/blog/post/ => generated 10518 bytes in 57 msecs (HTTP/1.1 200) 7 headers in 405 bytes (3 switches on core 0)
+[pid: 606|app: 0|req: 42/88] 127.0.0.1 () {42 vars in 869 bytes} [Tue Apr 17 18:15:26 2018] GET /admin/jsi18n/ => generated 7682 bytes in 12 msecs (HTTP/1.1 200) 3 headers in 93 bytes (1 switches on core 0)
+[pid: 606|app: 0|req: 43/89] 127.0.0.1 () {44 vars in 1000 bytes} [Tue Apr 17 18:15:28 2018] GET /admin/blog/category/ => generated 8833 bytes in 50 msecs (HTTP/1.1 200) 7 headers in 405 bytes (3 switches on core 0)
+[pid: 607|app: 0|req: 19/90] 127.0.0.1 () {42 vars in 873 bytes} [Tue Apr 17 18:15:29 2018] GET /admin/jsi18n/ => generated 7682 bytes in 21 msecs (HTTP/1.1 200) 3 headers in 93 bytes (2 switches on core 0)
+[pid: 606|app: 0|req: 44/91] 127.0.0.1 () {44 vars in 1000 bytes} [Tue Apr 17 18:15:39 2018] GET /admin/blog/category/ => generated 8833 bytes in 66 msecs (HTTP/1.1 200) 7 headers in 405 bytes (3 switches on core 0)
+[pid: 605|app: 0|req: 18/92] 127.0.0.1 () {44 vars in 996 bytes} [Tue Apr 17 18:15:45 2018] GET /admin/blog/post/ => generated 10518 bytes in 70 msecs (HTTP/1.1 200) 7 headers in 405 bytes (3 switches on core 0)
+[pid: 606|app: 0|req: 45/93] 127.0.0.1 () {42 vars in 869 bytes} [Tue Apr 17 18:15:45 2018] GET /admin/jsi18n/ => generated 7682 bytes in 10 msecs (HTTP/1.1 200) 3 headers in 93 bytes (2 switches on core 0)
+[pid: 605|app: 0|req: 19/94] 127.0.0.1 () {44 vars in 1000 bytes} [Tue Apr 17 18:15:48 2018] GET /admin/blog/post/add/ => generated 14551 bytes in 100 msecs (HTTP/1.1 200) 7 headers in 405 bytes (4 switches on core 0)
+[pid: 606|app: 0|req: 46/95] 127.0.0.1 () {42 vars in 873 bytes} [Tue Apr 17 18:15:48 2018] GET /admin/jsi18n/ => generated 7682 bytes in 13 msecs (HTTP/1.1 200) 3 headers in 93 bytes (2 switches on core 0)
+[pid: 606|app: 0|req: 47/96] 127.0.0.1 () {42 vars in 906 bytes} [Tue Apr 17 18:16:44 2018] GET / => generated 6760 bytes in 26 msecs (HTTP/1.1 200) 2 headers in 88 bytes (2 switches on core 0)
+[pid: 606|app: 0|req: 48/97] 127.0.0.1 () {44 vars in 956 bytes} [Tue Apr 17 18:16:46 2018] GET /admin/ => generated 13656 bytes in 71 msecs (HTTP/1.1 200) 6 headers in 251 bytes (3 switches on core 0)
+[pid: 606|app: 0|req: 49/98] 127.0.0.1 () {44 vars in 990 bytes} [Tue Apr 17 18:16:48 2018] GET /admin/blog/post/add/ => generated 14551 bytes in 98 msecs (HTTP/1.1 200) 7 headers in 405 bytes (4 switches on core 0)
+[pid: 606|app: 0|req: 50/99] 127.0.0.1 () {42 vars in 873 bytes} [Tue Apr 17 18:16:48 2018] GET /admin/jsi18n/ => generated 7682 bytes in 11 msecs (HTTP/1.1 200) 3 headers in 93 bytes (2 switches on core 0)
+[pid: 607|app: 0|req: 20/100] 127.0.0.1 () {44 vars in 1055 bytes} [Tue Apr 17 18:16:59 2018] GET /admin/blog/category/add/?_to_field=id&_popup=1 => generated 5286 bytes in 74 msecs (HTTP/1.1 200) 7 headers in 405 bytes (2 switches on core 0)
+[pid: 606|app: 0|req: 51/101] 127.0.0.1 () {42 vars in 899 bytes} [Tue Apr 17 18:16:59 2018] GET /admin/jsi18n/ => generated 7682 bytes in 14 msecs (HTTP/1.1 200) 3 headers in 93 bytes (2 switches on core 0)
+[pid: 606|app: 0|req: 52/102] 127.0.0.1 () {52 vars in 1335 bytes} [Tue Apr 17 18:17:24 2018] POST /admin/blog/category/add/?_to_field=id&_popup=1 => generated 378 bytes in 35 msecs (HTTP/1.1 200) 6 headers in 251 bytes (2 switches on core 0)
+[pid: 605|app: 0|req: 20/103] 127.0.0.1 () {44 vars in 1045 bytes} [Tue Apr 17 18:17:26 2018] GET /admin/blog/tag/add/?_to_field=id&_popup=1 => generated 5261 bytes in 84 msecs (HTTP/1.1 200) 7 headers in 405 bytes (2 switches on core 0)
+[pid: 607|app: 0|req: 21/104] 127.0.0.1 () {42 vars in 894 bytes} [Tue Apr 17 18:17:26 2018] GET /admin/jsi18n/ => generated 7682 bytes in 25 msecs (HTTP/1.1 200) 3 headers in 93 bytes (2 switches on core 0)
+[pid: 605|app: 0|req: 21/105] 127.0.0.1 () {52 vars in 1320 bytes} [Tue Apr 17 18:17:34 2018] POST /admin/blog/tag/add/?_to_field=id&_popup=1 => generated 370 bytes in 23 msecs (HTTP/1.1 200) 6 headers in 251 bytes (2 switches on core 0)
+[pid: 607|app: 0|req: 22/106] 127.0.0.1 () {44 vars in 1045 bytes} [Tue Apr 17 18:17:36 2018] GET /admin/blog/tag/add/?_to_field=id&_popup=1 => generated 5261 bytes in 64 msecs (HTTP/1.1 200) 7 headers in 405 bytes (2 switches on core 0)
+[pid: 606|app: 0|req: 53/107] 127.0.0.1 () {42 vars in 894 bytes} [Tue Apr 17 18:17:36 2018] GET /admin/jsi18n/ => generated 7682 bytes in 22 msecs (HTTP/1.1 200) 3 headers in 93 bytes (2 switches on core 0)
+[pid: 606|app: 0|req: 54/108] 127.0.0.1 () {52 vars in 1320 bytes} [Tue Apr 17 18:17:42 2018] POST /admin/blog/tag/add/?_to_field=id&_popup=1 => generated 369 bytes in 20 msecs (HTTP/1.1 200) 6 headers in 251 bytes (2 switches on core 0)
+[pid: 605|app: 0|req: 22/109] 127.0.0.1 () {44 vars in 1045 bytes} [Tue Apr 17 18:17:43 2018] GET /admin/blog/tag/add/?_to_field=id&_popup=1 => generated 5261 bytes in 57 msecs (HTTP/1.1 200) 7 headers in 405 bytes (2 switches on core 0)
+[pid: 606|app: 0|req: 55/110] 127.0.0.1 () {42 vars in 894 bytes} [Tue Apr 17 18:17:43 2018] GET /admin/jsi18n/ => generated 7682 bytes in 9 msecs (HTTP/1.1 200) 3 headers in 93 bytes (2 switches on core 0)
+[pid: 606|app: 0|req: 56/111] 127.0.0.1 () {52 vars in 1320 bytes} [Tue Apr 17 18:17:53 2018] POST /admin/blog/tag/add/?_to_field=id&_popup=1 => generated 369 bytes in 23 msecs (HTTP/1.1 200) 6 headers in 251 bytes (2 switches on core 0)
+[pid: 605|app: 0|req: 23/112] 127.0.0.1 () {52 vars in 1262 bytes} [Tue Apr 17 18:18:07 2018] POST /admin/blog/post/add/ => generated 0 bytes in 1920 msecs (HTTP/1.1 302) 8 headers in 546 bytes (3 switches on core 0)
+[pid: 606|app: 0|req: 57/113] 127.0.0.1 () {46 vars in 1259 bytes} [Tue Apr 17 18:18:09 2018] GET /admin/blog/post/ => generated 15207 bytes in 81 msecs (HTTP/1.1 200) 8 headers in 489 bytes (3 switches on core 0)
+[pid: 607|app: 0|req: 23/114] 127.0.0.1 () {42 vars in 869 bytes} [Tue Apr 17 18:18:09 2018] GET /admin/jsi18n/ => generated 7682 bytes in 14 msecs (HTTP/1.1 200) 3 headers in 93 bytes (2 switches on core 0)
+[pid: 607|app: 0|req: 24/115] 127.0.0.1 () {44 vars in 976 bytes} [Tue Apr 17 18:18:12 2018] GET /blog/38/ => generated 23878 bytes in 1784 msecs (HTTP/1.1 200) 4 headers in 256 bytes (5 switches on core 0)
+[pid: 606|app: 0|req: 58/116] 127.0.0.1 () {44 vars in 952 bytes} [Tue Apr 17 18:19:22 2018] GET / => generated 9339 bytes in 48 msecs (HTTP/1.1 200) 2 headers in 88 bytes (2 switches on core 0)
+[pid: 606|app: 0|req: 59/117] 127.0.0.1 () {44 vars in 1012 bytes} [Tue Apr 17 18:21:40 2018] GET /admin/blog/post/38/change/ => generated 31520 bytes in 133 msecs (HTTP/1.1 200) 7 headers in 405 bytes (6 switches on core 0)
+[pid: 606|app: 0|req: 60/118] 127.0.0.1 () {42 vars in 879 bytes} [Tue Apr 17 18:21:41 2018] GET /admin/jsi18n/ => generated 7682 bytes in 15 msecs (HTTP/1.1 200) 3 headers in 93 bytes (2 switches on core 0)
+[pid: 606|app: 0|req: 61/119] 127.0.0.1 () {52 vars in 1280 bytes} [Tue Apr 17 18:22:48 2018] POST /admin/blog/post/38/change/ => generated 0 bytes in 818 msecs (HTTP/1.1 302) 8 headers in 546 bytes (4 switches on core 0)
+[pid: 607|app: 0|req: 25/120] 127.0.0.1 () {46 vars in 1265 bytes} [Tue Apr 17 18:22:49 2018] GET /admin/blog/post/ => generated 15207 bytes in 156 msecs (HTTP/1.1 200) 8 headers in 489 bytes (4 switches on core 0)
+[pid: 607|app: 0|req: 26/121] 127.0.0.1 () {42 vars in 869 bytes} [Tue Apr 17 18:22:49 2018] GET /admin/jsi18n/ => generated 7682 bytes in 13 msecs (HTTP/1.1 200) 3 headers in 93 bytes (2 switches on core 0)
+[pid: 607|app: 0|req: 27/122] 127.0.0.1 () {46 vars in 983 bytes} [Tue Apr 17 18:22:50 2018] GET / => generated 9628 bytes in 37 msecs (HTTP/1.1 200) 2 headers in 88 bytes (3 switches on core 0)
+[pid: 604|app: 0|req: 6/123] 127.0.0.1 () {44 vars in 1012 bytes} [Tue Apr 17 18:24:08 2018] GET /admin/blog/post/38/change/ => generated 31803 bytes in 279 msecs (HTTP/1.1 200) 7 headers in 405 bytes (6 switches on core 0)
+[pid: 606|app: 0|req: 62/124] 127.0.0.1 () {42 vars in 879 bytes} [Tue Apr 17 18:24:08 2018] GET /admin/jsi18n/ => generated 7682 bytes in 57 msecs (HTTP/1.1 200) 3 headers in 93 bytes (2 switches on core 0)
+[pid: 606|app: 0|req: 63/125] 127.0.0.1 () {52 vars in 1280 bytes} [Tue Apr 17 18:24:15 2018] POST /admin/blog/post/38/change/ => generated 0 bytes in 549 msecs (HTTP/1.1 302) 8 headers in 546 bytes (5 switches on core 0)
+[pid: 607|app: 0|req: 28/126] 127.0.0.1 () {46 vars in 1265 bytes} [Tue Apr 17 18:24:15 2018] GET /admin/blog/post/ => generated 15207 bytes in 126 msecs (HTTP/1.1 200) 8 headers in 489 bytes (3 switches on core 0)
+[pid: 605|app: 0|req: 24/127] 127.0.0.1 () {42 vars in 869 bytes} [Tue Apr 17 18:24:16 2018] GET /admin/jsi18n/ => generated 7682 bytes in 91 msecs (HTTP/1.1 200) 3 headers in 93 bytes (2 switches on core 0)
+[pid: 607|app: 0|req: 29/128] 127.0.0.1 () {46 vars in 983 bytes} [Tue Apr 17 18:24:17 2018] GET / => generated 9630 bytes in 42 msecs (HTTP/1.1 200) 2 headers in 88 bytes (3 switches on core 0)
+[pid: 604|app: 0|req: 7/129] 127.0.0.1 () {44 vars in 1012 bytes} [Tue Apr 17 18:24:25 2018] GET /admin/blog/post/38/change/ => generated 31807 bytes in 107 msecs (HTTP/1.1 200) 7 headers in 405 bytes (5 switches on core 0)
+[pid: 606|app: 0|req: 64/130] 127.0.0.1 () {42 vars in 879 bytes} [Tue Apr 17 18:24:26 2018] GET /admin/jsi18n/ => generated 7682 bytes in 15 msecs (HTTP/1.1 200) 3 headers in 93 bytes (2 switches on core 0)
+[pid: 606|app: 0|req: 65/131] 127.0.0.1 () {52 vars in 1280 bytes} [Tue Apr 17 18:24:31 2018] POST /admin/blog/post/38/change/ => generated 0 bytes in 520 msecs (HTTP/1.1 302) 8 headers in 546 bytes (4 switches on core 0)
+[pid: 606|app: 0|req: 66/132] 127.0.0.1 () {46 vars in 1265 bytes} [Tue Apr 17 18:24:32 2018] GET /admin/blog/post/ => generated 15207 bytes in 84 msecs (HTTP/1.1 200) 8 headers in 489 bytes (3 switches on core 0)
+[pid: 606|app: 0|req: 67/133] 127.0.0.1 () {42 vars in 869 bytes} [Tue Apr 17 18:24:32 2018] GET /admin/jsi18n/ => generated 7682 bytes in 13 msecs (HTTP/1.1 200) 3 headers in 93 bytes (2 switches on core 0)
+[pid: 607|app: 0|req: 30/134] 127.0.0.1 () {46 vars in 983 bytes} [Tue Apr 17 18:24:37 2018] GET / => generated 9636 bytes in 34 msecs (HTTP/1.1 200) 2 headers in 88 bytes (3 switches on core 0)
+[pid: 605|app: 0|req: 25/135] 127.0.0.1 () {44 vars in 960 bytes} [Tue Apr 17 18:24:43 2018] GET /blog/38/ => generated 23896 bytes in 853 msecs (HTTP/1.1 200) 4 headers in 256 bytes (4 switches on core 0)
+[pid: 607|app: 0|req: 31/136] 127.0.0.1 () {44 vars in 1012 bytes} [Tue Apr 17 18:26:27 2018] GET /admin/blog/post/38/change/ => generated 31819 bytes in 255 msecs (HTTP/1.1 200) 7 headers in 405 bytes (5 switches on core 0)
+[pid: 606|app: 0|req: 68/137] 127.0.0.1 () {42 vars in 879 bytes} [Tue Apr 17 18:26:27 2018] GET /admin/jsi18n/ => generated 7682 bytes in 12 msecs (HTTP/1.1 200) 3 headers in 93 bytes (2 switches on core 0)
+[pid: 605|app: 0|req: 26/138] 127.0.0.1 () {52 vars in 1280 bytes} [Tue Apr 17 18:26:33 2018] POST /admin/blog/post/38/change/ => generated 0 bytes in 1294 msecs (HTTP/1.1 302) 8 headers in 546 bytes (4 switches on core 0)
+[pid: 607|app: 0|req: 32/139] 127.0.0.1 () {46 vars in 1265 bytes} [Tue Apr 17 18:26:35 2018] GET /admin/blog/post/ => generated 15207 bytes in 74 msecs (HTTP/1.1 200) 8 headers in 489 bytes (3 switches on core 0)
+[pid: 606|app: 0|req: 69/140] 127.0.0.1 () {42 vars in 869 bytes} [Tue Apr 17 18:26:35 2018] GET /admin/jsi18n/ => generated 7682 bytes in 8 msecs (HTTP/1.1 200) 3 headers in 93 bytes (2 switches on core 0)
+[pid: 606|app: 0|req: 70/141] 127.0.0.1 () {46 vars in 991 bytes} [Tue Apr 17 18:26:36 2018] GET /blog/38/ => generated 23896 bytes in 485 msecs (HTTP/1.1 200) 4 headers in 256 bytes (5 switches on core 0)
+[pid: 606|app: 0|req: 71/142] 127.0.0.1 () {44 vars in 952 bytes} [Tue Apr 17 18:26:39 2018] GET / => generated 9628 bytes in 31 msecs (HTTP/1.1 200) 2 headers in 88 bytes (3 switches on core 0)
+[pid: 606|app: 0|req: 72/143] 127.0.0.1 () {46 vars in 983 bytes} [Tue Apr 17 18:28:09 2018] GET / => generated 9628 bytes in 46 msecs (HTTP/1.1 200) 2 headers in 88 bytes (3 switches on core 0)
+[pid: 605|app: 0|req: 27/144] 127.0.0.1 () {44 vars in 960 bytes} [Tue Apr 17 18:28:11 2018] GET /blog/38/ => generated 23896 bytes in 705 msecs (HTTP/1.1 200) 4 headers in 256 bytes (5 switches on core 0)
+[pid: 607|app: 0|req: 33/145] 127.0.0.1 () {44 vars in 1000 bytes} [Tue Apr 17 18:29:33 2018] GET /admin/blog/post/add/ => generated 14687 bytes in 174 msecs (HTTP/1.1 200) 7 headers in 405 bytes (4 switches on core 0)
+[pid: 606|app: 0|req: 73/146] 127.0.0.1 () {42 vars in 873 bytes} [Tue Apr 17 18:29:33 2018] GET /admin/jsi18n/ => generated 7682 bytes in 16 msecs (HTTP/1.1 200) 3 headers in 93 bytes (2 switches on core 0)
+[pid: 607|app: 0|req: 34/147] 127.0.0.1 () {44 vars in 1045 bytes} [Tue Apr 17 18:29:58 2018] GET /admin/blog/tag/add/?_to_field=id&_popup=1 => generated 5261 bytes in 72 msecs (HTTP/1.1 200) 7 headers in 405 bytes (2 switches on core 0)
+[pid: 606|app: 0|req: 74/148] 127.0.0.1 () {42 vars in 894 bytes} [Tue Apr 17 18:29:58 2018] GET /admin/jsi18n/ => generated 7682 bytes in 15 msecs (HTTP/1.1 200) 3 headers in 93 bytes (2 switches on core 0)
+[pid: 607|app: 0|req: 35/149] 127.0.0.1 () {52 vars in 1320 bytes} [Tue Apr 17 18:30:04 2018] POST /admin/blog/tag/add/?_to_field=id&_popup=1 => generated 370 bytes in 33 msecs (HTTP/1.1 200) 6 headers in 251 bytes (2 switches on core 0)
+[pid: 606|app: 0|req: 75/150] 127.0.0.1 () {52 vars in 1262 bytes} [Tue Apr 17 18:32:46 2018] POST /admin/blog/post/add/ => generated 0 bytes in 6220 msecs (HTTP/1.1 302) 8 headers in 567 bytes (7 switches on core 0)
+[pid: 605|app: 0|req: 28/151] 127.0.0.1 () {46 vars in 1280 bytes} [Tue Apr 17 18:32:52 2018] GET /admin/blog/post/ => generated 15856 bytes in 164 msecs (HTTP/1.1 200) 8 headers in 489 bytes (3 switches on core 0)
+[pid: 606|app: 0|req: 76/152] 127.0.0.1 () {42 vars in 869 bytes} [Tue Apr 17 18:32:52 2018] GET /admin/jsi18n/ => generated 7682 bytes in 14 msecs (HTTP/1.1 200) 3 headers in 93 bytes (2 switches on core 0)
+[pid: 607|app: 0|req: 36/153] 127.0.0.1 () {44 vars in 1000 bytes} [Tue Apr 17 18:32:58 2018] GET /admin/blog/post/add/ => generated 14721 bytes in 155 msecs (HTTP/1.1 200) 7 headers in 405 bytes (4 switches on core 0)
+[pid: 606|app: 0|req: 77/154] 127.0.0.1 () {42 vars in 873 bytes} [Tue Apr 17 18:32:58 2018] GET /admin/jsi18n/ => generated 7682 bytes in 13 msecs (HTTP/1.1 200) 3 headers in 93 bytes (2 switches on core 0)
+[pid: 605|app: 0|req: 29/155] 127.0.0.1 () {52 vars in 1262 bytes} [Tue Apr 17 18:34:20 2018] POST /admin/blog/post/add/ => generated 0 bytes in 5007 msecs (HTTP/1.1 302) 8 headers in 617 bytes (9 switches on core 0)
+[pid: 607|app: 0|req: 37/156] 127.0.0.1 () {42 vars in 906 bytes} [Tue Apr 17 18:34:25 2018] GET / => generated 12012 bytes in 159 msecs (HTTP/1.1 200) 2 headers in 88 bytes (3 switches on core 0)
+[pid: 603|app: 0|req: 3/157] 127.0.0.1 () {46 vars in 1330 bytes} [Tue Apr 17 18:34:25 2018] GET /admin/blog/post/ => generated 16473 bytes in 223 msecs (HTTP/1.1 200) 8 headers in 489 bytes (5 switches on core 0)
+[pid: 606|app: 0|req: 78/158] 127.0.0.1 () {42 vars in 869 bytes} [Tue Apr 17 18:34:26 2018] GET /admin/jsi18n/ => generated 7682 bytes in 75 msecs (HTTP/1.1 200) 3 headers in 93 bytes (2 switches on core 0)
+[pid: 606|app: 0|req: 79/159] 127.0.0.1 () {44 vars in 937 bytes} [Tue Apr 17 18:34:32 2018] GET / => generated 14264 bytes in 77 msecs (HTTP/1.1 200) 2 headers in 88 bytes (4 switches on core 0)
+[pid: 607|app: 0|req: 38/160] 127.0.0.1 () {44 vars in 960 bytes} [Tue Apr 17 18:34:44 2018] GET /blog/40/ => generated 51404 bytes in 2668 msecs (HTTP/1.1 200) 4 headers in 256 bytes (9 switches on core 0)
+[pid: 605|app: 0|req: 30/161] 127.0.0.1 () {44 vars in 1012 bytes} [Tue Apr 17 18:35:03 2018] GET /admin/blog/post/40/change/ => generated 66123 bytes in 143 msecs (HTTP/1.1 200) 7 headers in 405 bytes (11 switches on core 0)
+[pid: 606|app: 0|req: 80/162] 127.0.0.1 () {42 vars in 879 bytes} [Tue Apr 17 18:35:03 2018] GET /admin/jsi18n/ => generated 7682 bytes in 21 msecs (HTTP/1.1 200) 3 headers in 93 bytes (2 switches on core 0)
+[pid: 607|app: 0|req: 39/163] 127.0.0.1 () {52 vars in 1280 bytes} [Tue Apr 17 18:35:46 2018] POST /admin/blog/post/40/change/ => generated 0 bytes in 1321 msecs (HTTP/1.1 302) 8 headers in 617 bytes (6 switches on core 0)
+[pid: 604|app: 0|req: 8/164] 127.0.0.1 () {46 vars in 1336 bytes} [Tue Apr 17 18:35:48 2018] GET /admin/blog/post/ => generated 16473 bytes in 163 msecs (HTTP/1.1 200) 8 headers in 489 bytes (4 switches on core 0)
+[pid: 606|app: 0|req: 81/165] 127.0.0.1 () {42 vars in 869 bytes} [Tue Apr 17 18:35:48 2018] GET /admin/jsi18n/ => generated 7682 bytes in 18 msecs (HTTP/1.1 200) 3 headers in 93 bytes (2 switches on core 0)
+[pid: 607|app: 0|req: 40/166] 127.0.0.1 () {46 vars in 991 bytes} [Tue Apr 17 18:35:49 2018] GET /blog/40/ => generated 51171 bytes in 1208 msecs (HTTP/1.1 200) 4 headers in 256 bytes (8 switches on core 0)
+[pid: 606|app: 0|req: 82/167] 127.0.0.1 () {44 vars in 1012 bytes} [Tue Apr 17 18:36:08 2018] GET /admin/blog/post/40/change/ => generated 65926 bytes in 203 msecs (HTTP/1.1 200) 7 headers in 405 bytes (10 switches on core 0)
+[pid: 607|app: 0|req: 41/168] 127.0.0.1 () {42 vars in 879 bytes} [Tue Apr 17 18:36:08 2018] GET /admin/jsi18n/ => generated 7682 bytes in 15 msecs (HTTP/1.1 200) 3 headers in 93 bytes (2 switches on core 0)
+[pid: 606|app: 0|req: 83/169] 127.0.0.1 () {52 vars in 1280 bytes} [Tue Apr 17 18:39:00 2018] POST /admin/blog/post/40/change/ => generated 0 bytes in 1612 msecs (HTTP/1.1 302) 8 headers in 617 bytes (6 switches on core 0)
+[pid: 606|app: 0|req: 84/170] 127.0.0.1 () {46 vars in 1336 bytes} [Tue Apr 17 18:39:02 2018] GET /admin/blog/post/ => generated 16473 bytes in 97 msecs (HTTP/1.1 200) 8 headers in 489 bytes (5 switches on core 0)
+[pid: 606|app: 0|req: 85/171] 127.0.0.1 () {42 vars in 869 bytes} [Tue Apr 17 18:39:02 2018] GET /admin/jsi18n/ => generated 7682 bytes in 15 msecs (HTTP/1.1 200) 3 headers in 93 bytes (2 switches on core 0)
+[pid: 606|app: 0|req: 86/172] 127.0.0.1 () {46 vars in 991 bytes} [Tue Apr 17 18:39:02 2018] GET /blog/40/ => generated 50656 bytes in 1283 msecs (HTTP/1.1 200) 4 headers in 256 bytes (8 switches on core 0)
+[pid: 607|app: 0|req: 42/173] 127.0.0.1 () {44 vars in 1012 bytes} [Tue Apr 17 18:39:33 2018] GET /admin/blog/post/39/change/ => generated 58333 bytes in 267 msecs (HTTP/1.1 200) 7 headers in 405 bytes (10 switches on core 0)
+[pid: 606|app: 0|req: 87/174] 127.0.0.1 () {42 vars in 879 bytes} [Tue Apr 17 18:39:33 2018] GET /admin/jsi18n/ => generated 7682 bytes in 9 msecs (HTTP/1.1 200) 3 headers in 93 bytes (2 switches on core 0)
+[pid: 606|app: 0|req: 88/175] 127.0.0.1 () {44 vars in 960 bytes} [Tue Apr 17 18:39:36 2018] GET /blog/39/ => generated 51578 bytes in 3873 msecs (HTTP/1.1 200) 4 headers in 256 bytes (8 switches on core 0)
+[pid: 607|app: 0|req: 43/176] 127.0.0.1 () {44 vars in 1002 bytes} [Tue Apr 17 18:41:02 2018] GET /admin/blog/post/ => generated 16130 bytes in 239 msecs (HTTP/1.1 200) 7 headers in 405 bytes (5 switches on core 0)
+[pid: 606|app: 0|req: 89/177] 127.0.0.1 () {44 vars in 1012 bytes} [Tue Apr 17 18:41:04 2018] GET /admin/blog/post/39/change/ => generated 58333 bytes in 144 msecs (HTTP/1.1 200) 7 headers in 405 bytes (10 switches on core 0)
+[pid: 606|app: 0|req: 90/178] 127.0.0.1 () {42 vars in 879 bytes} [Tue Apr 17 18:41:04 2018] GET /admin/jsi18n/ => generated 7682 bytes in 27 msecs (HTTP/1.1 200) 3 headers in 93 bytes (2 switches on core 0)
+[pid: 606|app: 0|req: 91/179] 127.0.0.1 () {44 vars in 1002 bytes} [Tue Apr 17 18:42:28 2018] GET /admin/blog/post/ => generated 16130 bytes in 113 msecs (HTTP/1.1 200) 7 headers in 405 bytes (4 switches on core 0)
+[pid: 606|app: 0|req: 92/180] 127.0.0.1 () {44 vars in 1012 bytes} [Tue Apr 17 18:42:30 2018] GET /admin/blog/post/39/change/ => generated 58333 bytes in 144 msecs (HTTP/1.1 200) 7 headers in 405 bytes (10 switches on core 0)
+[pid: 606|app: 0|req: 93/181] 127.0.0.1 () {42 vars in 879 bytes} [Tue Apr 17 18:42:30 2018] GET /admin/jsi18n/ => generated 7682 bytes in 15 msecs (HTTP/1.1 200) 3 headers in 93 bytes (2 switches on core 0)
+[pid: 606|app: 0|req: 94/182] 127.0.0.1 () {44 vars in 1002 bytes} [Tue Apr 17 18:43:47 2018] GET /admin/blog/post/ => generated 16130 bytes in 99 msecs (HTTP/1.1 200) 7 headers in 405 bytes (5 switches on core 0)
+[pid: 605|app: 0|req: 31/183] 127.0.0.1 () {44 vars in 1012 bytes} [Tue Apr 17 18:43:48 2018] GET /admin/blog/post/40/change/ => generated 66000 bytes in 237 msecs (HTTP/1.1 200) 7 headers in 405 bytes (11 switches on core 0)
+[pid: 606|app: 0|req: 95/184] 127.0.0.1 () {42 vars in 879 bytes} [Tue Apr 17 18:43:48 2018] GET /admin/jsi18n/ => generated 7682 bytes in 12 msecs (HTTP/1.1 200) 3 headers in 93 bytes (2 switches on core 0)
+[pid: 607|app: 0|req: 44/185] 127.0.0.1 () {44 vars in 1002 bytes} [Tue Apr 17 18:43:51 2018] GET /admin/blog/post/ => generated 16130 bytes in 70 msecs (HTTP/1.1 200) 7 headers in 405 bytes (5 switches on core 0)
+[pid: 607|app: 0|req: 45/186] 127.0.0.1 () {44 vars in 1012 bytes} [Tue Apr 17 18:43:53 2018] GET /admin/blog/post/39/change/ => generated 58333 bytes in 133 msecs (HTTP/1.1 200) 7 headers in 405 bytes (10 switches on core 0)
+[pid: 605|app: 0|req: 32/187] 127.0.0.1 () {42 vars in 879 bytes} [Tue Apr 17 18:43:53 2018] GET /admin/jsi18n/ => generated 7682 bytes in 33 msecs (HTTP/1.1 200) 3 headers in 93 bytes (2 switches on core 0)
+[pid: 607|app: 0|req: 46/188] 127.0.0.1 () {52 vars in 1280 bytes} [Tue Apr 17 18:44:54 2018] POST /admin/blog/post/39/change/ => generated 0 bytes in 930 msecs (HTTP/1.1 302) 8 headers in 567 bytes (5 switches on core 0)
+[pid: 607|app: 0|req: 47/189] 127.0.0.1 () {46 vars in 1286 bytes} [Tue Apr 17 18:44:55 2018] GET /admin/blog/post/ => generated 16471 bytes in 83 msecs (HTTP/1.1 200) 8 headers in 489 bytes (5 switches on core 0)
+[pid: 606|app: 0|req: 96/190] 127.0.0.1 () {42 vars in 869 bytes} [Tue Apr 17 18:44:55 2018] GET /admin/jsi18n/ => generated 7682 bytes in 15 msecs (HTTP/1.1 200) 3 headers in 93 bytes (2 switches on core 0)
+[pid: 607|app: 0|req: 48/191] 127.0.0.1 () {46 vars in 991 bytes} [Tue Apr 17 18:44:58 2018] GET /blog/39/ => generated 47381 bytes in 957 msecs (HTTP/1.1 200) 4 headers in 256 bytes (8 switches on core 0)
+[pid: 606|app: 0|req: 97/192] 127.0.0.1 () {44 vars in 1012 bytes} [Tue Apr 17 18:45:17 2018] GET /admin/blog/post/40/change/ => generated 66000 bytes in 116 msecs (HTTP/1.1 200) 7 headers in 405 bytes (10 switches on core 0)
+[pid: 606|app: 0|req: 98/193] 127.0.0.1 () {42 vars in 879 bytes} [Tue Apr 17 18:45:17 2018] GET /admin/jsi18n/ => generated 7682 bytes in 23 msecs (HTTP/1.1 200) 3 headers in 93 bytes (2 switches on core 0)
+[pid: 607|app: 0|req: 49/194] 127.0.0.1 () {52 vars in 1280 bytes} [Tue Apr 17 19:00:26 2018] POST /admin/blog/post/40/change/ => generated 0 bytes in 962 msecs (HTTP/1.1 302) 8 headers in 617 bytes (4 switches on core 0)
+[pid: 607|app: 0|req: 50/195] 127.0.0.1 () {46 vars in 1336 bytes} [Tue Apr 17 19:00:27 2018] GET /admin/blog/post/ => generated 16473 bytes in 93 msecs (HTTP/1.1 200) 8 headers in 489 bytes (4 switches on core 0)
+[pid: 606|app: 0|req: 99/196] 127.0.0.1 () {42 vars in 869 bytes} [Tue Apr 17 19:00:27 2018] GET /admin/jsi18n/ => generated 7682 bytes in 67 msecs (HTTP/1.1 200) 3 headers in 93 bytes (2 switches on core 0)
+[pid: 607|app: 0|req: 51/197] 127.0.0.1 () {46 vars in 991 bytes} [Tue Apr 17 19:00:30 2018] GET /blog/39/ => generated 47381 bytes in 1026 msecs (HTTP/1.1 200) 4 headers in 256 bytes (8 switches on core 0)
+[pid: 606|app: 0|req: 100/198] 127.0.0.1 () {44 vars in 960 bytes} [Tue Apr 17 19:00:35 2018] GET /blog/39/ => generated 47381 bytes in 2337 msecs (HTTP/1.1 200) 4 headers in 256 bytes (7 switches on core 0)
+[pid: 606|app: 0|req: 101/199] 127.0.0.1 () {44 vars in 960 bytes} [Tue Apr 17 19:00:39 2018] GET /blog/40/ => generated 35469 bytes in 866 msecs (HTTP/1.1 200) 4 headers in 256 bytes (7 switches on core 0)
+[pid: 606|app: 0|req: 102/200] 127.0.0.1 () {44 vars in 1012 bytes} [Tue Apr 17 19:01:18 2018] GET /admin/blog/post/39/change/ => generated 54460 bytes in 423 msecs (HTTP/1.1 200) 7 headers in 405 bytes (8 switches on core 0)
+[pid: 607|app: 0|req: 52/201] 127.0.0.1 () {42 vars in 879 bytes} [Tue Apr 17 19:01:19 2018] GET /admin/jsi18n/ => generated 7682 bytes in 8 msecs (HTTP/1.1 200) 3 headers in 93 bytes (2 switches on core 0)
+[pid: 605|app: 0|req: 33/202] 127.0.0.1 () {52 vars in 1280 bytes} [Tue Apr 17 19:02:01 2018] POST /admin/blog/post/39/change/ => generated 0 bytes in 960 msecs (HTTP/1.1 302) 8 headers in 567 bytes (5 switches on core 0)
+[pid: 607|app: 0|req: 53/203] 127.0.0.1 () {46 vars in 1286 bytes} [Tue Apr 17 19:02:02 2018] GET /admin/blog/post/ => generated 16471 bytes in 79 msecs (HTTP/1.1 200) 8 headers in 489 bytes (5 switches on core 0)
+[pid: 606|app: 0|req: 103/204] 127.0.0.1 () {42 vars in 869 bytes} [Tue Apr 17 19:02:02 2018] GET /admin/jsi18n/ => generated 7682 bytes in 8 msecs (HTTP/1.1 200) 3 headers in 93 bytes (2 switches on core 0)
+[pid: 607|app: 0|req: 54/205] 127.0.0.1 () {44 vars in 960 bytes} [Tue Apr 17 19:02:08 2018] GET /blog/39/ => generated 41364 bytes in 891 msecs (HTTP/1.1 200) 4 headers in 256 bytes (7 switches on core 0)
+[pid: 606|app: 0|req: 104/206] 127.0.0.1 () {44 vars in 1012 bytes} [Tue Apr 17 19:02:26 2018] GET /admin/blog/post/40/change/ => generated 45165 bytes in 103 msecs (HTTP/1.1 200) 7 headers in 405 bytes (8 switches on core 0)
+[pid: 606|app: 0|req: 105/207] 127.0.0.1 () {42 vars in 879 bytes} [Tue Apr 17 19:02:26 2018] GET /admin/jsi18n/ => generated 7682 bytes in 10 msecs (HTTP/1.1 200) 3 headers in 93 bytes (2 switches on core 0)
+[pid: 607|app: 0|req: 55/208] 127.0.0.1 () {44 vars in 960 bytes} [Tue Apr 17 19:02:33 2018] GET /blog/40/ => generated 35469 bytes in 821 msecs (HTTP/1.1 200) 4 headers in 256 bytes (7 switches on core 0)
+[pid: 606|app: 0|req: 106/209] 127.0.0.1 () {52 vars in 1280 bytes} [Tue Apr 17 19:03:03 2018] POST /admin/blog/post/40/change/ => generated 0 bytes in 2008 msecs (HTTP/1.1 302) 8 headers in 617 bytes (4 switches on core 0)
+[pid: 606|app: 0|req: 107/210] 127.0.0.1 () {46 vars in 1336 bytes} [Tue Apr 17 19:03:05 2018] GET /admin/blog/post/ => generated 16473 bytes in 79 msecs (HTTP/1.1 200) 8 headers in 489 bytes (5 switches on core 0)
+[pid: 606|app: 0|req: 108/211] 127.0.0.1 () {42 vars in 869 bytes} [Tue Apr 17 19:03:06 2018] GET /admin/jsi18n/ => generated 7682 bytes in 9 msecs (HTTP/1.1 200) 3 headers in 93 bytes (2 switches on core 0)
+[pid: 607|app: 0|req: 56/212] 127.0.0.1 () {46 vars in 991 bytes} [Tue Apr 17 19:03:05 2018] GET /blog/40/ => generated 35469 bytes in 1128 msecs (HTTP/1.1 200) 4 headers in 256 bytes (6 switches on core 0)
+[pid: 605|app: 0|req: 34/213] 127.0.0.1 () {46 vars in 991 bytes} [Tue Apr 17 19:03:11 2018] GET /blog/40/ => generated 36216 bytes in 846 msecs (HTTP/1.1 200) 4 headers in 256 bytes (6 switches on core 0)
+[pid: 606|app: 0|req: 109/214] 127.0.0.1 () {44 vars in 1012 bytes} [Tue Apr 17 19:03:17 2018] GET /admin/blog/post/40/change/ => generated 46297 bytes in 108 msecs (HTTP/1.1 200) 7 headers in 405 bytes (7 switches on core 0)
+[pid: 606|app: 0|req: 110/215] 127.0.0.1 () {42 vars in 879 bytes} [Tue Apr 17 19:03:17 2018] GET /admin/jsi18n/ => generated 7682 bytes in 13 msecs (HTTP/1.1 200) 3 headers in 93 bytes (2 switches on core 0)
+[pid: 607|app: 0|req: 57/216] 127.0.0.1 () {52 vars in 1280 bytes} [Tue Apr 17 19:03:46 2018] POST /admin/blog/post/40/change/ => generated 0 bytes in 843 msecs (HTTP/1.1 302) 8 headers in 617 bytes (4 switches on core 0)
+[pid: 607|app: 0|req: 58/217] 127.0.0.1 () {46 vars in 1336 bytes} [Tue Apr 17 19:03:46 2018] GET /admin/blog/post/ => generated 16473 bytes in 76 msecs (HTTP/1.1 200) 8 headers in 489 bytes (4 switches on core 0)
+[pid: 606|app: 0|req: 111/218] 127.0.0.1 () {42 vars in 869 bytes} [Tue Apr 17 19:03:47 2018] GET /admin/jsi18n/ => generated 7682 bytes in 12 msecs (HTTP/1.1 200) 3 headers in 93 bytes (2 switches on core 0)
+[pid: 606|app: 0|req: 112/219] 127.0.0.1 () {46 vars in 991 bytes} [Tue Apr 17 19:03:48 2018] GET /blog/40/ => generated 36079 bytes in 827 msecs (HTTP/1.1 200) 4 headers in 256 bytes (6 switches on core 0)
+[pid: 603|app: 0|req: 4/220] 127.0.0.1 () {44 vars in 1012 bytes} [Tue Apr 17 19:04:05 2018] GET /admin/blog/post/40/change/ => generated 46194 bytes in 173 msecs (HTTP/1.1 200) 7 headers in 405 bytes (8 switches on core 0)
+[pid: 606|app: 0|req: 113/221] 127.0.0.1 () {42 vars in 879 bytes} [Tue Apr 17 19:04:05 2018] GET /admin/jsi18n/ => generated 7682 bytes in 21 msecs (HTTP/1.1 200) 3 headers in 93 bytes (2 switches on core 0)
+[pid: 607|app: 0|req: 59/222] 127.0.0.1 () {52 vars in 1280 bytes} [Tue Apr 17 19:05:10 2018] POST /admin/blog/post/40/change/ => generated 0 bytes in 2209 msecs (HTTP/1.1 302) 8 headers in 617 bytes (4 switches on core 0)
+[pid: 606|app: 0|req: 114/223] 127.0.0.1 () {46 vars in 1336 bytes} [Tue Apr 17 19:05:12 2018] GET /admin/blog/post/ => generated 16473 bytes in 91 msecs (HTTP/1.1 200) 8 headers in 489 bytes (5 switches on core 0)
+[pid: 606|app: 0|req: 115/224] 127.0.0.1 () {42 vars in 869 bytes} [Tue Apr 17 19:05:13 2018] GET /admin/jsi18n/ => generated 7682 bytes in 8 msecs (HTTP/1.1 200) 3 headers in 93 bytes (2 switches on core 0)
+[pid: 606|app: 0|req: 116/225] 127.0.0.1 () {46 vars in 991 bytes} [Tue Apr 17 19:05:14 2018] GET /blog/40/ => generated 36128 bytes in 778 msecs (HTTP/1.1 200) 4 headers in 256 bytes (6 switches on core 0)
+[pid: 607|app: 0|req: 60/226] 127.0.0.1 () {44 vars in 1012 bytes} [Tue Apr 17 19:05:23 2018] GET /admin/blog/post/40/change/ => generated 46223 bytes in 116 msecs (HTTP/1.1 200) 7 headers in 405 bytes (8 switches on core 0)
+[pid: 606|app: 0|req: 117/227] 127.0.0.1 () {42 vars in 879 bytes} [Tue Apr 17 19:05:23 2018] GET /admin/jsi18n/ => generated 7682 bytes in 12 msecs (HTTP/1.1 200) 3 headers in 93 bytes (2 switches on core 0)
+[pid: 606|app: 0|req: 118/228] 127.0.0.1 () {52 vars in 1280 bytes} [Tue Apr 17 19:06:43 2018] POST /admin/blog/post/40/change/ => generated 0 bytes in 888 msecs (HTTP/1.1 302) 8 headers in 617 bytes (3 switches on core 0)
+[pid: 607|app: 0|req: 61/229] 127.0.0.1 () {46 vars in 1336 bytes} [Tue Apr 17 19:06:43 2018] GET /admin/blog/post/ => generated 16473 bytes in 78 msecs (HTTP/1.1 200) 8 headers in 489 bytes (4 switches on core 0)
+[pid: 607|app: 0|req: 62/230] 127.0.0.1 () {42 vars in 869 bytes} [Tue Apr 17 19:06:44 2018] GET /admin/jsi18n/ => generated 7682 bytes in 12 msecs (HTTP/1.1 200) 3 headers in 93 bytes (2 switches on core 0)
+[pid: 607|app: 0|req: 63/231] 127.0.0.1 () {46 vars in 991 bytes} [Tue Apr 17 19:06:45 2018] GET /blog/40/ => generated 35959 bytes in 843 msecs (HTTP/1.1 200) 4 headers in 256 bytes (6 switches on core 0)
+[pid: 606|app: 0|req: 119/232] 127.0.0.1 () {44 vars in 1012 bytes} [Tue Apr 17 19:06:56 2018] GET /admin/blog/post/40/change/ => generated 45816 bytes in 111 msecs (HTTP/1.1 200) 7 headers in 405 bytes (8 switches on core 0)
+[pid: 606|app: 0|req: 120/233] 127.0.0.1 () {42 vars in 879 bytes} [Tue Apr 17 19:06:57 2018] GET /admin/jsi18n/ => generated 7682 bytes in 10 msecs (HTTP/1.1 200) 3 headers in 93 bytes (2 switches on core 0)
+[pid: 607|app: 0|req: 64/234] 127.0.0.1 () {52 vars in 1280 bytes} [Tue Apr 17 19:07:44 2018] POST /admin/blog/post/40/change/ => generated 0 bytes in 881 msecs (HTTP/1.1 302) 8 headers in 617 bytes (4 switches on core 0)
+[pid: 606|app: 0|req: 121/235] 127.0.0.1 () {46 vars in 1336 bytes} [Tue Apr 17 19:07:45 2018] GET /admin/blog/post/ => generated 16473 bytes in 82 msecs (HTTP/1.1 200) 8 headers in 489 bytes (5 switches on core 0)
+[pid: 605|app: 0|req: 35/236] 127.0.0.1 () {42 vars in 869 bytes} [Tue Apr 17 19:07:45 2018] GET /admin/jsi18n/ => generated 7682 bytes in 22 msecs (HTTP/1.1 200) 3 headers in 93 bytes (2 switches on core 0)
+[pid: 605|app: 0|req: 36/237] 127.0.0.1 () {46 vars in 991 bytes} [Tue Apr 17 19:07:46 2018] GET /blog/40/ => generated 35893 bytes in 2039 msecs (HTTP/1.1 200) 4 headers in 256 bytes (6 switches on core 0)
+[pid: 606|app: 0|req: 122/238] 127.0.0.1 () {44 vars in 1012 bytes} [Tue Apr 17 19:07:52 2018] GET /admin/blog/post/40/change/ => generated 45730 bytes in 100 msecs (HTTP/1.1 200) 7 headers in 405 bytes (8 switches on core 0)
+[pid: 606|app: 0|req: 123/239] 127.0.0.1 () {42 vars in 879 bytes} [Tue Apr 17 19:07:52 2018] GET /admin/jsi18n/ => generated 7682 bytes in 8 msecs (HTTP/1.1 200) 3 headers in 93 bytes (2 switches on core 0)
+[pid: 606|app: 0|req: 124/240] 127.0.0.1 () {52 vars in 1280 bytes} [Tue Apr 17 19:08:17 2018] POST /admin/blog/post/40/change/ => generated 0 bytes in 768 msecs (HTTP/1.1 302) 8 headers in 617 bytes (4 switches on core 0)
+[pid: 607|app: 0|req: 65/241] 127.0.0.1 () {46 vars in 1336 bytes} [Tue Apr 17 19:08:17 2018] GET /admin/blog/post/ => generated 16473 bytes in 75 msecs (HTTP/1.1 200) 8 headers in 489 bytes (5 switches on core 0)
+[pid: 606|app: 0|req: 125/242] 127.0.0.1 () {42 vars in 869 bytes} [Tue Apr 17 19:08:18 2018] GET /admin/jsi18n/ => generated 7682 bytes in 13 msecs (HTTP/1.1 200) 3 headers in 93 bytes (2 switches on core 0)
+[pid: 605|app: 0|req: 37/243] 127.0.0.1 () {46 vars in 991 bytes} [Tue Apr 17 19:08:20 2018] GET /blog/40/ => generated 35892 bytes in 828 msecs (HTTP/1.1 200) 4 headers in 256 bytes (7 switches on core 0)
+[pid: 606|app: 0|req: 126/244] 127.0.0.1 () {44 vars in 1012 bytes} [Tue Apr 17 19:08:26 2018] GET /admin/blog/post/40/change/ => generated 45732 bytes in 103 msecs (HTTP/1.1 200) 7 headers in 405 bytes (8 switches on core 0)
+[pid: 607|app: 0|req: 66/245] 127.0.0.1 () {42 vars in 879 bytes} [Tue Apr 17 19:08:26 2018] GET /admin/jsi18n/ => generated 7682 bytes in 7 msecs (HTTP/1.1 200) 3 headers in 93 bytes (2 switches on core 0)
+[pid: 606|app: 0|req: 127/246] 127.0.0.1 () {52 vars in 1280 bytes} [Tue Apr 17 19:08:56 2018] POST /admin/blog/post/40/change/ => generated 0 bytes in 816 msecs (HTTP/1.1 302) 8 headers in 617 bytes (4 switches on core 0)
+[pid: 607|app: 0|req: 67/247] 127.0.0.1 () {46 vars in 1336 bytes} [Tue Apr 17 19:08:56 2018] GET /admin/blog/post/ => generated 16473 bytes in 69 msecs (HTTP/1.1 200) 8 headers in 489 bytes (4 switches on core 0)
+[pid: 605|app: 0|req: 38/248] 127.0.0.1 () {42 vars in 869 bytes} [Tue Apr 17 19:08:57 2018] GET /admin/jsi18n/ => generated 7682 bytes in 12 msecs (HTTP/1.1 200) 3 headers in 93 bytes (2 switches on core 0)
+[pid: 606|app: 0|req: 128/249] 127.0.0.1 () {46 vars in 991 bytes} [Tue Apr 17 19:08:59 2018] GET /blog/40/ => generated 35824 bytes in 829 msecs (HTTP/1.1 200) 4 headers in 256 bytes (7 switches on core 0)
+[pid: 606|app: 0|req: 129/250] 127.0.0.1 () {44 vars in 1012 bytes} [Tue Apr 17 19:09:06 2018] GET /admin/blog/post/40/change/ => generated 45665 bytes in 111 msecs (HTTP/1.1 200) 7 headers in 405 bytes (8 switches on core 0)
+[pid: 606|app: 0|req: 130/251] 127.0.0.1 () {42 vars in 879 bytes} [Tue Apr 17 19:09:06 2018] GET /admin/jsi18n/ => generated 7682 bytes in 14 msecs (HTTP/1.1 200) 3 headers in 93 bytes (2 switches on core 0)
+[pid: 606|app: 0|req: 131/252] 127.0.0.1 () {52 vars in 1280 bytes} [Tue Apr 17 19:09:19 2018] POST /admin/blog/post/40/change/ => generated 0 bytes in 2191 msecs (HTTP/1.1 302) 8 headers in 617 bytes (4 switches on core 0)
+[pid: 606|app: 0|req: 132/253] 127.0.0.1 () {46 vars in 1336 bytes} [Tue Apr 17 19:09:22 2018] GET /admin/blog/post/ => generated 16473 bytes in 73 msecs (HTTP/1.1 200) 8 headers in 489 bytes (4 switches on core 0)
+[pid: 607|app: 0|req: 68/254] 127.0.0.1 () {42 vars in 869 bytes} [Tue Apr 17 19:09:22 2018] GET /admin/jsi18n/ => generated 7682 bytes in 10 msecs (HTTP/1.1 200) 3 headers in 93 bytes (2 switches on core 0)
+[pid: 605|app: 0|req: 39/255] 127.0.0.1 () {46 vars in 991 bytes} [Tue Apr 17 19:09:22 2018] GET /blog/40/ => generated 35775 bytes in 797 msecs (HTTP/1.1 200) 4 headers in 256 bytes (6 switches on core 0)
+[pid: 605|app: 0|req: 40/256] 127.0.0.1 () {44 vars in 1012 bytes} [Tue Apr 17 19:09:28 2018] GET /admin/blog/post/40/change/ => generated 45584 bytes in 120 msecs (HTTP/1.1 200) 7 headers in 405 bytes (8 switches on core 0)
+[pid: 606|app: 0|req: 133/257] 127.0.0.1 () {42 vars in 879 bytes} [Tue Apr 17 19:09:28 2018] GET /admin/jsi18n/ => generated 7682 bytes in 13 msecs (HTTP/1.1 200) 3 headers in 93 bytes (2 switches on core 0)
+[pid: 607|app: 0|req: 69/258] 127.0.0.1 () {52 vars in 1280 bytes} [Tue Apr 17 19:09:45 2018] POST /admin/blog/post/40/change/ => generated 0 bytes in 850 msecs (HTTP/1.1 302) 8 headers in 617 bytes (4 switches on core 0)
+[pid: 606|app: 0|req: 134/259] 127.0.0.1 () {46 vars in 1336 bytes} [Tue Apr 17 19:09:45 2018] GET /admin/blog/post/ => generated 16473 bytes in 82 msecs (HTTP/1.1 200) 8 headers in 489 bytes (4 switches on core 0)
+[pid: 606|app: 0|req: 135/260] 127.0.0.1 () {42 vars in 869 bytes} [Tue Apr 17 19:09:46 2018] GET /admin/jsi18n/ => generated 7682 bytes in 11 msecs (HTTP/1.1 200) 3 headers in 93 bytes (2 switches on core 0)
+[pid: 606|app: 0|req: 136/261] 127.0.0.1 () {46 vars in 991 bytes} [Tue Apr 17 19:09:48 2018] GET /blog/40/ => generated 35687 bytes in 852 msecs (HTTP/1.1 200) 4 headers in 256 bytes (6 switches on core 0)
+[pid: 606|app: 0|req: 137/262] 127.0.0.1 () {44 vars in 1012 bytes} [Tue Apr 17 19:09:55 2018] GET /admin/blog/post/40/change/ => generated 45463 bytes in 104 msecs (HTTP/1.1 200) 7 headers in 405 bytes (8 switches on core 0)
+[pid: 606|app: 0|req: 138/263] 127.0.0.1 () {42 vars in 879 bytes} [Tue Apr 17 19:09:55 2018] GET /admin/jsi18n/ => generated 7682 bytes in 13 msecs (HTTP/1.1 200) 3 headers in 93 bytes (2 switches on core 0)
+[pid: 606|app: 0|req: 139/264] 127.0.0.1 () {52 vars in 1280 bytes} [Tue Apr 17 19:10:52 2018] POST /admin/blog/post/40/change/ => generated 0 bytes in 841 msecs (HTTP/1.1 302) 8 headers in 617 bytes (4 switches on core 0)
+[pid: 607|app: 0|req: 70/265] 127.0.0.1 () {46 vars in 1336 bytes} [Tue Apr 17 19:10:53 2018] GET /admin/blog/post/ => generated 16473 bytes in 81 msecs (HTTP/1.1 200) 8 headers in 489 bytes (4 switches on core 0)
+[pid: 607|app: 0|req: 71/266] 127.0.0.1 () {42 vars in 869 bytes} [Tue Apr 17 19:10:53 2018] GET /admin/jsi18n/ => generated 7682 bytes in 13 msecs (HTTP/1.1 200) 3 headers in 93 bytes (2 switches on core 0)
+[pid: 606|app: 0|req: 140/267] 127.0.0.1 () {46 vars in 991 bytes} [Tue Apr 17 19:10:55 2018] GET /blog/40/ => generated 35645 bytes in 2190 msecs (HTTP/1.1 200) 4 headers in 256 bytes (6 switches on core 0)
+[pid: 599|app: 0|req: 1/268] 127.0.0.1 () {42 vars in 862 bytes} [Wed Apr 25 10:20:56 2018] GET / => generated 14265 bytes in 2039 msecs (HTTP/1.1 200) 2 headers in 88 bytes (2 switches on core 0)
+[pid: 606|app: 0|req: 141/269] 127.0.0.1 () {44 vars in 916 bytes} [Wed Apr 25 10:21:02 2018] GET /blog/40/ => generated 35645 bytes in 1245 msecs (HTTP/1.1 200) 4 headers in 256 bytes (6 switches on core 0)
